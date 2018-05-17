@@ -1,0 +1,95 @@
+{
+  "menus": [
+    {
+      "index":"/commodity/list/",
+      "name": "产品管理",
+      "icon":"nt-icon-xbn-58"
+
+    },
+    {
+      "index":"20000",
+      "name": "仓储物流管理",
+      "icon":"nt-icon-xbn-41",
+      "children": [
+        {
+          "name": "库存管理",
+          "index": "/githuber/search/"
+        },
+        {
+          "name": "收货预报管理",
+          "index": "/forecast/list"
+        },
+        {
+          "name": "订单管理",
+          "index": "/githuber/search/"
+        },
+        {
+          "name": "物流计划查询",
+          "index": "/plan/list/"
+        }
+      ]
+    },{
+      "index":"30000",
+      "name": "退税管理",
+      "icon":"nt-icon-xbn-57",
+      "children": [
+        {
+          "name": "退税订单管理",
+          "index": "/tax/taxList"
+        },
+        {
+          "name": "收汇管理",
+          "index": "/exchange/incomeList"
+        },
+        {
+          "name": "结汇管理",
+          "index": "/exchange/settleList"
+        },
+        {
+          "name": "开票厂商",
+          "index": "/billing/list"
+        }
+      ]
+    },
+    {
+      "index":"40000",
+      "name": "资金账户管理",
+      "icon":"nt-icon-xbn-40",
+      "children": [
+        {
+          "name": "交易记录",
+          "index": "/finance/transactionList"
+        },
+        {
+          "name": "退款管理",
+          "index": "/githuber/search/"
+        }
+      ]
+    },
+    {
+      "index":"50000",
+      "name": "设置管理",
+      "icon":"nt-icon-xbn-43",
+      "children": [
+        {
+          "name": "结汇方式",
+          "index": "/exchange/settleMode"
+        },
+        {
+          "name": "联系人",
+          "index": "/contact/contactList"
+        }
+      ]
+    },
+    {
+      "index":"/githuber/search/",
+      "name": "账号授权",
+      "icon":"nt-icon-xbn-55"
+    },
+    {
+      "index":"/settled/mySettledInfo/",
+      "name": "我的入驻",
+      "icon":"nt-icon-xbn-56"
+    }
+  ]
+}

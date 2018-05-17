@@ -1,0 +1,97 @@
+<div class="js-modules-email-emailSetting" >
+	<div class="WrapBox">
+		<p class="grayHeader"><i class="iconfont icon-home"></i><span class="location">所在位置：</span>邮件设置</p>
+		<h1 class="pt30 center">邮件设置</h1>
+		<div class="center infoBox mt20">
+			<p class="grayHeader">邮件设置<span class="fr mr40 curp js-write writeHover"><i class="iconfont icon-write"></i><em>编辑</em></span></p>
+			<form class="js-emailSetting">
+				<div class="eachRow pt30 w55p m30auto mw850">
+					<div class="fl"><label class="w110 por"><label class="js-error emailSettingJsError"></label><span class="must">*</span>STMP服务器：</label><input type="text" name="host" data-property-name="host" data-control-type="TextBox" class="default_input mr40"></div>
+					<div class="fl"><label class="w110 por"><label class="js-error emailSettingJsError"></label><span class="must">*</span>STMP用户名：</label><input type="text" name="account" data-property-name="account" data-control-type="TextBox" class="default_input mr40"></div>
+					<div class="fl"><label class="w110 por"><label class="js-error emailSettingJsError"></label><span class="must">*</span>STMP端口：</label><input name="port" data-property-name="port" data-control-type="TextBox" type="text" class="default_input"></div>
+				</div>
+				<div class="eachRow pt30 w55p m30auto mw850 por">
+					<div class="fl"><label class="w110 por"><label class="js-error emailSettingJsError"></label><span class="must">*</span>STMP身份密码：</label><input name="password" data-property-name="password" data-control-type="TextBox" type="text" class="default_input mr40"></div>
+					<div class="fl"><label class="w110 por"><label class="js-error emailSettingJsError"></label><span class="must">*</span>发件人邮箱：</label><input name="from" data-property-name="from" data-control-type="TextBox" type="text" class="default_input "></div>
+				</div>
+			</form>
+			<div class="eachRow pt30 w55p m30auto mw850 por">
+				<form class="js-testEmailForm fl">
+				<div class="fl">
+					<label class="w110 por">测试邮箱：<label class="js-error emailSettingJsError" style="left:65px"></label></label>
+					<input name="testEmail" data-property-name="testEmail" data-control-type="TextBox" type="text" class="default_input js-testEmail">
+
+				</div>
+				<input type="button" class="reset_button ml30 js-send w80 fl" value="发送">
+				</form>
+			</div>
+			<!--<div class="eachRow pt30 m30auto w14p js-postButton">-->
+				<!--<input type="button" class="default_button ml30 js-submit" value="提交">-->
+				<!--<input type="button" class="reset_button ml30 js-reset" value="重置">-->
+			<!--</div>-->
+		</div>
+	</div>
+	<div class="js_tabPannel">
+		<div class="tab_btn mt40">
+			<ul class="fix fL">
+				<li class="active" tabChangeInfo="email">
+					<a href="javascript:;">绑定邮箱</a>
+					<span class="tab_line"></span>
+				</li>
+				<li tabChangeInfo="password">
+					<a href="javascript:;">找回密码</a>
+					<span class="tab_line"></span>
+				</li>
+				<li tabChangeInfo="testEmail">
+					<a href="javascript:;">测试邮箱</a>
+					<span class="tab_line"></span>
+				</li>
+			</ul>
+		</div>
+		<div class="tab_content js-tabContent h400">
+			<div class="listWrap pt70 mh0">
+				<div class="infoBox mt0 pb0">
+					<p class="grayHeader">
+						<span class="js-emailType">绑定邮箱</span>
+						<span class="fr mr40 curp js-tabWrite writeHover">
+							<i class="iconfont icon-write"></i>
+							<em>编辑</em>
+						</span>
+					</p>
+					<div>
+						<script id="modules.email.emailSetting-email" style="height:300px; width:100%" name="content" type="text/plain"></script>
+					</div>
+				</div>
+			</div>
+			<div  class="listWrap pt70 mh0">
+				<div class="infoBox mt0 pb0">
+					<p class="grayHeader">
+						<span class="js-emailType">找回密码</span>
+						<span class="fr mr40 curp js-tabWrite writeHover">
+							<i class="iconfont icon-write"></i>
+							<em>编辑</em>
+						</span>
+					</p>
+					<div>
+						<script id="modules.email.emailSetting-password" style="height:300px; width:100%" name="content" type="text/plain"></script>
+					</div>
+				</div>
+			</div>
+			<div class="listWrap pt70 mh0">
+				<div class="infoBox mt0 pb0">
+					<p class="grayHeader">
+						<span class="js-emailType">测试邮箱</span>
+						<span class="fr mr40 curp js-tabWrite writeHover">
+							<i class="iconfont icon-write"></i>
+							<em>编辑</em>
+						</span>
+					</p>
+					<div>
+						<script id="modules.email.emailSetting-testEmail" style="height:300px; width:100%" name="content" type="text/plain"></script>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>

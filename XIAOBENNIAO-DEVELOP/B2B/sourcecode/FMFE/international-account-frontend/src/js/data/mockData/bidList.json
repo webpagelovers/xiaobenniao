@@ -1,0 +1,58 @@
+{
+  "statusCode": "2000000",
+  "message": "成功",
+  "data":{
+      "list":[
+          {
+            "id" : "1",
+            "bidName" : "项目1",
+            "biddingUnit" : "北京市小笨鸟信息技术有限公司",
+            "releaseTime" : "2016-03-30",
+            "status" : "招标中",
+            "biddingMode":"公开招标",
+            "procurementArea" : "河南-郑州",
+            "change" : "未变更",
+            "operation":""
+          },
+          {
+            "id" : "2",
+            "bidName" : "项目2",
+            "biddingUnit" : "小笨鸟信息技术有限公司",
+            "releaseTime" : "2016-03-30",
+            "status" : "招标中",
+            "biddingMode":"公开招标",
+            "procurementArea" : "河南-郑州",
+            "change" : "未变更",
+            "operation":""
+          },
+          {
+            "id" : "3",
+            "bidName" : "项目3",
+            "biddingUnit" : "北京市小笨鸟信息技术",
+            "releaseTime" : "2016-03-30",
+            "status" : "招标中",
+            "biddingMode":"公开招标",
+            "procurementArea" : "河南-郑州",
+            "change" : "已变更",
+            "operation":""
+          },
+          {
+            "id" : "4",
+            "bidName" : "项目4",
+            "biddingUnit" : "北京市小笨鸟",
+            "releaseTime" : "2016-03-30",
+            "status" : "招标中",
+            "biddingMode":"公开招标",
+            "procurementArea" : "河南-郑州",
+            "change" : "未变更",
+            "operation":""
+          }
+      ],
+      "page": {
+        "pageSize":" 10",
+        "pageNo": "1",
+        "totalCount": "10",
+        "totalPages": "1"
+      }
+  }
+}

@@ -1,0 +1,6 @@
+*.iml
+.idea
+node_modules/
+dist/
+#预置工具命令
+/tools/*.bat

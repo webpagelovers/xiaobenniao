@@ -1,0 +1,44 @@
+<div class="js-modules-user-userAudit">
+    <form class="js-AuditUser">
+        <div class="WrapBox">
+            <p class="grayHeader"><i class="iconfont icon-home"></i><span class="location">所在位置：</span><span
+                    class="now">用户管理</span><span class="gt">&gt;</span><span>用户信息详情-审核</span></p>
+            <h1><!--用户信息--></h1><a data-back="true" class="fl hexagon">返回</a>
+            <div class="newInfoBox">
+                <div class="newInfoBoxHeader disib h30 lh30 w97p">
+                    <p class="newInfoBoxHeaderContent bold h30 lh30 f16 disib">个人信息</p>
+                </div>
+
+                <div class="w100p bgcee mt30 pt30 pb30">
+                    <p class="mb30"><span class="disib w160 tar">公司名称：</span><span data-content-text=""></span></p>
+                    <p class="mb30"><span class="disib w160 tar">姓名：</span><span data-content-text="userName"></span></p>
+                    <p class="mb30"><span class="disib w160 tar">手机号码：</span><span data-content-text="mobile"></span></p>
+                    <p class="mb30"><span class="disib w160 tar">用户ID：</span><span data-content-text="userId"></span></p>
+                    <p class="mb30"><span class="disib w160 tar">注册时间：</span><span data-content-text="createDate" data-format="createDateFormater"></span></p>
+                </div>
+            </div>
+
+            <div class="newInfoBox">
+                <div class="newInfoBoxHeader disib h30 lh30 w97p">
+                    <p class="newInfoBoxHeaderContent bold h30 lh30 f16 disib">审核结果</p>
+                </div>
+
+                <div class="w100p bgcee mt30 pt10 pb10">
+                    <div class="perInfo ml60 mt40" data-property-name="status" data-control-type="RadioBox">
+                        <div class="radioBox">
+                            <input type="radio" name="passOrNoPass" value="1" checked id="pass">
+                            <label for="pass" class="js-pass"></label><span>通过</span>
+                        </div>
+                        <div class="radioBox">
+                            <input type="radio" name="passOrNoPass" value="2" id="noPass">
+                            <label for="noPass" class="js-noPass1"></label><span>驳回</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <input type="button" class="default_button submit js-button" value="确认">
+        </div>
+    </form>
+</div>

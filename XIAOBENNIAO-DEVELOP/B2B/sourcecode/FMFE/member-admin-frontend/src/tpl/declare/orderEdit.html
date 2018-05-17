@@ -1,0 +1,196 @@
+<div class="js-modules-declare-addOrder">
+    <form class="js-addOrder">
+        <div class="WrapBox">
+            <p class="grayHeader"><i class="iconfont icon-home"></i><span class="location">所在位置：</span>
+                <span>9610业务</span><span class="gt">&gt;</span><span class="now">发布订单</span></p>
+            <div class="newInfoBox">
+                <div class="newInfoBoxHeader disib h30 lh30 w97p">
+                    <p class="newInfoBoxHeaderContent bold h30 lh30 f16 disib">交易信息</p>
+                </div>
+                <div class="w100p bgcee mt30 pt30 pb30">
+                    <div class="mb30 por">
+                        <span class="disib w160 tar">
+                            <em class="redFont f18 vat mr5">*</em>支付方式：
+                        </span>
+                        <input type="hidden" class="js-inputPaymentMethod" name="inputPaymentMethod">
+                        <div class="wrapper-dropdown selected w200 ml0" data-property-name="payName" data-control-type="ComboBox">
+                            <i>请选择</i>
+                            <ul class="dropdown">
+                            </ul>
+                        </div>
+                        <span class="js-error poa"></span>
+                    </div>
+                    <div class="mb30">
+                        <span class="disib w160 tar">
+                            <em class="redFont f18 vat mr5">*</em>支付时间：
+                        </span>
+                        <input type="text" class="default_input js-datetimepicker1 w250" style="z-index: 10001" name="payTime" data-property-name="payTime" data-control-type="TextBox">
+                        <span class="js-error poa"></span>
+                    </div>
+                    <div class="mb30 por">
+                        <span class="disib w160 tar">
+                            <em class="redFont f18 vat mr5">*</em>货币类型：
+                        </span>
+                        <input type="hidden" class="js-inputCurrencyType" name="inputCurrencyType">
+                        <div class="wrapper-dropdown selected w200 ml0" style="z-index: 10000" data-property-name="currency" data-control-type="ComboBox">
+                            <i>请选择</i>
+                            <ul class="dropdown">
+                            </ul>
+                        </div>
+                        <span class="js-error poa"></span>
+                    </div>
+                    <div class="mb30 por">
+                        <span class="disib w160 tar">
+                            <em class="redFont f18 vat mr5">*</em>退税方式：
+                        </span>
+                        <input type="hidden" class="js-inputDrawbackMode" name="inputDrawbackMode">
+                        <div class="wrapper-dropdown selected w200 ml0" data-property-name="taxMode" data-control-type="ComboBox">
+                            <i>请选择</i>
+                            <ul class="dropdown">
+                            </ul>
+                        </div>
+                        <span class="js-error poa"></span>
+                    </div>
+                    <div class="mb30 por">
+                        <span class="disib w160 tar">
+                            <em class="redFont f18 vat mr5">*</em>汇率：
+                        </span>
+                        <input type="text" class="default_input w250" name="rate" maxlength="5" data-property-name="rate" data-control-type="TextBox">
+                        <span class="js-error poa"></span>
+                    </div>
+                    <div class="mb30 por">
+                        <span class="disib w160 tar">
+                            <em class="redFont f18 vat mr5">*</em>原始订单号：
+                        </span>
+                        <input type="text" class="default_input w250" name="oldOrderNo"  maxlength="30" data-property-name="oldOrderNo" data-control-type="TextBox">
+                        <span class="js-error poa"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="newInfoBox">
+                <div class="newInfoBoxHeader disib h30 lh30 w97p">
+                    <p class="newInfoBoxHeaderContent bold h30 lh30 f16 disib">商品信息</p>
+                </div>
+                <div class="mt30">
+                    <div class="operation_btn js-operation"></div>
+                    <div class="js-datagrid"></div>
+                </div>
+                <div class="w100p bgcee pt10 pb10 tar">
+                    <div class="ib">
+                        <span class="disib w120 tar">
+                            <em class="redFont f18 vat mr5">*</em>总毛重(kg)：
+                        </span>
+                        <input type="text" class="default_input js-totalGrossWeight w60" name="totalGrossWeight" maxlength="5" data-property-name="totalGrossWeight" data-control-type="TextBox">
+                        <span class="js-error poa" style="text-align:center"></span>
+                    </div>
+                    <div class="ib">
+                        <span class="disib w120 tar">
+                            <em class="redFont f18 vat mr5">*</em>总净重(kg)：
+                        </span>
+                        <input type="text" class="default_input js-totalNetWeight w60" name="totalNetWeight"  maxlength="5" data-property-name="totalNetWeight" data-control-type="TextBox">
+                        <span class="js-error poa" style="text-align:center"></span>
+                    </div>
+                    <div class="ib ml30">
+                        <span class="disib w85 tal"><em class="redFont f18 vat mr5">*</em>商品总计：</span>
+                        <span class="js-totalNumber" data-property-name="packageNo" data-control-type="HtmlBox"></span>
+                    </div>
+                    <div class="ib ml30 mr30">
+                        <span class="disib w100 tal"><em class="redFont f18 vat mr5">*</em>订单总金额：</span>
+                        <span class="js-totalAmount" data-property-name="totalPrice" data-control-type="HtmlBox"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="newInfoBox">
+                <div class="newInfoBoxHeader disib h30 lh30 w97p">
+                    <p class="newInfoBoxHeaderContent bold h30 lh30 f16 disib">包装物流</p>
+                </div>
+                <div class="w100p bgcee mt30 pt30 pb30">
+                    <div class="mb30 por">
+                        <span class="disib w160 tar">
+                            <em class="redFont f18 vat mr5">*</em>物流公司：
+                        </span>
+                        <input type="hidden" class="js-inputLogisticsCompany" name="inputLogisticsCompany">
+                        <div class="wrapper-dropdown selected w200 ml0" data-property-name="logisCompanyName" data-control-type="ComboBox">
+                            <i>请选择</i>
+                            <ul class="dropdown">
+                            </ul>
+                        </div>
+                        <span class="js-error poa"></span>
+                    </div>
+                    <div class="mb30">
+                        <span class="disib w160 tar">
+                            <em class="redFont f18 vat mr5">*</em>运单号：
+                        </span>
+                        <input type="text" class="default_input w250" name="wayBillNo" maxlength="15" data-property-name="wayBillNo" data-control-type="TextBox">
+                        <span class="js-error poa"></span>
+                    </div>
+                    <div class="mb30 por">
+                        <span class="disib w160 tar">
+                            <em class="redFont f18 vat mr5">*</em>收货人：
+                        </span>
+                        <input type="text" class="default_input w250" name="consignee" maxlength="30" data-property-name="consignee" data-control-type="TextBox">
+                        <span class="js-error poa"></span>
+                    </div>
+                    <div class="mb30 por">
+                        <span class="disib w160 tar">
+                            <em class="redFont f18 vat mr5">*</em>收货人国家：
+                        </span>
+                        <input type="hidden" class="js-inputConsigneeState" name="inputConsigneeState">
+                        <div class="wrapper-dropdown selected w200 ml0" style="z-index: 10005" data-property-name="consigneeCountry" data-control-type="ComboBox">
+                            <i>请选择</i>
+                            <ul class="dropdown">
+                            </ul>
+                        </div>
+                        <span class="js-error poa"></span>
+                    </div>
+                    <div class="mb30 por">
+                        <span class="disib w160 tar">
+                            <em class="redFont f18 vat mr5">*</em>运输方式：
+                        </span>
+                        <input type="hidden" class="js-inputTypeOfShipping" name="inputTypeOfShipping">
+                        <div class="wrapper-dropdown selected w200 ml0" style="z-index: 10004" data-property-name="transMode" data-control-type="ComboBox">
+                            <i>请选择</i>
+                            <ul class="dropdown">
+                            </ul>
+                        </div>
+                        <span class="js-error poa"></span>
+                    </div>
+                    <div class="mb30 por">
+                        <span class="disib w160 tar">
+                            <em class="redFont f18 vat mr5">*</em>发货方式：
+                        </span>
+                        <input type="hidden" class="js-inputDelivery" name="inputDelivery">
+                        <div class="wrapper-dropdown selected w200 ml0" style="z-index: 10003" data-property-name="realShippingId" data-control-type="ComboBox">
+                            <i>请选择</i>
+                            <ul class="dropdown">
+                            </ul>
+                        </div>
+                        <span class="js-error poa"></span>
+                    </div>
+                    <div class="mb30 por">
+                        <span class="disib w160 tar">
+                            <em class="redFont f18 vat mr5">*</em>包装种类：
+                        </span>
+                        <input type="hidden" class="js-inputPackingType" name="inputPackingType">
+                        <div class="wrapper-dropdown selected w200 ml0" data-property-name="wrapType" data-control-type="ComboBox">
+                            <i>请选择</i>
+                            <ul class="dropdown">
+                            </ul>
+                        </div>
+                        <span class="js-error poa"></span>
+                    </div>
+                    <div class="mb30">
+                        <span class="disib w160 tar">
+                            <em class="redFont f18 vat mr5">*</em>发货时间：
+                        </span>
+                        <input type="text" class="default_input js-datetimepicker2 w250" name="shippingTime" data-property-name="shippingTime" data-control-type="TextBox">
+                        <span class="js-error poa"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="newInfoBox" style="z-index: 10006">
+                <input type="button" class="default_button js-button ml130" value="提交业务订单">
+            </div>
+        </div>
+    </form>
+</div>

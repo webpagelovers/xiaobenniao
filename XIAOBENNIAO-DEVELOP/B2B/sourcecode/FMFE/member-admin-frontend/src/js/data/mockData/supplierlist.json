@@ -1,0 +1,225 @@
+{
+  "data":{
+    "list":[
+      {
+        "supplierId":1,
+        "companyPhone": "010-2876584",
+        "number": "15187813215D",
+        "supplierAddress":{
+          "city":"北京",
+          "detailedAddress":"科苑路18号",
+          "district":"大兴",
+          "province":"北京"
+        },
+        "registeredCapital":"2000万",
+        "lastLoginIp":"192.168.1.12",
+        "status":"待审核",
+        "user":{
+          "mobile":"13120365884"
+        },
+        "license":{
+           "imgurl":"images/logo.png"
+          },
+        "companyNameCn": "北京小笨鸟信息技术有限公司"
+      },
+      {
+        "supplierId":2,
+        "companyPhone": "010-2876584",
+        "number": "15187813215D",
+        "supplierAddress":{
+          "city":"北京",
+          "detailedAddress":"科苑路18号",
+          "district":"大兴",
+          "province":"北京"
+        },
+        "registeredCapital":"2000万",
+        "lastLoginIp":"192.168.1.12",
+        "status":"待审核",
+        "user":{
+          "mobile":"13120365884"
+        },
+        "license":{
+          "imgurl":"images/logo.png"
+        },
+        "companyNameCn": "北京小笨鸟信息技术有限公司"
+      },
+      {
+        "supplierId":3,
+        "companyPhone": "010-2876584",
+        "number": "15187813215D",
+        "supplierAddress":{
+          "city":"北京",
+          "detailedAddress":"科苑路18号",
+          "district":"大兴",
+          "province":"北京"
+        },
+        "registeredCapital":"2000万",
+        "lastLoginIp":"192.168.1.12",
+        "status":"待审核",
+        "user":{
+          "mobile":"13120365884"
+        },
+        "license":{
+          "imgurl":"images/logo.png"
+        },
+        "companyNameCn": "北京小笨鸟信息技术有限公司"
+      },
+      {
+        "supplierId":4,
+        "companyPhone": "010-2876584",
+        "number": "15187813215D",
+        "supplierAddress":{
+          "city":"北京",
+          "detailedAddress":"科苑路18号",
+          "district":"大兴",
+          "province":"北京"
+        },
+        "registeredCapital":"2000万",
+        "lastLoginIp":"192.168.1.12",
+        "status":"待审核",
+        "user":{
+          "mobile":"13120365884"
+        },
+        "license":{
+          "imgurl":"images/logo.png"
+        },
+        "companyNameCn": "北京小笨鸟信息技术有限公司"
+      },
+      {
+        "supplierId":5,
+        "companyPhone": "010-2876584",
+        "number": "15187813215D",
+        "supplierAddress":{
+          "city":"北京",
+          "detailedAddress":"科苑路18号",
+          "district":"大兴",
+          "province":"北京"
+        },
+        "registeredCapital":"2000万",
+        "lastLoginIp":"192.168.1.12",
+        "status":"待审核",
+        "user":{
+          "mobile":"13120365884"
+        },
+        "license":{
+          "imgurl":"images/logo.png"
+        },
+        "companyNameCn": "北京小笨鸟信息技术有限公司"
+      },
+      {
+        "supplierId":6,
+        "companyPhone": "010-2876584",
+        "number": "15187813215D",
+        "supplierAddress":{
+          "city":"北京",
+          "detailedAddress":"科苑路18号",
+          "district":"大兴",
+          "province":"北京"
+        },
+        "registeredCapital":"2000万",
+        "lastLoginIp":"192.168.1.12",
+        "status":"待审核",
+        "user":{
+          "mobile":"13120365884"
+        },
+        "license":{
+          "imgurl":"images/logo.png"
+        },
+        "companyNameCn": "北京小笨鸟信息技术有限公司"
+      },
+      {
+        "supplierId":7,
+        "companyPhone": "010-2876584",
+        "number": "15187813215D",
+        "supplierAddress":{
+          "city":"北京",
+          "detailedAddress":"科苑路18号",
+          "district":"大兴",
+          "province":"北京"
+        },
+        "registeredCapital":"2000万",
+        "lastLoginIp":"192.168.1.12",
+        "status":"待审核",
+        "user":{
+          "mobile":"13120365884"
+        },
+        "license":{
+          "imgurl":"images/logo.png"
+        },
+        "companyNameCn": "北京小笨鸟信息技术有限公司"
+      },
+      {
+        "supplierId":8,
+        "companyPhone": "010-2876584",
+        "number": "15187813215D",
+        "supplierAddress":{
+          "city":"北京",
+          "detailedAddress":"科苑路18号",
+          "district":"大兴",
+          "province":"北京"
+        },
+        "registeredCapital":"2000万",
+        "lastLoginIp":"192.168.1.12",
+        "status":"待审核",
+        "user":{
+          "mobile":"13120365884"
+        },
+        "license":{
+          "imgurl":"images/logo.png"
+        },
+        "companyNameCn": "北京小笨鸟信息技术有限公司"
+      },
+      {
+        "supplierId":9,
+        "companyPhone": "010-2876584",
+        "number": "15187813215D",
+        "supplierAddress":{
+          "city":"北京",
+          "detailedAddress":"科苑路18号",
+          "district":"大兴",
+          "province":"北京"
+        },
+        "registeredCapital":"2000万",
+        "lastLoginIp":"192.168.1.12",
+        "status":"待审核",
+        "user":{
+          "mobile":"13120365884"
+        },
+        "license":{
+          "imgurl":"images/logo.png"
+        },
+        "companyNameCn": "北京小笨鸟信息技术有限公司"
+      },
+      {
+        "supplierId":10,
+        "companyPhone": "010-2876584",
+        "number": "15187813215D",
+        "supplierAddress":{
+          "city":"北京",
+          "detailedAddress":"科苑路18号",
+          "district":"大兴",
+          "province":"北京"
+        },
+        "registeredCapital":"2000万",
+        "lastLoginIp":"192.168.1.12",
+        "status":"待审核",
+        "user":{
+          "mobile":"13120365884"
+        },
+        "license":{
+          "imgurl":"images/logo.png"
+        },
+        "companyNameCn": "北京小笨鸟信息技术有限公司"
+      }
+
+    ],
+    "page": {
+      "pageSize":" 10",
+      "pageNo": "1",
+      "totalCount": "10",
+      "totalPages": "1"
+    }
+  },
+  "message": "成功",
+  "statusCode": 2000000
+}

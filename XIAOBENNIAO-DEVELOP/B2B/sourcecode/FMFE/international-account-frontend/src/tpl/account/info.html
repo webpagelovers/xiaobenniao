@@ -1,0 +1,76 @@
+<div>
+    <div class="bold col7f f20 ml60 mt40 mb10">User info</div>
+    <div>
+        <form action="" class="pb70 pt30 ml30 bgcff js-userInfo ">
+            <p class="mb25 por">
+                <label class="disib f14 tar w300 mr15"><span data-i18n="about_contactUs_name">User Name:</span></label>
+                <span class="js-name"></span>
+            </p>
+            <p class="mb25 por">
+                <label class="disib f14 tar w300 mr15"><em class="f15 vam">*</em><span data-i18n="about_contactUs_name">Email:</span></label>
+                <input class=" cccBorder h34 lh32  pl10 w410 br3 ignore js-email" name="email" readonly="readonly" data-property-name="email" data-control-type="TextBox" maxlength="128">
+                <span class="js-email-text" style="display: none"></span>
+                <a href="emailVerify/emailVerify.html" class="ml30 colGreen js-verifyEmail" style="display: none;text-decoration: underline;">Verify your email address to access all of Weintrade</a>
+                <span class="js-error inlineb poa tar redFont b_20 l95"></span>
+            </p>
+            <p class="mb25 por">
+                <span class="disib f14 tar w300 mr15 ">Phone:</span>
+                <span class="f14 col66 js-dialCode" style="position: absolute;margin-left: 52px;margin-top: 7px;z-index: 10;"></span>
+                <input id="phone" name="mobile" data-property-name="mobile" data-control-type="TextBox" maxlength="11" class=" cccBorder h34 lh32 w410 br3" style="border: 1px solid #dddddd;padding-left: 85px;" onkeyup='this.value=this.value.replace(/\D/gi,"")'/>
+                <span class="js-error inlineb poa tar redFont b_20 l95"></span>
+            </p>
+            <p class="mb25 por">
+                <label class="disib f14 tar w300 mr15"><span data-i18n="about_contactUs_name">Street Address:</span></label>
+                <input class=" cccBorder h34 lh32  pl10 w410 br3 js-streetAddress" maxlength="128" name="streetAddress"  data-property-name="streetAddress" data-control-type="TextBox">
+                <span class="js-error inlineb poa tar redFont b_20 l95"></span>
+            </p>
+            <p class="mb25 por">
+                <label class="disib f14 tar w300 mr15"><span data-i18n="about_contactUs_name">city:</span></label>
+                <input class=" cccBorder h34 lh32  pl10 w410 br3 js-city" maxlength="60" name="city" data-property-name="city" data-control-type="TextBox">
+                <span class="js-error inlineb poa tar redFont b_20 l95"></span>
+            </p>
+            <p class="mb25 por js-country">
+                <label class="disib f14 tar w300 mr15"><span data-i18n="about_contactUs_name">country:</span></label>
+                <input class=" cccBorder h34 lh32 pl10 w410 br3" style="display: none" id="country">
+                <span class="js-error inlineb   poa tar redFont b_20 l95"></span>
+            </p>
+            <p class="mb25 por">
+                <label class="disib f14 tar w300 mr15"><span data-i18n="about_contactUs_name">WebsiteURL:</span></label>
+                <input class=" cccBorder h34 lh32  pl10 w410 br3 js-websiteUrl" maxlength="60" name="websiteUrl" data-property-name="websiteUrl" data-control-type="TextBox">
+                <span class="js-error inlineb   poa tar redFont b_20 l95"></span>
+            </p>
+            <p class="mb25 por">
+                <label class="disib f14 tar w300 mr15"><span data-i18n="about_contactUs_name">Company name:</span></label>
+                <input class=" cccBorder h34 lh32  pl10 w410 br3 js-companyName" maxlength="128" name="companyName" data-property-name="companyName" data-control-type="TextBox">
+                <span class="js-error inlineb   poa tar redFont b_20 l95"></span>
+            </p>
+            <input type="button" class="contactUs f16 default_button curp ml320 js-viewDetailSubmit w420 f18 mt35" value="View Detail"/>
+        </form>
+    </div>
+    <div class="bold col7f f20 ml60 mt40 mb10">Sourcing info</div>
+    <div class="pt30 ml30 mb130 bgcff">
+        <form class="js-sourcingInfo">
+            <div class="mb25 por">
+                <label class="disib f14 tar w300 mr15"><span data-i18n="about_contactUs_name">Product Names:</span></label>
+                <div class="inlineb por">
+                    <input type="text" class="cccBorder h34 lh32 pl10 w410 br3 js-category-val" maxlength="32">
+                    <a class="addInfo-category-addBtn disib f20 tac ml10 js-add-category curp va_2">+</a>
+                    <input type="hidden" name="category" class="js-category-hidden-val" />
+                </div>
+                <div class="mt30 ml320 js-category-html" style="width: 420px;"> </div>
+                <label class="js-category-error redFont"></label>
+            </div>
+            <div class="mb25 por">
+                <label class="disib f14 tar w300 mr15"><span class="must">*</span>Sourcing Frequency:</label>
+                <input type="hidden" class="js-inputSource" name="inputSource">
+                <div class="wrapper-dropdown selected ml0 js-sourcingFrequency" style="width: 280px;" data-property-name="sourcingFrequency" data-control-type="ComboBox">
+                    <i>请选择</i>
+                    <ul class="dropdown">
+                    </ul>
+                </div>
+                <span class="poa w400 b0" style="left:165px;"><label class="js-error currency-error"></label></span>
+            </div>
+            <input type="button" class="contactUs f16 default_button curp ml320 js-sourcingInfoSubmit w420 f18 mt35 mb25" value="View Detail"/>
+        </form>
+    </div>
+</div>

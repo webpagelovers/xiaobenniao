@@ -1,0 +1,675 @@
+<div class="js-modules-customerClearance clearanceHandle">
+   <div class="WrapBox">
+      <p class="grayHeader">
+         <i class="iconfont icon-home"></i>
+         <span class="location">所在位置：</span>
+         <span class="now">通关结汇处理</span>
+         <span class="gt">&gt;</span>
+         <span>处理</span>
+      </p>
+      <div class="changeTitle">
+         <h1 >处理通关申请 </h1><a class="fl hexagon" data-back="true">返回</a>
+      </div>
+      <div class="ml60">
+         <!--审核-->
+         <div class="handelInfo">
+            <i class="ibg blueBg">1</i>
+            <h3 class="col33 ml20 f14">报关资料审核</h3>
+            <div class="borleft">
+               <form class="js-reviewform none">
+                  <div class="w94p grayBlockBig">
+                     <div class="por">
+                        <label class="ib w100 tar">审核意见: </label>
+                        <textarea class="default_text va_50" name="documentVerifyDescription" data-property-name='documentVerifyDescription' data-control-type='TextBox'></textarea>
+                        <span class="js-error poa t75 l100"></span>
+                        <div class="ml106 mt30">
+                            <input type="button" class="default_button w76 js-reviewbutton" value="审核">
+                           <span class="colRed ml20">提交后不可修改</span>
+                        </div>
+                     </div>
+                  </div>
+               </form>
+               <div class="js-review">
+
+               </div>
+            </div>
+         </div>
+         <!--订舱-->
+         <div class="handelInfo">
+            <i class="ibg js-bookingBg">2</i>
+            <h3 class="col33 ml20 f14">订舱</h3>
+            <div class="borleft">
+               <form class="js-bookingform none">
+                  <div class="w94p grayBlockBig">
+                     <div class="w97p borbw p10">
+                        <label class="ib w74 tar"><i class="colRed"></i>船舱信息：</label>
+                        <div class="ib w160 tac col66 bsdc h30 lh30 curp bgwhite js-addBerth">
+                           <i class="iconfont icon-add"></i>
+                           <span class="pl10">添加舱位</span>
+                        </div>
+                     </div>
+                        <div class="js-berthBase">
+
+                        </div>
+                     <div class="w97p  pt20 por">
+                        <label class="ib w86 tar">补充说明： </label>
+                        <textarea class="default_text va_50" name="bookingDescription" data-property-name="bookingDescription" data-control-type="TextBox"></textarea>
+                        <span class="js-error poa t90 l100"></span>
+                     </div>
+                     <div class="w97p  pt20">
+                        <label class="ib w86 tar vat">上传附件：</label>
+                        <div class="js-addBooking mb20 ib">
+                           <div class="js-webUpload ib va_4">
+                              <div data-property-name="bookingAttachments" data-control-type="WebUpload">
+                                 <div class="queueList ">
+                                    <div class="filePicker file_button por"></div>
+                                    <span class="ml60 vat mt10 col66 ib">上传文件支持doc\docx\xls\xlsx\ppt\pptx\pdf\jpg\jpeg\gif\png，文件小于20M，上传数量不大于5张。</span>
+                                 </div>
+                                 <div class="js-wrapData w680"></div>
+                                 <span class="js-attachError js-error redFont"></span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="w97p  pt20">
+                        <div class="ml92">
+                           <input type="button" class="default_button w76 js-bookingbutton" value="提交">
+                           <span class="colRed ml20" >提交后不可修改</span>
+                        </div>
+                     </div>
+                     </div>
+               </form>
+               <div class="js-exportBooking"></div>
+            </div>
+         </div>
+         <!--报关-->
+         <div class="handelInfo">
+            <i class="ibg js-clearanceBg">3</i>
+            <h3 class="col33 ml20 f14">报关</h3>
+            <div class="borleft">
+               <form class="js-clearanceform none">
+                  <div class="w94p grayBlockBig">
+                     <div class="w97p borbw p10">
+                        <label class="ib w74 tar">报关人员：</label>
+                        <div class="ib w160 tac col66 bsdc bgwhite h30 lh30 curp ml2 ">
+                           <i class="iconfont icon-add"></i>
+                           <span class="pl10 js-addUser">添加人员</span>
+                        </div>
+                     </div>
+                     <div class="js-adduser">
+
+                     </div>
+                     <div class="w97p pt20">
+                        <div class="ib w27pm260 por">
+                           <label class="ib w86 tar"><i class="colRed"> * </i>申报日期：</label>
+                         <input type="text" class="default_input_clear" name="declarationPlanDate" data-property-name="declarationPlanDate" data-control-type="DatePicker">
+                           <label class="js-error poa l94 t34 w160"></label>
+                        </div>
+                        <div class="ib w27pm285 por">
+                           <label class="ib w110 tar"><i class="colRed"> * </i>放行日期：</label>
+                          <input type="text" class="default_input_clear" name="declarationDate" data-property-name="declarationDate" data-control-type="DatePicker">
+                           <label class="js-error poa l120 t32 w160"></label>
+                        </div>
+                     </div>
+                     <div class="w97p pt20 por">
+                        <label class="ib w86 tar">补充说明：</label>
+                        <textarea class="default_text" name="declarationDescription" data-property-name="declarationDescription" data-control-type="TextBox" style="vertical-align: -50px"></textarea>
+                        <label class="js-error poa l100 t90"></label>
+                     </div>
+                     <div class="w97p pt20">
+                        <div class="js-addclearanceFlies mb20">
+                           <label class="ib w86 tar vat">上传附件：</label>
+                           <div class="js-webUpload ib va_4" >
+                              <div data-property-name="declarationAttachments" data-control-type="WebUpload">
+                                 <div class="queueList ">
+                                    <div class="filePicker file_button por"></div>
+                                    <span class="ml60 vat mt10 col66 ib">上传文件支持doc\docx\xls\xlsx\ppt\pptx\pdf\jpg\jpeg\gif\png，文件小于20M，上传数量不大于5张。</span>
+                                 </div>
+                                 <div class="js-wrapData w680"></div>
+                                 <span class="js-attachError js-error redFont"></span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="w97p pt20">
+                        <div class="ml92">
+                           <input type="button" class="default_button w76 js-clearanceButton" value="提交">
+                           <span class="colRed ml20" >提交后不可修改</span>
+                        </div>
+                     </div>
+                  </div>
+               </form>
+               <form class="js-clearance">
+
+               </form>
+            </div>
+         </div>
+         <!--结汇-->
+         <div class="handelInfo">
+            <i class="ibg js-conversionBg">4</i>
+            <h3 class="col33 ml20 f14">结汇</h3>
+            <div class="clear"></div>
+            <div class="borleft">
+               <form class="js-conversionform none">
+                  <div class="w94p grayBlockBig">
+                     <div class="js-conversion-contacts">
+                        <div class="w97p pt20 ">
+                           <div class="ib">
+                              <label class="ib w86 tar">供应商联系人：</label>
+                              <span data-content-text="exportSettlement.bankContacts"></span>
+                              <span class="ml30" data-content-text="exportSettlement.bankPhoneNumber"></span>
+                              <span class="ml30" data-content-text="exportSettlement.bankImEmail"></span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="w97p pt20">
+                        <div class="ib w27pm285 ">
+                           <label class="ib w86 tar">开户名：</label>
+                           <span data-content-text="exportSettlement.accountName"></span>
+                        </div>
+                        <div class="ib w27pm260 ">
+                           <label class="ib w86 tar">开户行：</label>
+                           <span data-content-text="exportSettlement.bankName"></span>
+                        </div>
+                        <div class="ib w27pm260 ">
+                           <label class="ib w86 tar">账户：</label>
+                           <span data-content-text="exportSettlement.bankAccount"></span>
+                        </div>
+                     </div>
+                     <div class="w97p  pt20 ">
+                        <div class="ib w27pm285 por">
+                           <label class="ib w86 tar"><i class="colRed"> * </i>结汇处理人：</label>
+                          <input type="text" class="default_input_clear" name="contacts" data-property-name='contacts' data-control-type='TextBox'>
+                           <label class="js-error poa l94 t34 w160"></label>
+                        </div>
+                        <div class="ib w27pm260 por">
+                           <label class="ib w86 tar"><i class="colRed"> * </i>联系电话：</label>
+                           <input type="text" class="default_input_clear" name="phoneNumber" data-property-name='phoneNumber' data-control-type='TextBox'>
+                           <label class="js-error poa l94 t34 w160"></label>
+                        </div>
+                        <div class="ib w27pm260 por">
+                           <label class="ib w86 tar">QQ／邮箱：</label>
+                           <input type="text" class="default_input_clear" name="imEmail" data-property-name='imEmail' data-control-type='TextBox'>
+                           <label class="js-error poa l94 t34 w160"></label>
+                        </div>
+                     </div>
+
+                     <div class="w97p pt20">
+                           <div class="ib w27pm285 por">
+                              <label class="ib w86 tar"><i class="colRed"> * </i>结汇外币：</label> <!--settlementUsd -->
+                              <input type="text" class="default_input_clear" name="settlementAmount" data-property-name="settlementAmount" data-control-type="TextBox">
+                              <span class="js-currency"></span>
+                              <label class="js-error poa l94 t34 w160"></label>
+                           </div>
+
+                           <div class="ib w27pm285 por">
+                              <label class="ib w86 tar"><i class="colRed"> * </i>结汇金额：</label>
+                              <span> <input type="text" class="default_input_clear" name="settlementRmb" data-property-name="settlementRmb" data-control-type="TextBox">RMB
+                              <label class="js-error poa l94 t34 w160"></label>
+                              </span>
+
+                           </div>
+
+                     </div>
+                     <div class="w97p pt20 por">
+                        <label class="ib w86 tar">补充说明：</label>
+                        <textarea class="default_text va_50" name="settlementDescription" data-property-name="settlementDescription" data-control-type="TextBox"></textarea>
+                        <label class="js-error poa l100 t90"></label>
+                     </div>
+                     <div class="w97p pt20">
+                        <div class="js-addconversionFlies mb20">
+                           <label class="ib w86 tar vat">上传附件：</label>
+                           <div class="js-webUpload ib va_4" >
+                              <div data-property-name="settlementAttachments" data-control-type="WebUpload">
+                                 <div class="queueList ">
+                                    <div class="filePicker file_button por"></div>
+                                    <span class="ml60 vat mt10 col66 ib">上传文件支持doc\docx\xls\xlsx\ppt\pptx\pdf\jpg\jpeg\gif\png，文件小于20M，上传数量不大于5张。</span>
+                                 </div>
+                                 <div class="js-wrapData w680"></div>
+                                 <span class="js-attachError js-error redFont"></span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="w97p pt20">
+                        <div class="ml92">
+                           <input type="button" class="default_button w76 js-conversionButton" value="提交">
+                           <span class="colRed ml20" >提交后不可修改</span>
+                        </div>
+                     </div>
+                  </div>
+               </form>
+               <div class="js-conversion">
+
+               </div>
+               </div>
+            </div>
+
+         <!--退税-->
+         <div class="handelInfo">
+            <i class="ibg js-drawbackBg">5</i>
+            <h3 class="col33 ml20 f14">退税</h3>
+            <div class="">
+               <form class="js-drawbackform none">
+                  <div class="w94p grayBlockBig ml10 mt20">
+                     <div class="js-drawback-contacts">
+                        <div class="w97p ">
+                           <div class="ib lh40">
+                              <label class="ib w86 tar ">供应商联系人：</label>
+                              <span data-content-text="exportRefund.bankContacts"></span>
+                              <span class="ml30" data-content-text="exportRefund.bankPhoneNumber"></span>
+                              <span  class="ml30" data-content-text="exportRefund.bankImEmail"></span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="w97p pt20">
+                        <div class="ib w27pm260 ">
+                           <label class="ib w86 tar">开户名：</label>
+                           <span data-content-text="exportRefund.accountName"></span>
+                        </div>
+                        <div class="ib w27pm260 ">
+                           <label class="ib w86 tar">开户行：</label>
+                           <span data-content-text="exportRefund.bankName"></span>
+                        </div>
+                        <div class="ib w27pm260 ">
+                           <label class="ib w86 tar">账户：</label>
+                           <span data-content-text="exportRefund.bankAccount"></span>
+                        </div>
+                     </div>
+                     <div class="w97p pt20 ">
+                        <div class="ib w27pm260  por">
+                           <label class="ib w86 tar"><i class="colRed">*</i>退税处理人：</label>
+                           <input type="text" class="default_input_clear" name="contacts" data-property-name='contacts' data-control-type='TextBox'>
+                           <label class="js-error poa l94 t34 w160"></label>
+                        </div>
+                        <div class="ib w27pm260 por">
+                           <label class="ib w86 tar"><i class="colRed">*</i>联系电话：</label>
+                           <input type="text" class="default_input_clear" name="phoneNumber" data-property-name='phoneNumber' data-control-type='TextBox'>
+                           <label class="js-error poa l94 t34 w160"></label>
+                        </div>
+                        <div class="ib w27pm260 por">
+                           <label class="ib w86 tar">QQ／邮箱：</label>
+                           <input type="text" class="default_input_clear" name="imEmail" data-property-name='imEmail' data-control-type='TextBox'>
+                           <label class="js-error poa l94 t34 w160"></label>
+                        </div>
+                     </div>
+                     <div class="w97p pt20">
+                        <div class="ib w27pm285 por">
+                           <label class="ib w86 tar"><i class="colRed">*</i>退税金额：</label>
+                           <span> <input type="text" class="default_input_clear" name="refundAmount" data-property-name='refundAmount' data-control-type='TextBox'>RMB
+                                  <label class="js-error poa l94 t34 w160"></label>
+                           </span>
+                        </div>
+                     </div>
+                     <div class="w97p pt20 por">
+                        <label class="ib w86 tar">补充说明: </label>
+                        <textarea class="default_text va_50" name="refundDescription" data-property-name='refundDescription' data-control-type='TextBox'></textarea>
+                        <label class="js-error poa l100 t90"></label>
+                     </div>
+                     <div class="w97p pt20">
+                        <div class="js-adddrawbackFlies mb20">
+                           <label class="ib w86 tar vat">上传附件：</label>
+                           <div class="js-webUpload ib va_4" >
+                              <div data-property-name="exportRefundAttachments" data-control-type="WebUpload">
+                                 <div class="queueList ">
+                                    <div class="filePicker file_button por"></div>
+                                    <span class="ml60 vat mt10 col66 ib">上传文件支持doc\docx\xls\xlsx\ppt\pptx\pdf\jpg\jpeg\gif\png，文件小于20M，上传数量不大于5张。</span>
+                                 </div>
+                                 <div class="js-wrapData w680"></div>
+                                 <span class="js-attachError js-error colRed"></span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="w97p pt20">
+                        <div class="ml92">
+                           <input type="button" class="default_button w76 js-drawbackButton" value="提交">
+                           <span class="colRed ml20" >提交后不可修改</span>
+                        </div>
+                     </div>
+                  </div>
+               </form>
+               <div class="js-drawback">
+               </div>
+            </div>
+         </div>
+         <!--取消-->
+         <div class="handelInfo js-cancelnone">
+            <h2 class=" mt30 mb20 ti2 lh40">订单取消操作</h2>
+            <div class="ib w97p"> <hr size="3" color="#00aff0" width="11%" style="float: left;margin-left: 6px"><hr width="88%" color="#cccccc" size="3" style="float: left"></div>
+            <form class="js-cancelForm mt30 por">
+               <label class="ib w100 tar">取消说明：</label>
+               <textarea class="default_text va_50" name="cancelExplain" data-property-name="cancelExplain" data-control-type="TextBox" ></textarea>
+               <span class="js-error redFont poa l100 t75 w160"></span>
+               <div class="ml106 mt30">
+                  <input type="button" class="default_button js-cancelButton" value="取消订单">
+                  <span class="colRed ml20">订单取消操作，一旦提交，则此条订单为取消（作废）状态。</span>
+               </div>
+             </form>
+            <div class="js-cancel mb80"></div>
+         </div>
+         <!--操作记录-->
+         <div class="handelInfo">
+            <h2 class="mt30 w97p ti2 lh40">操作记录</h2>
+            <div class="ib w97p"> <hr size="3" color="#00aff0" width="11%" style="float: left;margin-left: 6px"><hr width="88%" color="#cccccc" size="3" style="float: left"></div>
+
+
+            <div class="js_tabPannel1 mt30 clearanceHandle">
+               <div class="tab_btn">
+                  <ul class="fix fL none">
+                     <li class="active" tabChangeInfo="tabAll">
+                        <a href="javascript:;">全部用户</a>
+                        <span class="tab_line"></span>
+                     </li>
+                  </ul>
+               </div>
+               <div class="tab_content js-tabContent">
+                  <div class="listWrap">
+                     <div class="screen_search_box fix js-searchbox none"></div>
+                     <div class="operation_btn js-operation none"></div>
+                     <div class="table_main js-datagrid"></div>
+                     <div class="papogation js-pagination pagination none" >
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </div>
+      </div>
+   </div>
+   <!--申请-->
+   <script type="text/html"  class="js-review-tpl">
+      <div class="lh30 ml20">
+         <label>审核状态：</label>
+         <span> 审核通过</span>
+      </div>
+      <div class="lh30 ml20">
+         <label>审核意见：</label>
+         <span class="" data-content-text="documentVerifyDescription"></span>
+      </div>
+   </script>
+   <!--订舱-->
+   <script type="text/html"  class="js-exportBooking-tpl">
+      <div class="lh30 ml20">
+      <label>舱位信息：</label>
+         <div class="js-booking"></div>
+         <br>
+      </div>
+      <div class="lh30 ml20 mt10">
+         <label>补充说明：</label>
+         <span data-content-text="bookingDescription"></span>
+      </div>
+      <div class="lh30 ml20 mt10">
+         <label>上传附件：</label>
+         <div class="mt10 js-bookingAttachments  ib">
+         </div>
+      </div>
+   </script>
+   <script type="text/html"  class="js-booking-tpl">
+         <div class="ib ml106">
+              <label >
+                 <span>船名</span>
+                 <span data-content-text="shipCompany"></span>
+              </label>
+              <label class="ml35">
+                 <span data-content-text="containerType" data-format="containerTypemater"></span>
+                 <span data-content-text="containerCount" data-format="containerCountmater"></span><span>个</span>
+              </label>
+              <label class="ml35">
+                 <span>航次</span>
+                 <span data-content-text="voyageNumber"></span>
+              </label>
+              <label class="ml35">
+                 <span>开船日期</span> <span data-content-text="sailDate"></span>
+              </label>
+         </div>
+      <br>
+   </script>
+   <!--报关-->
+   <script type="text/html"  class="js-clearance-tpl">
+      <div class="lh30 ml20">
+         <label>报关人员：</label>
+         <div class="js-customs"></div>
+      </div>
+      <div class="lh30 ml20">
+         <label>申报日期：</label>
+        <span data-content-text="declarationPlanDate"></span>
+      </div>
+      <div class="lh30 ml20">
+      <label>放行日期：</label>
+      <span data-content-text="declarationDate"></span>
+      </div>
+      <div class="lh30 ml20 mt10">
+         <label>补充说明：</label>
+         <span data-content-text="declarationDescription"></span>
+      </div>
+      <div class="lh30 ml20 mt10">
+         <label>上传附件：</label>
+         <div class="mt10 js-exportDeclaration ib">
+         </div>
+      </div>
+   </script>
+   <script type="text/html"  class="js-customs-tpl">
+      <div class="ib ml106">
+         <label >
+           <span data-content-text="fullname"> </span>
+         </label>
+         <label class="ml35">
+            <span data-content-text="phoneNumber"></span>
+         </label>
+         <label class="ml35">
+            <span data-content-text="imEmail"></span>
+         </label>
+      </div>
+      <br>
+   </script>
+   <!--结汇-->
+   <script type="text/html"  class="js-conversion-tpl">
+      <div class="w94p ml20">
+         <div class="js-conversion-contacts">
+            <div class="w97p pt20 ">
+               <div class="ib">
+                  <label class="ib w86 tar">供应商联系人：</label>
+                  <span data-content-text="bankContacts"></span>
+                  <span class="ml30" data-content-text="bankPhoneNumber"></span>
+                  <span class="ml30" data-content-text="bankImEmail"></span>
+               </div>
+            </div>
+         </div>
+         <div class="w97p pt20">
+            <div class="ib w30p ">
+               <label >开户名：</label>
+               <span data-content-text="accountName"> </span>
+            </div>
+            <div class="ib w30p ">
+               <label >开户行：</label>
+               <span data-content-text="bankName"> </span>
+            </div>
+            <div class="ib w30p ">
+               <label>账户：</label>
+               <span data-content-text="bankAccount"> </span>
+            </div>
+         </div>
+         <div class="w97p  pt20 ">
+            <div class="ib w30p  ">
+               <label >联系人：</label>
+               <span data-content-text="contacts"> </span>
+            </div>
+            <div class="ib w30p ">
+               <label >联系电话：</label>
+               <span data-content-text="phoneNumber"></span>
+            </div>
+            <div class="ib w30p">
+               <label >QQ／邮箱：</label>
+               <span data-content-text="imEmail"> </span>
+            </div>
+         </div>
+         <div class="w97p pt20">
+            <div class="ib w30p ">
+               <label >结汇外币：</label>
+               <span data-content-text="settlementAmount"></span>
+               <span data-content-text="settlementCurrency" data-format="currencyFormater"></span>
+            </div>
+            <div class="ib w30p ">
+               <label >结汇金额：</label>
+               <span data-content-text="settlementRmb"></span>
+               <span>RMB</span>
+            </div>
+         </div>
+      </div>
+      <div class="clear"></div>
+      <div class="lh30 mt10 ml20">
+         <label>补充说明：</label>
+         <span data-content-text="settlementDescription"></span>
+      </div>
+      <div class="clear"></div>
+      <div class="lh30 mt10 ml20">
+         <label class="vat">上传附件：</label>
+         <div class="mt10 js-otherAttachments ib">
+
+         </div>
+      </div>
+   </script>
+   <!--退税-->
+   <script type="text/html"  class="js-drawback-tpl">
+      <div class="w94p ml20">
+         <div class="js-drawback-contacts">
+            <div class="w97p mt20">
+                  <label>供应商联系人：</label>
+                  <span data-content-text="bankContacts"></span>
+                  <span class="ml30" data-content-text="bankPhoneNumber"></span>
+                  <span  class="ml30" data-content-text="bankImEmail"></span>
+            </div>
+         </div>
+         <div class="w97p pt20">
+            <div class="ib w30p ">
+               <label >开户名：</label>
+               <span data-content-text="accountName"> </span>
+            </div>
+            <div class="ib w30p ">
+               <label >开户行：</label>
+               <span data-content-text="bankName"> </span>
+            </div>
+            <div class="ib w30p ">
+               <label>账户：</label>
+               <span data-content-text="bankAccount"> </span>
+            </div>
+         </div>
+         <div class="w97p  pt20 ">
+            <div class="ib w30p  ">
+               <label >联系人：</label>
+               <span data-content-text="contacts"> </span>
+            </div>
+            <div class="ib w30p ">
+               <label >联系电话：</label>
+               <span data-content-text="phoneNumber"></span>
+            </div>
+            <div class="ib w30p">
+               <label >QQ／邮箱：</label>
+               <span data-content-text="imEmail"> </span>
+            </div>
+         </div>
+         <div class="w97p pt20">
+            <div class="ib w30p ">
+               <label >退款金额：</label>
+               <span data-content-text="refundAmount"></span>
+               <span> USD</span>
+            </div>
+
+         </div>
+      </div>
+      <div class=" w97p lh30 ml20 mt10">
+         <label >补充说明：</label>
+         <span data-content-text="refundDescription"> </span>
+      </div>
+      <div class="w97p lh30 ml20">
+         <label class="vat">上传附件：</label>
+         <div class="ml20 js-taxAttachments ib">
+         </div>
+      </div>
+   </script>
+   <script type="text/html" class="js-berthBaseRow-tpl">
+      <div class="borbw  pb20 por">
+         <div class="w97p  pt20">
+            <div class="ib w27pm260 por">
+               <span class="ib w84 tar"><i class="colRed"> * </i>船名：</span>
+               <input type="text" class="default_input_clear" name="shipCompany" data-property-name="shipCompany" data-control-type="TextBox">
+               <label class="js-error poa l100 t32 w160"></label>
+            </div>
+            <div class="ib">
+               <span><i class="redFont">*</i>货柜类型</span>
+               <div class="ib por">
+                  <input type="hidden" name="containerTypeHidden" class="containerTypeHidden">
+                  <div class="wrapper-dropdown selected va_8" data-property-name="containerType" data-control-type="ComboBox">
+                     <i>请选择</i>
+                     <ul class="dropdown">
+                     </ul>
+                  </div>
+                  <span class="js-error containerType-error poa l13 t34 w160"></span>
+               </div>
+
+               <div class="ib por change">
+                  <span><i class="redFont">*</i>货柜个数</span>
+                  <input type="hidden" name="containerCountHidden" class="containerCountHidden" >
+                  <div class="wrapper-dropdown selected va_8" data-property-name="containerCount" data-control-type="ComboBox">
+                     <i>请选择</i>
+                     <ul class="dropdown">
+                     </ul>
+                  </div>
+                  <span class="js-error containerCount-error poa l13 t34 w160"></span>
+               </div>
+            </div>
+            <div class="ib por change">
+               <label class="ib w84 tar"><i class="colRed"> * </i>航次：</label>
+                <input type="text" class="default_input_clear" name="voyageNumber" data-property-name="voyageNumber" data-control-type="TextBox">
+               <label class="js-error poa l94 t34 w160"></label>
+            </div>
+         </div>
+         <div class="w97p pt20 por">
+            <label class="ib w86 tar"><i class="colRed"> * </i>开船日期：</label>
+           <input type="text" class="default_input_clear" name="sailDate" data-property-name="sailDate" data-control-type="DatePicker">
+            <label class="js-error poa l94  t54 w160"></label>
+         </div>
+          <span class="colBlue poa r10 b6 js-delBerth">
+             <label>删除</label>
+             <i class="iconfont icon-lajitong"></i>
+          </span>
+      </div>
+   </script>
+   <script type="text/html" class="js-adduserRow-tpl">
+      <div class="borbw  pb20 por">
+         <div class="w97p  pt20">
+            <div class="ib w27pm260 por">
+               <span class="ib w86 tar"><i class="colRed"> * </i>姓名：</span>
+               <input type="text" class="default_input_clear" name="fullname" data-property-name="fullname" data-control-type="TextBox">
+               <label class="js-error poa l94 t34 w160"></label>
+            </div>
+            <div class="ib w27pm285 por">
+               <label class="ib w110 tar"><i class="colRed"> * </i>电话／手机号：</label>
+               <input type="text" class="default_input_clear" name="phoneNumber" data-property-name="phoneNumber" data-control-type="TextBox">
+               <label class="js-error poa l120 t34 w160"></label>
+            </div>
+            <div class="ib w27pm260 por">
+               <label class="ib w86 tar"><i class="colRed"> * </i>QQ／邮箱：</label>
+               <input type="text" class="default_input_clear" name="imEmail" data-property-name="imEmail" data-control-type="TextBox">
+               <label class="js-error poa l94 t34 w160"></label>
+            </div>
+         </div>
+         <span class="colBlue poa r10 b6 js-deluserRow">
+             <label>删除</label>
+             <i class="iconfont icon-lajitong"></i>
+         </span>
+      </div>
+   </script>
+   <script type="text/html"  class="js-cancel-tpl">
+      <div class="lh30">
+         <label class="ib w100 tar">审核状态：</label>
+         <span> 已取消</span>
+      </div>
+      <div class="lh30">
+         <label class="ib w100 tar">取消说明：</label>
+         <span class="" data-content-text="cancelExplain"></span>
+      </div>
+   </script>
+</div>

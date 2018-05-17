@@ -1,0 +1,51 @@
+.table{
+    text-align: center;
+    width:96%;
+    border:1px solid #ccc;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 18px;
+    font-weight:normal;
+    cursor: default;
+}
+.table thead{
+   background:#eef0f4;
+}
+.table th{font-weight:normal;color:black}
+.table thead tr{
+     height:38px;
+     line-height:38px;
+ }
+.table tbody{
+    color:#666;
+}
+.table tbody td,.table thead th {
+    border:1px solid #ccc;
+    padding:0 10px;
+}
+/*.table tbody td img{*/
+    /*box-sizing: border-box;*/
+    /*cursor: pointer;*/
+/*}*/
+/*.table tbody td img:hover{*/
+    /*border:1px solid #00aff0;*/
+/*}*/
+.table tbody td{
+    height:38px;
+    line-height:22px;
+}
+.table tbody tr:hover{background: #ffeee4!important;}
+/********************没数据的样式*********************/
+.noDataImg:hover {
+    border: none !important;
+}
+.noDataImg {
+    cursor: default;
+    width: 200px;
+    height: 130px;
+    margin: 30px auto;
+}
+.noDataTd:hover{
+    cursor: default;
+    background: white;
+}

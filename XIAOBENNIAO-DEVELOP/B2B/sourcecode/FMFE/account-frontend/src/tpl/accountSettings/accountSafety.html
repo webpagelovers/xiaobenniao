@@ -1,0 +1,89 @@
+<div class="js-modules-message-systemMessage">
+    <div class="mt40">
+        <div class="bottomBorder w95p center js-email none">
+            <div class="w350 disib pt50 pb50 ml30">
+                <i class="iconfont icon-bgcGanTan f22 redFont va_2"></i><span class="f14 ml10">邮箱验证</span>
+            </div>
+            <div class="w220 disib pt50 pb50">
+                <span class="f14">尚未绑定</span>
+            </div>
+            <div class="w350 disib pt50 pb50">
+                <span class="f14">尚未验证</span>
+                <input type="button" value="去绑定" class="default_button w100 fr mt_5 js-bindEmailButton">
+            </div>
+        </div>
+
+        <div class="bottomBorder w95p center js-email-base none">
+            <div class="w350 disib pt50 pb50 ml30">
+                <i class="iconfont icon-bgcDuiguo f22 colGreen va_2"></i><span class="f14 ml10">邮箱验证</span>
+            </div>
+            <div class="w220 disib pt50 pb50">
+                <span class="f14">已绑定</span>
+            </div>
+            <div class="w350 disib pt50 pb50">
+                <span class="f14" data-content-text="email"></span>
+                <input type="button" value="更改邮箱" class="default_button w100 fr mt_5 js-bindEmailButton">
+            </div>
+        </div>
+
+        <div class="bottomBorder w95p center">
+            <div class="w350 disib pt50 pb50 ml30">
+                <i class="iconfont icon-bgcDuiguo f22 colGreen va_2"></i><span class="f14 ml10">修改密码</span>
+            </div>
+            <div class="w220 disib pt50 pb50">
+                <span class="f14">建议修改</span>
+            </div>
+            <div class="w350 disib pt50 pb50">
+                <span class="f14">为保证账户安全，经常修改密码</span>
+                <input type="button" value="修改密码" class="default_button w100 fr mt_5 js-resetPasswordButton">
+            </div>
+        </div>
+
+        <div class="bottomBorder w95p center">
+            <div class="w350 disib pt50 pb50 ml30">
+                <i class="iconfont icon-bgcDuiguo f22 colGreen va_2"></i><span class="f14 ml10">修改手机号</span>
+            </div>
+            <div class="w220 disib pt50 pb50">
+                <span class="f14">已验证</span>
+            </div>
+            <div class="w350 disib pt50 pb50">
+                <span class="f14 js-mobile"></span><span> 已成功验证</span>
+                <input type="button" value="修改手机号" class="default_button w100 fr mt_5" style="background: #f1f1f1;color:#ababab;cursor: default;">
+            </div>
+        </div>
+    </div>
+    <div class="js-resetPasswordLayer none">
+        <form class="js-resetPasswordForm repassword mr20">
+            <p class="tac mb30 por">
+                <label class="col66 tar w100 disibni">原密码：</label>
+                <input class="default_text " type="password" placeholder="请输入原密码" name="oldPassword">
+                <span class="js-error poa t35 tal w280 l125"></span>
+            </p>
+            <p class="tac mb30 por">
+                <label class="col66 tar w100 disibni">新密码：</label>
+                <input class="default_text"       type="password"
+                       placeholder="请输入新密码" id="password"
+                       name="password"  data-property-name="password"
+                       data-control-type="TextBox">
+                <span class="js-error poa t35 tal w280 l125"></span>
+            </p>
+            <p class="tac mb30 por">
+                <label class="col66 tar w100 disibni">确认新密码：</label>
+                <input class="default_text password" type="password" name="cosPassword" placeholder="请再次输入新密码">
+                <span class="js-error poa t35 tal w280 l125"></span>
+            </p>
+            <p class="tac ml45">
+                <input class="submit-button js-passSubmit w100" type="button" value="提交">
+            </p>
+        </form>
+    </div>
+    <div class="js-bindEmailLayer none">
+        <form class="js-bindEmailForm por email">
+            <label class="col66">邮箱地址：</label>
+            <input class="default_text emailAddress"  name="email" data-control-type="TextBox"
+                   data-property-name="emailAddress" placeholder="请输入邮箱地址">
+            <span class="js-error poa w280 t35 l75"></span>
+            <input type="button" class="submit-button js-bindEmail w80 mt28 ml100" value="确定">
+        </form>
+    </div>
+</div>

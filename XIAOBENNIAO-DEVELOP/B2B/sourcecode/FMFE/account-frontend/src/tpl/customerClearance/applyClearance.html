@@ -1,0 +1,773 @@
+<div class="js-modules-customerClearance-applyClearance">
+    <form class="js-declare">
+        <div class="perInfo" style="position: relative;">
+            <div class="fixNav">
+                <a  class="method" data-target="js-method">收汇方式</a>
+                <a  class="goods"  data-target="js-goods">货品信息</a>
+                <a  class="apply"  data-target="js-apply">报关信息</a>
+                <a  class="upload" data-target="js-upload">上传附件</a>
+            </div>
+            <div class="ml50">
+                <h1 class="tac f16 mt70">
+                    <span class="bold">申请报关</span>
+                </h1>
+                <div class="perInfo js-method">
+                    <h2 class="header f16 por mb20">
+                        <div class="fileWrap bgcYe ml45">
+                            <i class="iconfont icon-file"></i>
+                        </div>
+                        <span id="basic">收汇方式</span>
+                        <span class="f12 col66">/ THE METHOD OF SETTLEMENT</span>
+                    </h2>
+                    <div class="error-ver render-form1 edit-dom pl40">
+                        <div class="perDetail mb0" data-property-name="exchangeMethod" data-control-type="RadioBox" >
+                            <label class="inlineb w130 tar">
+                                <i class="redFont f18 mr5 vat-t">*</i>收汇方式：
+                            </label>
+                            <input type="hidden" class="exchangeMethodHiddenInput" name="exchangeMethodHiddenInput" data-property-name="exchangeMethodHiddenInput"/>
+                            <div class="radioBox">
+                                <input type="radio" class="exchangeMethodRadio" name="exchangeMethod" class="poa" value="0" id="remittance">
+                                <label for="remittance"></label><span>汇款（如T/T）</span>
+                            </div>
+                            <div class="radioBox ml40" >
+                                <input type="radio" class="exchangeMethodRadio" name="exchangeMethod"  value="1" id="collection">
+                                <label for="collection"></label><span class="w100">托收（D/P,D/A）</span>
+                            </div>
+                            <div class="radioBox ml40">
+                                <input type="radio" class="exchangeMethodRadio" name="exchangeMethod"  value="2" id="credit">
+                                <label for="credit"></label><span>信用证（L/C）</span>
+                            </div>
+                            <span><label class="js-error exchange-method-error"></label></span>
+                        </div>
+                        <br>
+                        <div class="perDetail mb30">
+                            <label class="vat"><i class="redFont f18 mr5 vat-t">*</i>结汇/退税收款账户：</label>
+
+                            <div class="js-account disibni company-bank-account-id-div" data-property-name="companyBankAccountId" data-control-type="RadioBox"></div>
+                            <input type="hidden" class="companyBankAccountIdHiddenInput" name="companyBankAccountIdHiddenInput" data-property-name="companyBankAccountIdHiddenInput"/>
+                            <span><label class="js-error company-bank-account-id-error"></label></span>
+                             <div class="ml150">
+                                 <span class="js-acountButton orange-font curp"><i class="iconfont icon-add mr5"></i>添加</span>
+                                 <span class="js-showacountButton orange-font curp ml40">显示全部</span>
+                             </div>
+                        </div>
+                        <br>
+                        <div class="perDetail mb30">
+                            <label class="vat"><i class="redFont f18 mr5 vat-t">*</i>本单联系人：</label>
+                            <div class="js-contacts disibni export-contacts-id-div" data-property-name="exportContactsId" data-control-type="RadioBox"></div>
+                            <input type="hidden" class="exportContactsIdHiddenInput" name="exportContactsIdHiddenInput" data-property-name="exportContactsIdHiddenInput"/>
+                            <span><label class="js-error export-contacts-id-error"></label></span>
+                            <div class="ml150">
+                                <span class="js-contactsButton orange-font curp"><i class="iconfont icon-add mr5"></i>添加</span>
+                                <span class="js-showcontactsButton orange-font curp ml40">显示全部</span>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="perDetail mb30">
+                            <label><i class="redFont f18 mr5 vat-t">*</i>出口口岸：</label>
+                            <input class="default_input" type="text" name="customsPort"  data-property-name="customsPort" data-control-type="TextBox" />
+                            <span><label class="js-error"></label></span>
+                        </div>
+                    </div>
+                </div>
+                <hr size="3" color="#eee" width="88%" class="ml100 mt10">
+
+                <div class="perInfo js-goods" >
+                    <h2 class="header f16 ml45 por mb20 mt30">
+                        <div class="fileWrap bgcGreen ">
+                            <i class="iconfont icon-file"></i>
+                        </div>
+                        <span id="list">货品信息</span>
+                        <span class="f12 col66">/ BIDDING ITEM LISTING</span>
+                    </h2>
+                    <div class="pl40">
+                        <div class="perDetail">
+                            <label><i class="redFont f18 mr5 vat-t">*</i>报关币种：</label>
+                            <input type="hidden" class="currencyHiddenInput" name="currencyHiddenInput" data-property-name="currencyHiddenInput"/>
+                            <div class="wrapper-dropdown selected va_8 w160" data-property-name="currency" data-control-type="ComboBox">
+                                <i>请选择</i>
+                                <ul class="dropdown">
+                                </ul>
+                            </div>
+                            <span><label class="js-error currency-error"></label></span>
+                        </div>
+                        <br>
+                        <div class="perDetail js-priceClause m0"  data-property-name="priceTerm" data-control-type="RadioBox" >
+                            <label class="inlineb w130 tar">
+                                <i class="redFont f18 mr5 vat-t">*</i>价格条款：
+                            </label>
+                            <input type="hidden" class="priceTermHiddenInput" name="priceTermHiddenInput" data-property-name="priceTermHiddenInput"/>
+                            <div class="radioBox">
+                                <input type="radio" class="priceTermRadio" name="priceTerm" value="0" class="poa" id="fob">
+                                <label for="fob"></label><span>FOB</span>
+                            </div>
+                            <div class="radioBox ml40" >
+                                <input type="radio" class="priceTermRadio" name="priceTerm"  value="1" id="cif">
+                                <label for="cif"></label><span>CIF</span>
+                            </div>
+                            <div class="radioBox ml40">
+                                <input type="radio" class="priceTermRadio" name="priceTerm"  value="2" id="fobCif">
+                                <label for="fobCif"></label><span>C&F</span>
+                            </div>
+                            <span><label class="js-error price-term-error"></label></span>
+                        </div>
+
+                        <div class="js-fare ml85 mb20 none" >
+                            <label class="disib w64 tar"><i class="redFont f18 mr5 vat-t">*</i> 运费：</label>
+                            <input type="text" class="default_input fare_validate_state" name="fare"  data-property-name="fare" data-control-type="TextBox" />
+                            <span><label class="js-error fare-error"></label></span>
+                        </div>
+
+                        <div class="js-premium ml85 mb20 none" >
+                            <label class="tar disib w64"><i class="redFont f18 mr5 vat-t">*</i>保费：</label>
+                            <input type="text" class="default_input premium_validate_state" name="premium"  data-property-name="premium" data-control-type="TextBox" />
+                            <span><label class="js-error premium-error"></label></span>
+                        </div>
+                        <div class="perDetail mb0" data-property-name="packageType" data-control-type="RadioBox" >
+                            <label class="inlineb w130 tar">
+                                <i class="redFont f18 mr5 vat-t">*</i>包装方式：
+                            </label>
+                            <input type="hidden" class="packageTypeHiddenInput" name="packageTypeHiddenInput" data-property-name="packageTypeHiddenInput"/>
+                            <div class="radioBox w250">
+                                <input type="radio" class="packageTypeRadio" name="packageType" value="0" class="poa" id="whole">
+                                <label for="whole"></label><span>整装（同一包装中只含单项产品）</span>
+                            </div>
+                                    <br>
+                            <div class="radioBox w250 ml154" >
+                                <input type="radio" class="packageTypeRadio" name="packageType"  value="1" id="mixed">
+                                <label for="mixed"></label><span>混装（任一包装中含两种或以上产品）</span>
+                            </div>
+                            <span><label class="js-error package-type-error"></label></span>
+                        </div>
+                        <div class="perDetail bordashed disb">
+                            <label><i class="redFont f18 mr5 vat-t">*</i>出货清单：</label>
+                            <input type="hidden" class="bordashedHiddenInput" name="bordashedHiddenInput" data-property-name="bordashedHiddenInput"/>
+                            <div class="js-wrapAddDispatchList disibni w160 tac col66 bsdc h28 lh28 curp">
+                                <i class="iconfont icon-add"></i>
+                                <span class="pl10 js-dispatchList">添加货品</span>
+                            </div>
+                            <span><label class="js-error bordashed-error"></label></span>
+                            <div class="js-wrapGood disibni"></div>
+                            <div class="js-totalExportGoodsLocation none mt10 ml10 mb20">
+                                <div class="disibni">
+                                    <label>该批总净重(KG):</label>
+                                    <span class="js-totalNetWeight" data-content-text="totalNetWeight" data-property-name="totalNetWeight" data-control-type="HtmlBox"></span>
+                                </div>
+                                <div class="disibni">
+                                    <label>总毛重(KG):</label>
+                                    <span class="js-totalGrosWeight" data-content-text="totalGrosWeight" data-property-name="totalGrosWeight" data-control-type="HtmlBox"></span>
+                                </div>
+                                <div class="disibni">
+                                    <label>总产品数量:</label>
+                                    <span class="js-totalGoodsCount" data-content-text="totalGoodsCount" data-property-name="totalGoodsCount" data-control-type="HtmlBox"></span>
+                                </div>
+                                <div class="disibni">
+                                    <label>总货值<span class="js-currencyUnit"></span>:</label>
+                                    <span class="js-totalValue" data-content-text="totalValue" data-property-name="totalValue" data-control-type="HtmlBox"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="perDetail bordashed disb">
+                            <label>货品数量：</label>
+                            <span class="js-packageNumber disib cccBlock" data-property-name="packageNumber" data-control-type="HtmlBox">0</span>
+                        </div>
+                        <div class="perDetail bordashed disb">
+                            <label><i class="redFont f18 mr5 vat-t">*</i>整体包装种类：</label>
+                            <input type="hidden" class="packagingMaterialHiddenInput" name="packagingMaterialHiddenInput" data-property-name="packagingMaterialHiddenInput">
+                            <div class="wrapper-dropdown selected va_8 w160" data-property-name="packagingMaterial" data-control-type="ComboBox">
+                                <i>请选择</i>
+                                <ul class="dropdown">
+                                </ul>
+                            </div>
+                            <span><label class="js-error packaging-material-error"></label></span>
+                        </div>
+                        <div class="js-trayType none"  data-property-name="trayType" data-control-type="RadioBox" >
+                            <label class="inlineb w130 tar vat ml73">
+                                <i class="redFont f18 mr5 vat">*</i>托盘类型：
+                            </label>
+                            <input type="hidden" class="trayTypeHiddenInput" name="trayTypeHiddenInput" data-property-name="trayTypeHiddenInput"/>
+                            <div class="radioBox">
+                                <input type="radio" class="trayTypedRadio" name="trayType" value="0" class="poa" id="manMade">
+                                <label for="manMade"></label><span class="w100">人造板</span>
+                            </div>
+                            <div class="radioBox ml80" >
+                                <input type="radio" class="trayTypedRadio" name="trayType"  value="1" id="solidWood">
+                                <label for="solidWood"></label><span class="w100">实木</span>
+                            </div>
+                            <div class="radioBox ml80">
+                                <input type="radio" class="trayTypedRadio" name="trayType"  value="2" id="plastic">
+                                <label for="plastic"></label><span class="w100">塑料</span>
+                            </div>
+                            <span><label class="js-error tray-type-error"></label></span>
+
+                        </div>
+                        <div class="perDetail" data-property-name="detailConfirmed" data-control-type="RadioBox" >
+                            <label class="inlineb w130 tar">
+                                <i class="redFont f18 mr5 vat-t">*</i>产品信息是否确定：
+                            </label>
+                            <input type="hidden" class="detailConfirmedHiddenInput" name="detailConfirmedHiddenInput" data-property-name="detailConfirmedHiddenInput"/>
+                            <div class="mt_25">
+                                <div class="radioBox disb w80p ml150">
+                                    <input type="radio" class="detailConfirmedRadio" name="detailConfirmed" class="poa" value="1" id="sure">
+                                    <label for="sure"></label><span>已确定（产品信息确定的状态下，下单成功后进入报关审核环节）</span>
+                                </div>
+                                <div class="radioBox disb w80p ml150 " >
+                                    <input type="radio" class="detailConfirmedRadio" name="detailConfirmed"  value="0" id="noSure">
+                                    <label for="noSure"></label><span>未确定（产品信息未确定的状态下，下单后不会立即报关，客户需确认签函才能进入报关审核环节）</span>
+                                </div>
+                                <p class="w88p ml150 colcc">如提交的产品数量或重量需装车后才能明确，请选择“产品信息未确定”。该状态的订单需修改产品信息后，才能进入报关审核环节。</p>
+                            </div>
+                            <span><label class="js-error detail-confirmed-error"></label></span>
+                        </div>
+                    </div>
+                    <hr size="3" color="#eee" width="88%" class="ml90 mt40">
+                </div>
+
+                <div class="perInfo anchor js-apply">
+                    <h2 class="header f16 ml45 por mb20 mt15">
+                        <div class="fileWrap bgcBlue">
+                            <i class="iconfont icon-file"></i>
+                        </div>
+                        <span id="commercial">报关信息</span>
+                        <span class="f12 col66">/ CUSTOMS INFORMATION</span>
+                    </h2>
+                    <div class="pl40">
+                        <div class="perDetail disb">
+                            <label><i class="redFont f18 mr5 vat-t">*</i>预计出货日期：</label><input class="default_input shipment_date_picker_input" type="text" readonly name="shipmentDate"  data-property-name="shipmentDate" data-control-type="DatePicker" />
+                            <span><label class="js-error shipment-date-picker-error"></label></span>
+                        </div>
+                        <div class="perDetail disb">
+                            <label><i class="redFont f18 mr5 vat-t">*</i>运抵国（贸易国/地区）：</label><input class="default_input" type="text" name="tradeNation"  data-property-name="tradeNation" data-control-type="TextBox" />
+                            <span><label class="js-error"></label></span>
+                        </div>
+                        <div class="perDetail disb">
+                            <label><i class="redFont f18 mr5 vat-t">*</i>指运港（境外接货港）：</label><input class="default_input" type="text" name="targetNation"  data-property-name="targetNation" data-control-type="TextBox" />
+                            <span><label class="js-error"></label></span>
+                        </div>
+                        <div class="perDetail disibni w100p mb10">
+                            <label class="vat"><i class="redFont f18 mr5 vat-t">*</i>境外贸易商：</label>
+                            <input type="hidden" class="internationalTraderHiddenInput" name="internationalTraderHiddenInput" data-property-name="internationalTraderHiddenInput"/>
+                            <div class="js-wrapAddInternationalTrader disibni w160 tac col66 bsdc h28 lh28 curp">
+                                <i class="iconfont icon-add"></i>
+                                <span class="pl10 js-internationalTrader">添加</span>
+                            </div>
+                            <span><label class="js-error international-trader-error"></label></span>
+                            <div class="js-wrapInternationalTrader disibni w75p"></div>
+                        </div>
+                        <div class="perDetail disb">
+                            <label><i class="redFont f18 mr5 vat-t">*</i>最终目的国：</label><input class="default_input" type="text" name="destinationCountry"  data-property-name="destinationCountry" data-control-type="TextBox" />
+                            <span><label class="js-error"></label></span>
+                        </div>
+                        <div class="perDetail disb">
+                            <label><i class="redFont f18 mr5 vat-t">*</i>境内货源地：</label><input class="default_input" type="text" name="domesticSource"  data-property-name="domesticSource" data-control-type="TextBox" />
+                            <span><label class="js-error"></label></span>
+                        </div>
+                        <div class="perDetail disbni w100p mb10">
+                            <label class="vat"><i class="redFont f18 mr5 vat-t">*</i>提货地址：</label>
+                            <input type="hidden" class="exportGoodsLocationFirstHiddenInput" name="exportGoodsLocationFirstHiddenInput" data-property-name="exportGoodsLocationFirstHiddenInput"/>
+                            <div class="js-wrapAddExportGoodsLocation w160 tac col66 bsdc h28 lh28 disibni curp">
+                                <i class="iconfont icon-add"></i>
+                                <span class="pl10 js-exportGoodsLocation">添加</span>
+                            </div>
+                            <span><label class="js-error export-goods-location-first-error"></label></span>
+                            <div class="js-wrapExportGoodsLocation disibni w75p"></div>
+                        </div>
+                        <div class="perDetail disb contract">
+                            <label><i class="redFont f18 mr5 vat-t">*</i>合同类型：</label>
+                            <input type="hidden" class="contractTypeHiddenInput" name="contractTypeHiddenInput" data-property-name="contractTypeHiddenInput" >
+                            <div class="wrapper-dropdown selected va_8" data-property-name="contractType" data-control-type="ComboBox">
+                                <i>请选择</i>
+                                <ul class="dropdown">
+                                </ul>
+                            </div>
+                            <span><label class="js-error contract-type-error"></label></span>
+                        </div>
+                        <div class="perDetail js-contractNumber">
+                            <label><i class="redFont f18 mr5 vat-t">*</i>合同号：</label><input class="default_input contract_number_validate_state" type="text" name="contractNumber"  data-property-name="contractNumber" data-control-type="TextBox" />
+                            <span><label class="js-error contract-number-error"></label></span>
+                        </div>
+                    </div>
+
+                    <hr size="3" color="#eee" width="88%" class="ml90 mt40">
+                </div>
+
+                <div class="perInfo js-upload">
+                    <h2 class="header f16 ml45 por mb20 mt15">
+                        <div class="fileWrap bgcR">
+                            <i class="iconfont icon-file"></i>
+                        </div>
+                        <span id="skill">上传附件</span>
+                        <span class="f12 col66">/ UPLOAD ATTACHMENTS</span>
+                    </h2>
+                    <p class="col66 ml90">请上传附件，文件大小20M以内，每一项数量最多5张。</p>
+                    <div class="listTable ml90 mt10">
+                        <h2 class="h30 lh30">SO（Shipping Order/SO）：</h2>
+                        <div class="js-addorderAttachments mb20">
+                            <div class="js-webUpload">
+                                <div data-property-name="orderAttachments" data-control-type="WebUpload" class="por">
+                                    <div class="queueList disib poa t0">
+                                        <div class="filePicker default_button w100"></div>
+                                    </div>
+                                    <div class="js-wrapData disib w530 hauto pl136"></div>
+                                    <span><label class="js-error js-attachError redFont w180 poa l0 t40"></label></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listTable ml90 mt70">
+                        <h2 class="h30 lh30">内贸合同：</h2>
+                        <div class="js-adddomesticTradeContractAttachments mb20">
+                            <div class="js-webUpload">
+                                <div data-property-name="domesticTradeContractAttachments" data-control-type="WebUpload" class="por">
+                                    <div class="queueList disib poa t0">
+                                        <div class="filePicker default_button w100"></div>
+                                    </div>
+                                    <div class="js-wrapData disib w530 hauto pl136"></div>
+                                    <span><label class="js-error js-attachError redFont  w180 poa l0 t40"></label></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listTable ml90 mt70">
+                        <h2 class="h30 lh30">其他附件：</h2>
+                        <div class="js-addotherAttachments mb50">
+                            <div class="js-webUpload">
+                                
+                                <div data-property-name="otherAttachments" data-control-type="WebUpload" class="por">
+                                    <div class="queueList disib poa t0">
+                                        <div class="filePicker default_button w100" ></div>
+                                    </div>
+                                    <div class="js-wrapData disib w530 hauto pl136"></div>
+                                    <span><label class="js-error js-attachError redFont  w180 poa l0 t40"></label></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr size="3" color="#eee" width="88%" class="ml90 mt30">
+                    <div class="perInfo tac mt60 mb50">
+                        <input type="button" class="js-preview reset_button w100 mr20" value="预览">
+                        <input type="button" class="js-submit default_button w100" value="提交">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <form class="js-addAcount" style="display: none">
+        <div class="mb20">
+            <label class="w100 tar disib ml60"><span class="redFont f18 mr5 vat-t">* </span><span>开户名：</span></label>
+            <input type="text" class="default_input w155"  name="accountName"  data-property-name="accountName" data-control-type="TextBox" />
+            <span><label class="js-error"></label></span>
+        </div>
+        <div class="mb20">
+            <label class="w100 tar disib ml60"><span class="redFont f18 mr5 vat-t">* </span><span>开户行：</span></label>
+            <input type="text" class="default_input w155"  name="bankName"  data-property-name="bankName" data-control-type="TextBox" />
+            <span><label class="js-error"></label></span>
+        </div>
+        <div class="mb20">
+            <label class="w100 tar disib ml60"><span class="redFont f18 mr5 vat-t">* </span><span>银行账号：</span></label>
+            <input type="text" class="default_input w155"  name="bankAccount"  data-property-name="bankAccount" data-control-type="TextBox" />
+            <span><label class="js-error"></label></span>
+        </div>
+    </form>
+    <form class="js-addContacts" style="display: none">
+        <div class="mb20">
+            <label class="w100 tar disib ml60"><span class="redFont f18 mr5 vat-t">* </span><span>联系人姓名：</span></label>
+            <input type="text" class="default_input w155"  name="contacts"  data-property-name="contacts" data-control-type="TextBox" />
+            <span><label class="js-error"></label></span>
+        </div>
+        <div class="mb20">
+            <label class="w100 tar disib ml60"><span class="redFont f18 mr5 vat-t">* </span><span>手机：</span></label>
+            <input type="text" class="default_input w155"  name="phone"  data-property-name="phone" data-control-type="TextBox" />
+            <span><label class="js-error"></label></span>
+        </div>
+        <div class="mb20">
+            <label class="w100 tar disib ml60"><span class="redFont f18 mr5 vat-t">* </span><span>联系电话：</span></label>
+            <input type="text" class="default_input w155"  name="mobile"  data-property-name="mobile" data-control-type="TextBox" />
+            <span><label class="js-error"></label></span>
+        </div>
+        <div class="mb20">
+            <label class="w100 tar disib ml60"><span class="redFont f18 mr5 vat-t">  </span><span>邮箱：</span></label>
+            <input type="text" class="default_input w155"  name="email"  data-property-name="email" data-control-type="TextBox" />
+            <span><label class="js-error"></label></span>
+        </div>
+    </form>
+    <form class="js-addGood" style="display: none;">
+        <div class="pl70">
+            <div class="mb20 disib por">
+                <label class="disib w120 tar pt7"><i class="redFont f18 mr5 vat-t">*</i>货品名称：</label>
+                <input type="text"  class="default_input w124"  name="nameCn"  data-property-name="nameCn" data-control-type="TextBox" />
+                <span><label class="js-error"></label></span>
+            </div>
+            <div class="mb20 disib por">
+                <label class="disib w120 tar pt7"><i class="redFont f18 mr5 vat-t">*</i>英文名称：</label>
+                <input type="text" class="default_input w124"  name="nameEn"  data-property-name="nameEn" data-control-type="TextBox" />
+                <span><label class="js-error js-addGood-right-error"></label></span>
+            </div>
+        </div>
+        <div class="pl70">
+            <div class="mb20 disib por">
+                <label class="w120 disib tar"><i class="redFont f18 mr5 vat-t">*</i>HSCode：</label>
+                <input type="text" class="default_input w124"  name="hsCode"  data-property-name="hsCode" data-control-type="TextBox" />
+                <span><label class="js-error"></label></span>
+            </div>
+            <div class="mb20 disib por">
+                <span class="w120 disib tar">货品属性：</span>
+                <div class="wrapper-dropdown selected va_8 w160" data-property-name="attribute" data-control-type="ComboBox">
+                    <input type="hidden">
+                    <i>请选择</i>
+                    <ul class="dropdown">
+                    </ul>
+                </div>
+                <span><label class="js-error"></label></span>
+            </div>
+        </div>
+        <div class="pl70">
+            <div class="mb20 disib por">
+                <span class="w120 disib tar ">原产国 ：</span>
+                <input type="text" class="default_input w124"  name="originCountry"  data-property-name="originCountry" data-control-type="TextBox" />
+                <span><label class="js-error"></label></span>
+            </div>
+            <div class="mb20 disib por">
+            <span class="w120 disib tar">种类：</span>
+            <input type="text" class="default_input w124"  name="category"  data-property-name="category" data-control-type="TextBox" />
+            <span><label class="js-error"></label></span>
+        </div>
+        </div>
+        <div class="pl70">
+            <div class="mb20 disib por">
+                <label class="w120 disib tar"><span>品牌：</span></label>
+                <input type="text" class="default_input w124"  name="brand"  data-property-name="brand" data-control-type="TextBox" />
+                <span><label class="js-error"></label></span>
+            </div>
+            <div class="mb20 disib por">
+                <label class="w120 disib tar">型号：</label>
+                <input type="text" class="default_input w124"  name="model"  data-property-name="model" data-control-type="TextBox" />
+                <span><label class="js-error"></label></span>
+            </div>
+        </div>
+        <div class="pl70">
+            <div class="mb20 disib por">
+                <label class="w120 disib tar">材质：</label>
+                <input type="text" class="default_input w124"  name="texture"  data-property-name="texture" data-control-type="TextBox" />
+                <span><label class="js-error"></label></span>
+            </div>
+            <div class="mb20 disib por">
+                <label class="w120 disib tar">用途：</label>
+                <input type="text" class="default_input w124"  name="goodsUsage"  data-property-name="goodsUsage" data-control-type="TextBox" />
+                <span><label class="js-error"></label></span>
+            </div>
+        </div>
+        <div class="pl70">
+            <div class="mb20 disib por">
+                <label class="w120 disib tar"><i class="redFont f18 mr5 vat-t">* </i>生产厂家：</label>
+                <input type="text" class="default_input w124 "  name="manufacturer"  data-property-name="manufacturer" data-control-type="TextBox" />
+                <span><label class="js-error"></label></span>
+            </div>
+            <div class="mb20 disib por">
+                <label class="w120 disib tar"><i class="redFont f18 mr5 vat-t">*</i>包装/托盘尺寸：</label>
+                <input type="text" class="default_input w124"  name="goodsSize"   data-property-name="goodsSize" data-control-type="TextBox" />
+                <span><label class="js-error js-addGood-right-error"></label></span>
+            </div>
+        </div>
+        <div class="pl70">
+            <div class="mb20 disib por">
+                <label class="w120 disib tar"><i class="redFont f18 mr5 vat-t">* </i>最大包装数：</label>
+                <input type="text" class="default_input w124"  name="packageCount"  data-property-name="packageCount" data-control-type="TextBox" />
+                <span><label class="js-error"></label></span>
+
+            </div>
+            <div class="mb20 disib por">
+                <label class="w120 disib tar"><i class="redFont f18 mr5 vat-t">* </i>净重量（KG）：</label>
+                <input type="text" class="default_input w124" name="netWeight"  data-property-name="netWeight" data-control-type="TextBox" />
+                <span><label class="js-error js-addGood-right-error"></label></span>
+            </div>
+        </div>
+        <div class="pl70">
+            <div class="mb20 disib por">
+                <label class="w120 disib tar"><i class="redFont f18 mr5 vat-t">* </i>毛重量（KG）：</label>
+                <input type="text" class="default_input w124" name="grosWeight"  data-property-name="grosWeight" data-control-type="TextBox" />
+                <span><label class="js-error"></label></span>
+            </div>
+            <div class="mb20 disib por">
+                <label class="w120 disib tar"><i class="redFont f18 mr5 vat-t">* </i>数量：</label>
+                <input type="text" class="default_input w124 js-quantityUnit"  name="quantity"  data-property-name="quantity" data-control-type="TextBox" />
+                <span><label class="js-error js-addGood-right-error"></label></span>
+            </div>
+        </div>
+        <div class="pl70">
+            <div class="mb20 disib por">
+                <label class="w120 disib tar"><i class="redFont f18 mr5 vat-t">* </i>单位：</label>
+                <input type="text" class="default_input w124 "  name="unit"  data-property-name="unit" data-control-type="TextBox" />
+                <span><label class="js-error"></label></span>
+            </div>
+            <div class="mb20 disib por">
+                <label class="w120 disib tar"><i class="redFont f18 mr5 vat-t">*</i>单价<span class="js-currencyUnit"></span>：</label>
+                <input type="text" class="default_input w124 js-unitPrice"  name="unitPrice"   data-property-name="unitPrice" data-control-type="TextBox" />
+                <span><label class="js-error js-addGood-right-error"></label></span>
+            </div>
+        </div>
+        <div class="pl70 mb20 ">
+            <label class="w120 disib tar">货值：</label>
+            <span class="js-packageValue cccBlock vam" data-property-name="packageValue" data-control-type="HtmlBox"></span>
+        </div>
+    </form>
+    <form class="js-addInternationalTrader" style="display: none">
+        <div class="mb20 por">
+            <label class="w64 tar disib ml130"><span class="redFont f18 mr5 vat-t">* </span><span>名称：</span></label>
+            <input type="text" class="default_input w155"  name="name"  data-property-name="name" data-control-type="TextBox" />
+            <span><label class="js-error"></label></span>
+        </div>
+        <div class="mb20 por">
+            <label class="w64 tar disib ml130"><span class="redFont f18 mr5 vat-t">* </span><span>国家：</span></label>
+            <input type="text" class="default_input w155"  name="nation"  data-property-name="nation" data-control-type="TextBox" />
+            <span><label class="js-error"></label></span>
+        </div>
+        <div class="mb20 por">
+            <label class="w64 tar disib ml130"><span class="redFont f18 mr5 vat-t">* </span><span>地址：</span></label>
+            <input type="text" class="default_input w155"  name="address"  data-property-name="address" data-control-type="TextBox" />
+            <span><label class="js-error"></label></span>
+        </div>
+        <div class="mb20 por">
+            <label class="w64 tar disib ml130"><span class="redFont f18 mr5 vat-t">* </span><span>电话：</span></label>
+            <input type="text"  class="default_input w155" name="phone"  data-property-name="phone" data-control-type="TextBox" />
+            <span><label class="js-error"></label></span>
+        </div>
+        <div class="mb20 por">
+            <label class="w64 tar disib ml130"><span>传真：</span></label>
+            <input type="text" class="default_input w155"  name="fax"  data-property-name="fax" data-control-type="TextBox" />
+            <span><label class="js-error"></label></span>
+        </div>
+    </form>
+    <form class="js-addExportGoodsLocation" style="display: none">
+        <div class="mb30 w350 pl90 por">
+            <label class="w100 tar disib "><span class="redFont f18 mr5 ">*</span><span class="va8">地址：</span></label>
+            <!--<label class="disib w100 tar va8">地址：</label>-->
+            <input type="hidden"  id="addressId"  name="locationId"  class="exportGoodsLocationHiddenInput" data-property-name="exportGoodsLocationHiddenInput"data-value="exportGoodsLocation.locationId">
+            <div  data-property-name="exportGoodsLocation" data-control-type="ComboBoxSecond" class="disib">
+                <div class="wrapper-dropdown selected js-province m0 export-goods-location-first-select">
+                    <i>请选择</i>
+                    <ul class="dropdown">
+                    </ul>
+                </div>
+                <div class="wrapper-dropdown selected js-city m0 w100 export-goods-location-second-select">
+                    <i class="w100">请选择</i>
+                    <ul class="dropdown">
+                    </ul>
+                </div>
+<!--                <div class="wrapper-dropdown selected js-district m0 ">
+                    <i>请选择</i>
+                    <ul class="dropdown">
+                    </ul>
+                </div>-->
+            </div>
+            <span><label class="js-error export-goods-location-error"></label></span>
+        </div>
+        <div class="mb30 pl90 por">
+            <label class="w100 tar disib "><span class="redFont f18 mr5 vat-t">*</span><span>存放地址：</span></label>
+            <input type="text" class="default_input w155"  name="address"  data-property-name="address" data-control-type="TextBox" />
+            <span><label class="js-error"></label></span>
+        </div>
+        <div class="mb30 pl90 por">
+            <label class="w100 tar disib"><span class="redFont f18 mr5 vat-t">*</span><span>货物联系人：</span></label>
+            <input type="text" class="default_input w155"  name="contacts"  data-property-name="contacts" data-control-type="TextBox" />
+            <span><label class="js-error"></label></span>
+        </div>
+        <div class="mb10 pl90 por">
+            <label class="w100 tar disib"><span class="redFont f18 mr5 vat-t">*</span><span>手机号：</span></label>
+            <input type="text" class="default_input w155"  name="phone"  data-property-name="phone" data-control-type="TextBox" />
+            <span><label class="js-error"></label></span>
+        </div>
+    </form>
+    <div class="js-wrapPreview"></div>
+</div>
+
+<!-- 添加账户数据展示模板 -->
+<script type="text/html"  class="js-bid-getCountData-tpl">
+    <div class="radioBox" style="display: block">
+        <input type="radio" name="companyBankAccountId" class="poa" data-value="companyBankAccountId" data-id="accountcompanyBankAccountId">
+        <label data-for="accountcompanyBankAccountId"></label>
+        <span class="w720">
+            <i>开户名：</i><em data-content-text="accountName" class="mr30"></em>
+            <i>开户行：</i><em data-content-text="bankName" class="mr30"></em>
+            <i>银行账号：</i><em data-content-text="bankAccount" class="mr30"></em>
+        </span>
+    </div>
+</script>
+<!-- 添加联系人数据展示模板 -->
+<script type="text/html"  class="js-bid-getContactsData-tpl">
+
+    <div class="radioBox" style="display: block;">
+            <input type="radio" name="exportContactsId" class="poa" data-value="exportContactsId" data-id="contactsexportContactsId">
+            <label data-for="contactsexportContactsId"></label>
+        <span class="w720">
+            <em data-content-text="contacts" class="mr30"></em>
+            <em data-content-text="phone" class="mr30"></em>
+            <em data-content-text="mobile" class="mr30"></em>
+            <em data-content-text="email" class="mr30"></em>
+            <p class="disibni orange-font js-contactsEait curp ml73">
+                <i>编辑</i>
+            </p>
+        </span>
+    </div>
+</script>
+<!-- 添加境外贸易商数据展示模板 -->
+<script type="text/html"  class="js-bid-getInternationalTraderData-tpl">
+    <div class="disibni por w100p">
+        <div class="disibni mr70 mb20">名称：<span data-content-text="name" data-property-name="name" data-control-type="HtmlBox"></span></div>
+        <div class="disibni mr70 mb20">国家：<span data-content-text="nation" data-property-name="nation" data-control-type="HtmlBox"></span></div>
+        <div class="disibni mr70 mb20">地址：<span data-content-text="address" data-property-name="address" data-control-type="HtmlBox"></span></div>
+        <div class="disibni mr70 mb20">电话：<span data-content-text="phone" data-property-name="phone" data-control-type="HtmlBox"></span></div>
+        <div class="disibni mr70 mb20">传真：<span data-content-text="fax" data-property-name="fax" data-control-type="HtmlBox"></span></div>
+        <div class="disibni orange-font js-interTraderEait curp poa r0 t0">
+            <i>编辑</i>
+        </div>
+    </div>
+</script>
+<!-- 添加货物存放地址数据展示模板 -->
+<script type="text/html"  class="js-bid-getExportGoodsLocationData-tpl">
+    <div class="disibni por w100p">
+        <div class="disibni mr70 mb20">地址：<span data-content-text="exportGoodsLocation" data-format="exchangeaddressFormater" data-property-name="exportGoodsLocation" data-control-type="HtmlBox"></span></div>
+        <div class="disibni mr70 mb20">存放地址：<span data-content-text="address" data-property-name="address" data-control-type="HtmlBox"></span></div>
+        <div class="disibni mr70 mb20">货物联系人：<span data-content-text="contacts" data-property-name="contacts" data-control-type="HtmlBox"></span></div>
+        <div class="disibni mr70 mb20">联系电话：<span data-content-text="phone" data-property-name="phone" data-control-type="HtmlBox"></span></div>
+        <div class="disibni orange-font js-goodsLocationEdit curp poa r0 t0">
+            <i>编辑</i>
+        </div>
+    </div>
+</script>
+
+<!-- 预览功能数据展示模板 -->
+<script type="text/html"  class="js-bid-previewData-tpl">
+    <div class="bid-previewData center">
+        <div class="f16 bold tac">预览</div>
+        <h2 class="header f14 por mb40 mt20">
+            <div class="fileWrap bgcYe ml30">
+                <i class="iconfont icon-file"></i>
+            </div>
+            <span>收汇方式</span>
+            <span class="f12 col66">/  THE METHOD OF SETTLEMENT</span>
+        </h2>
+        <div class="w100p mw1028 bsb pl40 mb10">
+            <div class="perDetail w33p">
+                <label class="col66 w27p">收款方式：</label><span data-content-text="exchangeMethod" data-format="exchangeMethodFormater"></span>
+            </div>
+            <div class="perDetail w33p">
+                <label class="col66 w27p">结汇/退税收款账户：</label><span data-format="acountFormater" data-content-text="acount"></span>
+            </div>
+            <div class="perDetail w33p">
+                <label class="col66 w27p">出口口岸：</label><span data-content-text="customsPort"></span>
+            </div>
+            <div class="perDetail w33p">
+                <label class="col66 w27p">本单联系人：</label><span data-format="exportContactsFormater" data-content-text="exportContacts"></span>
+            </div>
+        </div>
+        <hr size="3" color="#eee" width="95%" class="center">
+
+        <h2 class="header f14 por mb20 mt20">
+            <div class="fileWrap bgcBlue ml30">
+                <i class="iconfont icon-file"></i>
+            </div>
+            <span>货品信息</span>
+            <span class="f12 col66">/  GOODS NFORMATIONS</span>
+        </h2>
+        <div class="w100p mw1028 bsb pl40">
+            <div class="perDetail w33p">
+                <label class="col66 w27p">币种：</label><span data-content-text="currency" data-format="currencyFormater"></span>
+            </div>
+        </div>
+        <div class="w100p mw1028 bsb pl40">
+            <div class="perDetail w33p">
+                <label class="col66 w27p">价格条款：</label><span data-content-text="priceTerm" data-format="priceTermFormater"></span>
+            </div>
+        </div>
+        <div class="w100p mw1028 bsb pl40 js-fareData none">
+            <div class="perDetail w33p">
+                <label class="col66 w27p">运费：</label><span data-content-text="fare"></span>
+            </div>
+        </div>
+        <div class="w100p mw1028 bsb pl40 js-premiumData none">
+            <div class="perDetail w33p">
+                <label class="col66 w27p">保费：</label><span data-content-text="premium"></span>
+            </div>
+        </div>
+        <div class="w100p mw1028 bsb pl40">
+            <div class="perDetail w33p">
+                <label class="col66 w27p">包装方式：</label><span data-content-text="packageType" data-format="packageTypeFormater"></span>
+            </div>
+        </div>
+        <div class="w100p mw1028 bsb pl40">
+            <div class="perDetail w33p">
+                <label class="col66 w27p">出货清单：</label>
+            </div>
+        </div>
+        <div class="js-exportGoodsList disibni"></div>
+        <p class="mw1028 mt20 ml80 mb40">
+            <label class="col66">该批总净重(KG)：</label><span class="mr60" data-content-text="totalNetWeight"></span>
+            <label class="col66">总毛重(KG)：</label><span class="mr60" data-content-text="totalGrosWeight"></span>
+            <label class="col66">总产品数量：</label><span class="mr60" data-content-text="totalGoodsCount"></span>
+            <label class="col66">总货值(<span class="js-totalValueUnit" data-content-text="currency" data-format="currencyFormater"></span>)：</label><span class="mr60" data-content-text="totalValue"></span>
+        </p>
+        <p class="ml145 mt20"><label class="col66">整体包装件数：</label><span data-content-text="packageNumber"></span></p>
+        <p class="ml145 mt20"><label class="col66">整体包装种类：</label><span data-content-text="packagingMaterial" data-format="packagingMaterialFormater"></span></p>
+        <p class="ml145 mt20 js-packagingM none"><label class="col66">托盘类型：</label><span data-content-text="trayType" data-format="trayTypeFormater"></span></p>
+        <p class="ml145 mt20 mb40"><label class="col66">产品信息是否确定：</label><span data-content-text="detailConfirmed" data-format="detailConfirmedFormater"></span></p>
+        <hr size="3" color="#eee" width="95%" class="center">
+        <h2 class="header f14 por mb20 mt20">
+            <div class="fileWrap bgcYe ml30">
+                <i class="iconfont icon-file"></i>
+            </div>
+            <span>报关信息</span>
+            <span class="f12 col66">/  Customs information</span>
+        </h2>
+        <div class="w100p mw1028 bsb pl40 mb10">
+            <div class="perDetail w33p">
+                <label class="col66 w27p">预计出货日期：</label><span data-content-text="shipmentDate"></span>
+            </div>
+            <div class="perDetail w33p">
+                <label class="col66 w27p">运抵国（贸易国/地区）：</label><span data-content-text="tradeNation"></span>
+            </div>
+            <div class="perDetail w33p">
+                <label class="col66 w27p">指运港（境外接货港）：</label><span data-content-text="targetNation"></span>
+            </div>
+            <div class="perDetail w33p">
+                <label class="col66 w27p">境外贸易商：</label><span data-content-text="internationalTrader"  data-format="exchangeInternationalTraderFormater"></span>
+            </div>
+            <div class="perDetail w33p">
+                <label class="col66 w27p">最终目的国：</label><span data-content-text="destinationCountry"></span>
+            </div>
+            <div class="perDetail w33p">
+                <label class="col66 w27p">境内货源地：</label><span data-content-text="domesticSource"></span>
+            </div>
+            <div class="perDetail w33p">
+                <label class="col66 w27p">提货地址：</label><span data-content-text="exportGoodsLocation" data-format="exportGoodsLocationFormater"></span>
+            </div>
+            <div class="perDetail w33p">
+                <label class="col66 w27p">合同类型：</label><span data-content-text="contractType" data-format="exchangeContractTypeFormater"></span>
+            </div>
+            <div class="perDetail w33p js-contractNumberReview">
+                <label class="col66 w27p">指定报关合同号：</label><span data-content-text="contractNumber"></span>
+            </div>
+        </div>
+        <hr size="3" color="#eee" width="95%" class="center">
+        <h2 class="header f14 por mb20 mt20">
+            <div class="fileWrap bgcGreen ml30">
+                <i class="iconfont icon-file"></i>
+            </div>
+            <span>附件</span>
+            <span class="f12 col66">/  Enclosure</span>
+        </h2>
+        <p class="ml80">SO（Shipping Order/SO）：</p>
+        <div class="ml80 mt10 js-orderAttachments">
+
+        </div>
+        <p class="ml80 mt40">内贸合同：</p>
+        <div class="ml80 mt10 js-domesticTradeContractAttachments">
+
+        </div>
+        <p class="ml80 mt40">其他附件：</p>
+        <div class="ml80 mt10 js-otherAttachments">
+
+        </div>
+    </div>
+</script>
+

@@ -1,0 +1,177 @@
+{
+  "menus": [
+    {
+      "index": "/commodity/list",
+      "name": "产品管理",
+      "icon": "nt-icon-xbn-58"
+
+    },
+    {
+      "index": "20000",
+      "name": "仓储物流管理",
+      "icon": "nt-icon-xbn-41",
+      "children": [
+        {
+          "name": "库存管理",
+          "index": "/githuber/search"
+        },
+        {
+          "name": "收货预报管理",
+          "index": "/forecast/list"
+        },
+        {
+          "name": "订单管理",
+          "index": "/xxx/xxx"
+        },
+        {
+          "name": "物流计划管理",
+          "index": "/plan/list"
+        },
+        {
+          "name": "拼箱计划",
+          "index": "/lcl-plan/list"
+        },
+        {
+          "name": "客服信息管理",
+          "index": "/xxx/xxx"
+        },
+        {
+          "name": "意见管理",
+          "index": "/xxx/xxx"
+        }
+      ]
+    },
+    {
+      "index": "50000",
+      "name": "退税管理",
+      "icon": "nt-icon-xbn-57",
+      "children": [
+        {
+          "name": "CF订单",
+          "index": "/cfOrder/list"
+        },
+        {
+          "name": "退税订单管理",
+          "index": "/taxrefund/list"
+        },
+        {
+          "name": "收汇管理",
+          "index": "/exchange/incomeList"
+        },
+        {
+          "name": "结汇管理",
+          "index": "/exchange/settleList"
+        },
+        {
+          "name": "开票厂商",
+          "index": "/billing/list"
+        }
+      ]
+    },
+    {
+      "index": "70000",
+      "name": "服务订单管理",
+      "icon": "nt-icon-xbn-54",
+      "children": [
+        {
+          "name": "报关订单",
+          "index": "/cusDecOrder/list"
+        }
+      ]
+    },
+    {
+      "index": "30000",
+      "name": "资金账户管理",
+      "icon": "nt-icon-xbn-40",
+      "children": [
+        {
+          "name": "账户管理",
+          "index": "/finance/acountList"
+        },
+        {
+          "name": "线下充值管理",
+          "index": "/finance/chargeList"
+        },
+        {
+          "name": "收/结汇管理",
+          "index": "/finance/foreign-exchange"
+        },
+        {
+          "name": "发票管理",
+          "index": "/xxx/xxx"
+        },
+        {
+          "name": "退款管理",
+          "index": "/xxx/xxx"
+        }
+      ]
+    },
+    {
+      "index": "40000",
+      "name": "系统设置",
+      "icon": "nt-icon-xbn-43",
+      "children": [
+        {
+          "name": "国家管理",
+          "index": "/country/list/"
+        },
+        {
+          "name": "仓库管理",
+          "index": "/storehouse/list"
+        },
+        {
+          "name": "港口管理",
+          "index": "/port/list"
+        },
+        {
+          "name": "物流公司管理",
+          "index": "/company/list"
+        },
+        {
+          "name": "装箱计划",
+          "index": "/encasement/list"
+        }
+      ]
+    },
+    {
+      "index": "60000",
+      "name": "应收应付管理",
+      "icon": "nt-icon-xbn-54",
+      "children": [
+        {
+          "name": "应收管理",
+          "index": "/receipt-payment/receipt/"
+        },
+        {
+          "name": "应付管理",
+          "index": "/receipt-payment/payment/"
+        },
+        {
+          "name": "费用项管理",
+          "index": "/costitem/list"
+        },
+        {
+          "name": "供应商管理",
+          "index": "/supplier/list"
+        }
+      ]
+    },
+    {
+      "index": "90000",
+      "name": "用户管理",
+      "icon": "nt-icon-xbn-54",
+      "children": [
+        {
+          "name": "用户管理",
+          "index": "/user-manage/"
+        }
+      ]
+    },
+    {
+      "index": "/settled/settledList",
+      "name": "入驻管理",
+      "icon": "nt-icon-xbn-54"
+
+    }
+  ]
+}

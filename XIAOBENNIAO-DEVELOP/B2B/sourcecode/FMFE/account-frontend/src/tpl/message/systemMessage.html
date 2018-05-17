@@ -1,0 +1,35 @@
+<div class="js-modules-message-systemMessage">
+    <div class="js_tabPannel1">
+        <div class="tab_btn">
+            <ul class="fix fL none">
+                <li class="active" tabChangeInfo="tabMessage">
+                    <a href="javascript:;"></a>
+                    <span class="tab_line"></span>
+                </li>
+            </ul>
+        </div>
+        <div class="tab_content js-tabContent">
+            <div class="listWrap js-tenderAnswer">
+                <div class="table_main js-datagrid"></div>
+                <div class="papogation js-pagination pagination" >
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 消息模板 -->
+    <script type="text/html"  class="js-message-systenMessage-tpl">
+        <tr>
+            <td>
+                <div class="eachSystemMessage bottomBorder pb30 pt30 w95p center por curp">
+                    <div class="notRead poa js-messageStatus curp" data-content-text="status"></div>
+                    <i class="iconfont icon-lajitong colcc fr mt10 mr20 curp js-delete"></i>
+                    <div class="ml50">
+                        <p class="f14 p_text mb25" data-content-text="content"></p>
+                        <p class="col66 p_text"><span class="col00">发送时间：</span><span data-content-text="createDate"></span></p>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </script>
+
+</div>
