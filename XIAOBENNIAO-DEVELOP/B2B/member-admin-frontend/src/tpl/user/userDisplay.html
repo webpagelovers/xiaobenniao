@@ -1,0 +1,113 @@
+<div class="js-modules-user-userDisplay">
+    <div>
+        <div class="WrapBox">
+            <p class="grayHeader">
+                <i class="iconfont icon-home"></i>
+                <span class="location">所在位置：</span>
+                <span>用户管理</span>
+                <span class="gt">&gt;</span>
+                <span class="js-location now">详情</span>
+            </p>
+            <h1><!--用户信息--></h1><a data-back="true" class="fl hexagon">返回</a>
+
+
+            <form class="js-editUser">
+                <div class="newInfoBox">
+                    <div class="newInfoBoxHeader disib h30 lh30 w97p">
+                        <p class="newInfoBoxHeaderContent bold h30 lh30 f16 disib">个人信息</p>
+                    </div>
+
+                    <div class="w100p bgcee mt30 pt30 pb30">
+                        <p class="mb30 js-companyNameCn-detail"><span class="disib w160 tar">公司名称：</span><span
+                                data-content-text="companyNameCn"></span></p>
+                        <p class="mb30 js-companyNameCn-edit"><span class="disib w160 tar">公司名称：</span>
+                            <input type="text" class="default_input" checkFieldUrl="/user/verifyCompanyName"
+                                   name="companyNameCn" data-value="companyNameCn" data-control-type="TextBox">
+                            <span class="js-error"></span>
+                        </p>
+                        <p class="mb30 js-userName-detail"><span class="disib w160 tar">姓名：</span><span
+                                data-content-text="userName"></span></p>
+                        <p class="mb30 js-userName-edit"><span class="disib w160 tar">姓名：</span>
+                            <input type="text" class="default_input"
+                                   name="userName" data-value="userName" data-control-type="TextBox">
+                            <span class="js-error"></span>
+                        </p>
+                        <p class="mb30"><span class="disib w160 tar">手机号码：</span><span
+                                data-content-text="mobile"></span></p>
+                        <p class="mb30"><span class="disib w160 tar">用户ID：</span><span
+                                data-content-text="userId"></span></p>
+                        <p class="mb30"><span class="disib w160 tar">注册时间：</span><span data-content-text="createDate"
+                                                                                       data-format="createDateFormater"></span>
+                        </p>
+                    </div>
+                </div>
+
+                <!--审核结果-->
+                <div class="newInfoBox">
+                    <div class="newInfoBoxHeader disib h30 lh30 w97p">
+                        <p class="newInfoBoxHeaderContent bold h30 lh30 f16 disib">审核结果</p>
+                    </div>
+
+                    <div class="w100p bgcee mt30 pt10 pb10  por">
+                        <div class="perInfo ml60 mt40 js-status" data-property-name="status"
+                             data-control-type="RadioBox">
+                            <div class="radioBox">
+                                <input type="radio" name="status" value="1" id="pass">
+                                <label for="pass" class="js-pass"></label><span>通过</span>
+                                <span class="poa l0 w100 js-error js-errorNo" style="left :10px;top: 30px;"></span>
+                            </div>
+                            <div class="radioBox">
+                                <input type="radio" name="status" value="2" id="noPass">
+                                <label for="noPass" class="js-noPass"></label><span>驳回</span>
+                                <span class="poa l0 w100 js-error js-errorNo" style="left :10px;top: 30px;"></span>
+                            </div>
+                            <input type="button" value="修改" class="default_button ml40 vera30 js-button-modify"/>
+                        </div>
+                    </div>
+                </div>
+                <!--审核结果-->
+            </form>
+            <input type="button" class="default_button submit js-button-confirm" value="确认">
+
+
+            <!--历史记录-->
+            <div class="newInfoBox js-history">
+                <div class="newInfoBoxHeader disib h30 lh30 w97p">
+                    <p class="newInfoBoxHeaderContent bold h30 lh30 f16 disib">历史记录</p>
+                </div>
+                <table cellspacing="0" cellpadding="0" rules="rows" border="1" class="table mt20 w97p center">
+                    <thead>
+                    <tr>
+                        <th width="33%">处理时间</th>
+                        <th width="33%">处理人</th>
+                        <th width="33%">审核结果</th>
+                    </tr>
+                    </thead>
+                    <tbody class="js-record">
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script type="text/html" class="js-record-tpl">
+    <tr>
+        <td data-content-text="operateDate"></td>
+        <td data-content-text="backendUserName"></td>
+        <td data-content-text="operationDescription"></td>
+    </tr>
+</script>
+<form class="js-changeResult" style="display: none">
+    <div class="perInfo mt40 tac" data-property-name="status2" data-control-type="RadioBox">
+        <div class="radioBox">
+            <input type="radio" name="passOrNoPass" value="1" checked id="pass1">
+            <label for="pass1" class="js-pass1"></label><span>通过</span>
+        </div>
+        <div class="radioBox">
+            <input type="radio" name="passOrNoPass" value="2" id="noPass1">
+            <label for="noPass1" class="js-noPass1"></label><span>驳回</span>
+        </div>
+    </div>
+</form>

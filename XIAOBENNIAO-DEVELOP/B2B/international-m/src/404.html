@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Weintrade providing product sourcing, risk control, customized services, supply chain financing to help you source faster and easier in China.">
+    <meta name="keywords" content="Weintrade Service, Import Products From China">
+    <title>Guide To Our Service | Import Products From China - Weintrade.com</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="canonical" href="https://www.weintrade.com/404.html" >
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <base href="../../">
+    <!-- build:css-->
+    <link rel="stylesheet" href="css/commonStyle.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/lib/sm.min.css">
+    <link rel="stylesheet" href="css/lib/sm-extend.min.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <!-- endbuild -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-100335941-3', 'auto');
+        ga('send', 'pageview');
+    </script>
+</head>
+<body>
+<div class="page-group">
+    <!-- 你的html代码 -->
+    <div class="page page-current bgcff" id="service-steps-of-our-service">
+        <!--build:nav-->
+        <!--endbuild-->
+        <div class="content native-scroll bgcff">
+            <!-- 这里是页面内容区 -->
+            <div class="page-index">
+                <header class=" bgcff h47 por border-bottom-7f">
+                    <a href="/"><img src="../../images/logo.png" class="mt10 ml10" style="width:101px;height:30px"></a>
+                    <span class="col7f f16 Roboto poa b0 ls03 r2p">Error</span>
+                </header>
+                <div class="tac" style="margin-top:4rem">
+                    <img src="../images/404.png" style="width:15rem">
+                    <p style="color:#747474;" class="f22 mb0">lt looks like you are lost</p>
+                    <p style="color:#747474;" class="f16 mt0">Jump to home page in <span class="colGreen js-count">3</span> sec</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--build:contact-->
+    <!--endbuild-->
+</div>
+
+<script type='text/javascript' src='js/lib/zepto.min.js' charset='utf-8'></script>
+<script type='text/javascript' src="js/lib/require.min.js" ></script>
+<script>
+        $(function(){
+            require(['js/xbn.config'], function (config) {
+                var timer = null;
+                timer = setInterval(function(){
+                    var count = $(".js-count").html();
+                    if(count > 0){
+                        count --;
+                        $(".js-count").html(count);
+                    }
+                    else{
+                        window.location.href = config.link.home;
+                        clearInterval(timer);
+                    }
+                },1000);
+            })
+        });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html class="h100p">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <base href="../">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9"/>
+    <!-- build:css-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/controls.css">
+    <!-- endbuild -->
+</head>
+<body class="h100p">
+
+<div class="mh100p por bgcff">
+    <div class="topHeader">
+        <div class="inner">
+            <a href="/">
+                <img src="images/indexLogo.png" class="mt10">
+            </a>
+        </div>
+    </div>
+
+    <div class="xbn-main" style="margin-top: -70px;">
+        <div class="middle bgcff">
+            <div class="content inner">
+                <div class="right bgcff">
+                    <div class="xbn-content"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bgc7f7f7f w100p h70 por z99" style="margin: -70px 0 0;min-width: 1245px;">
+    <div class="inner por tac">
+        <div class="clear h40"></div>
+        <div class="footer_bottom colff">
+            <span data-i18n="common_copyRight">Copyright © 2017 WEINTRADE.COM All RIGHTS RESERVED</span>
+        </div>
+    </div>
+</div>
+
+<script>
+    // 动态设置中间内容高度，避免导航高度不够
+    window.onload = window.onresize = function(){
+        var ch = document.documentElement.clientHeight;
+        var fixHeight = ch - 140 + 'px';    // 140是头部与底部的高度和
+        $(".content").css("min-height",fixHeight)
+    }
+</script>
+</body>
+
+<script type="text/javascript" src="js/lib/jquery.js"></script>
+<script type="text/javascript" src="js/lib/jquery.validate.v1.5.2.js"></script>
+<script type="text/javascript" src="js/lib/layer/layer.min.js"></script>
+<script type="text/javascript" src="js/lib/jquery.loadTemplate-1.4.4.js"></script>
+<script type="text/javascript" src="js/lib/jquery.pseudo.js"></script>
+<script type="text/javascript" src="js/core/core.js"></script>
+<!-- build:js-controls-->
+<script type="text/javascript" src="js/controls/Base.js"></script>
+<script type="text/javascript" src="js/controls/Accondion.js"></script>
+<!--<script type="text/javascript" src="js/controls/CheckboxBox.js"></script>-->
+<!--<script type="text/javascript" src="js/controls/CheckboxList.js"></script>-->
+<!--<script type="text/javascript" src="js/controls/ComboBox.js"></script>-->
+<!--<script type="text/javascript" src="js/controls/ComboBoxSecond.js"></script>-->
+<script type="text/javascript" src="js/controls/DataGrid.js"></script>
+<script type="text/javascript" src="js/controls/DatePicker.js"></script>
+<script type="text/javascript" src="js/controls/DateRangePicker.js"></script>
+<script type="text/javascript" src="js/controls/HtmlBox.js"></script>
+<script type="text/javascript" src="js/controls/List.js"></script>
+<!--<script type="text/javascript" src="js/controls/NumberBox.js"></script>-->
+<!--<script type="text/javascript" src="js/controls/Pagination.js"></script>-->
+<!--<script type="text/javascript" src="js/controls/ProgressBar.js"></script>-->
+<!--<script type="text/javascript" src="js/controls/RadioBox.js"></script>-->
+<!--<script type="text/javascript" src="js/controls/Searcher.js"></script>-->
+<script type="text/javascript" src="js/controls/SubmitControl.js"></script>
+<script type="text/javascript" src="js/controls/SwitchButton.js"></script>
+<script type="text/javascript" src="js/controls/TabDataGrid.js"></script>
+<script type="text/javascript" src="js/controls/TabPanel.js"></script>
+<script type="text/javascript" src="js/controls/TabButton.js"></script>
+<script type="text/javascript" src="js/controls/TextBox.js"></script>
+<script type="text/javascript" src="js/controls/Toolbar.js"></script>
+<script type="text/javascript" src="js/controls/Upload.js"></script>
+<!--<script type="text/javascript" src="js/controls/WebUpload.js"></script>-->
+<!--<script type="text/javascript" src="js/controls/Uploader.js"></script>-->
+<!--<script type="text/javascript" src="js/controls/UploaderDashedImg.js"></script>-->
+<!--<script type="text/javascript" src="js/controls/MultiTextBox.js"></script>-->
+<!--<script type="text/javascript" src="js/controls/AddList.js"></script>-->
+<script type="text/javascript" src="js/controls/ViewModel.js"></script>
+<!-- endbuild -->
+<script type="text/javascript" src="js/xbn.config.js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="js/common/ie8.js"></script>
+
+<![endif]-->
+<script src="js/modules/emailVerify/emailVerify.js"></script>
+</html>

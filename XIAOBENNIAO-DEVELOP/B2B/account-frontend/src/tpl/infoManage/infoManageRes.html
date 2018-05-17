@@ -1,0 +1,102 @@
+<div class="js-modules-infoManage-infoManageRes">
+    <h1 class="f18 mt40 tac mb20">响应采购信息</h1>
+    <div class="directionWords h30 lh30 tac w88p center">*响应后代表你对本条采购信息在本平台提出正式回复，响应成功后该采购信息将会在我的响应列表中展现</div>
+    <form class="responsedd js-response">
+        <div class="pl70 pr70 ">
+            <p class="mt40 js-purchaserName-tt"><i class="iconfont icon-fileCircle f22 vasub orange-font"></i><span
+                    class="f16 ml10">采购商</span><span class="colcc ml10">PURCHASER</span></p>
+            <div class="mt30 ml30 js-purchaserName-bd">
+                <div class="f14 disib"><span class="col66">公司名称：</span><span data-content-text="purchaserName"></span>
+                </div>
+                <div class="f14 disib ml100"><span class="col66">联系人：</span><span data-content-text="contact"></span>
+                </div>
+            </div>
+            <p class="mt40"><i class="iconfont icon-fileCircle f22 vasub orange-font"></i><span
+                    class="f16 ml10">供应商人信息</span><span class="colcc ml10">SUPPLIER INFORMATION</span></p>
+            <div class="mt30 ml30">
+                <div class="f14"><span class="col66">公司名称：</span><span data-content-text="companyNameCn">美国硅谷信息有限公司</span>
+                </div>
+                <div class="f14 mt30">
+                    <div class="disib por"><span class="col66"><em class="vasub colff6">* </em>联系人：</span>
+                        <input name="contact" data-control-type="TextBox" data-property-name="contact" type="text"
+                               class="default_input js-contact">
+                        <span class="poa l70 t30 w220 js-error"></span>
+                    </div>
+                    <div class="disib ml60 por"><span class="col66"><em class="vasub colff6">* </em>联系电话：</span>
+                        <input name="contactPhone" data-control-type="TextBox" data-property-name="contactPhone"
+                               type="text" class="default_input js-contactPhone">
+                        <span class="poa l85 t30 w220 js-error"></span>
+                    </div>
+                    <div class="disib ml60  por"><span class="col66"><em class="vasub colff6">* </em>电子邮箱：</span>
+                        <input name="contactEmail" data-control-type="TextBox" data-property-name="contactEmail"
+                               type="text" class="default_input js-contactEmail">
+                        <span class="poa l85 t30 w220 js-error"></span>
+                    </div>
+                </div>
+            </div>
+            <p class="mt40"><i class="iconfont icon-fileCircle f22 vasub orange-font"></i><span
+                    class="f16 ml10">详细信息</span><span
+                    class="colcc ml10">FOR DETAILS</span></p>
+            <div class="mt30 ml30">
+                <div class="por">
+                    <span class="col66 f14 vat"><em class="vat colff6">* </em>响应：</span>
+                    <div class="disib" style="width:100%;">
+                        <script id="container" style="height:200px" type="text/plain" ></script>
+                    </div>
+                    <span class="poa l0 w50p js-error js-error-responseInfo" style="bottom: 0px;"></span>
+                    <span class="poa l0 w220 js-responseInfo" style="color:red;bottom: -20px;"></span>
+                    <input type="hidden" class="js-responseInfoInput"  name="responseInfo"  data-control-type="TextBox" data-property-name="responseInfo" />
+                </div>
+                <div class="por">
+                    <div class="mt30 por js-responsePrice"><span class="col66 f14 vat"><em class="vat colff6">* </em>响应金额：</span>
+                        <input name="responsePrice" data-control-type="TextBox" data-property-name="responsePrice"
+                               type="text" class="default_input">
+                        <span class="poa l85 t30 w220 js-error"></span>
+                    </div>
+                    <div class="wrapper-dropdown selected va_8 w160 ml0 js-priceUnit" style="position: absolute;left: 260px;top:0;z-index: 5;" data-property-name="priceUnit"  data-control-type="ComboBox">
+                        <input type="hidden" name="priceUnit">
+                        <i>请选择</i>
+                        <ul class="dropdown z99"></ul>
+                        <span class="poa l0 t30 w220 js-error" style="z-index: 1;"></span>
+                    </div>
+                </div>
+                <div class="mt30"><span class="col66 f14 va15">附件：</span>
+                    <div data-property-name="purchaseResponseAttachmentList" data-control-type="WebUpload"
+                         class="por disibni">
+                        <div class="queueList disibni vat">
+                            <i class="iconfont icon-add colff6 m5"></i>
+                            <div class="filePicker default_button w100 disibni"></div>
+                        </div>
+                        <span class="poa disibni w140 t80 l60"><label
+                                class="js-error js-attachError redFont"></label></span>
+                        <div class="js-wrapData disibni hauto w530"></div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="tac mt30"><input type="button" value="响应" class="default_button w100 js-res"></p>
+            <p class="bgcee h30 lh30 f14 mt40"><span class="ml20">以下为采购信息</span></p>
+        </div>
+    </form>
+    <div class="pb50">
+        <h1 class="f18 tac mb80 mt40" data-content-text="title"></h1>
+        <div class="pl70 pr70">
+            <h3 class="f16 bottomBorder pb5">基本信息</h3>
+            <div class="f14 w100p mb20 mt30"><em class="col66">产品分类：</em><span class="disib w90p vat" data-content-text="productsCategory" data-format="productsCategoryFormater"></span></div>
+            <div class="f14 w260 mb20 "><em class="col66">采购数量：</em><span data-content-text="purchaseNum"></span></div>
+            <div class="f14 w260 mb20 "><em class="col66">状态：</em><span data-content-text="status" data-format="statusFormater"></span></div>
+            <div class="f14 w260 mb20 "><em class="col66">信息类型：</em><span data-content-text="infoType" data-format="infoTypeFormater"></span></div>
+            <div class="f14 w260 mb20 "><em class="col66">国别：</em><span data-content-text="country"></span></div>
+            <div class="f14 w260 mb20"><em class="col66">发布日期：</em><span data-content-text="createDate" data-format="createDateFormater"></span></div>
+            <div class="f14 w260 mb20 "><em class="col66">截止日期：</em><span data-content-text="dueDate" data-format="dueDateFormater"></span></div>
+            <div class="f14 w260 mb20 js-shoppingTerms"><em class="col66">交易方式：</em><span data-content-text="shoppingTerms"></span></div>
+            <div class="f14 w260 mb20 js-paymentTerms"><em class="col66">付款方式：</em><span data-content-text="paymentTerms"></span></div>
+            <div class="f14 w260 mb20 js-currency"><em class="col66">货币种类：</em><span data-content-text="currency" data-format="currencyFormater"></span></div>
+            <div class="f14 w260 mb20 js-budget"><em class="col66">预算：</em><span data-content-text="budget"></span></div>
+            <div class="f14 mt20"><em class="col66 vat">详情：</em><span class="disib w95p" data-content-text="summary"></span></div>
+            <!--附件-->
+            <div class="f14 mt20 mb10 js-infoDetailAttachTitle"><em class="col66">下载附件：</em></div>
+            <div class="js-infoDetailAttach"></div>
+        </div>
+    </div>
+</div>

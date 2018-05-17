@@ -1,0 +1,54 @@
+<div class="js-modules-message-systemBulletin">
+    <div class="js_tabPannel1">
+        <div class="tab_btn">
+            <ul class="fix fL none">
+                <li class="active" tabChangeInfo="tabClient">
+                    <a href="javascript:;"></a>
+                    <span class="tab_line"></span>
+                </li>
+            </ul>
+        </div>
+        <div class="tab_content js-tabContent">
+            <div class="listWrap js-tenderAnswer">
+                <div class="table_main js-datagrid"></div>
+                <div class="papogation js-pagination pagination" >
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/html"  class="js-modules-message-clientMessage">
+        <tr>
+            <td>
+                <div class="bottomBorder w95p center pt30 pb30">
+                    <div class="colorfulLabel bgcDarkOran colff w50 fl mt40 ml40 mr60 js-status"></div>
+                    <div class="fl tal mw710">
+                        <p class="col00 f14 mb25"><span>发送人：</span><span class="col66" data-content-text="senderCompanyName"></span></p>
+                        <p class="col66 f14 mb25 por"><span class="js-message-content"></span><i class="js-delete iconfont icon-lajitong colcc curp f28 poa r30 t_10"></i></p>
+                        <div>
+                            <p class="col00 fl f14"><span>发送时间：</span><span class="col66" data-content-text="messageTime"></span></p>
+                            <p class="col00 ml265 fl f14"><span>采购信息：</span><span class="vat disib col66 js-title-data w180 contract-word-cut"></span></p>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </td>
+        </tr>
+    </script>
+
+    <div style="display: none" class="js-layer">
+
+        <div>
+            <p class="f18 col66 pb10 tac bottomBorder mt20 js-title"></p>
+            <div class="pl20 pr20 mt10 mb20">
+                <p class="f14 col66 mb20"><span class="js-messageTime"></span> <span class="js-companyName"></span></p>
+                <p class="col66 w252 h70 js-message" style="overflow: auto;"></p>
+            </div>
+            <p class="bottomBorder"></p>
+            <p class="tac"><input type="button" value="确定" class="default_button w100 mt30 js-close mb30">
+                <input type="button" value="查看详情" class="default_button w100 mt30 ml40 js-detail mb30"></p>
+
+        </div>
+
+    </div>
+</div>
+

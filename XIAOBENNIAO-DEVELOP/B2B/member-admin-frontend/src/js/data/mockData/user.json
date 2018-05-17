@@ -1,0 +1,20 @@
+{
+  "statusCode": 2000000,
+  "data":[
+    {
+      "createType":"0",
+      "userId":"1",
+      "email":"179727262@qq.com",
+      "gender":"男",
+      "mobile":"13283899223",
+      "password":"123456789",
+      "portraitUrl":"images/headImg.jpg",
+      "userName":"hani",
+      "createDate":"2016-05-13",
+      "lastLoginDate":"2016-06-13",
+      "lastLoginIp":"222.222.12.13",
+      "status":0
+    }
+  ],
+  "message":""
+}

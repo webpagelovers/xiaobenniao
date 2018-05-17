@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="CONTENT-TYPE" CONTENT="text/html" charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
+    <meta name="description" content="<%=_description%>">
+    <meta name="keywords" content="<%=_keywords%>">
+    <meta name="fragment" content="!">
+    <base href="../../" />
+    <link class="js-canonical-link" rel="alternate" media="only screen and (max-width: 640px)"  href="<%=_alternate%>" >
+    <!--[if lt IE 10]>
+    <script type="text/javascript"  src="../../js/adapter/browserAdapter.js"></script>
+    <![endif]-->
+    <title><%=_title%></title>
+    <meta property="og:title" content="<%=_title%>">
+    <meta property="og:description" content="<%=_description%>">
+    <meta property="og:image" content="<%=_image%>">
+    <meta name="twitter:title" content="<%=_title%>">
+    <meta name="twitter:image" content="<%=_image%>">
+    <meta name="twitter:description" content="<%=_description%>">
+    <!-- build:css-->
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/iconfont.css">
+    <!--控件样式-->
+    <link rel="stylesheet" type="text/css" href="css/controls/DatePicker.css">
+    <!-- endbuild -->
+</head>
+<body>
+<div class="warp bgcf8 h_auto">
+
+    <!--顶部-->
+    <div class="js-nav w100p por z99 bgcff">
+        <!-- build:nav-->
+        <!-- endbuild -->
+    </div>
+    <div class="linear_line por" style="z-index: 10000;"> </div>
+    <!--顶部-->
+    <div class="js-blog-detail">
+        <div class="aboutPage innerContent mh480 mt40">
+            <div style="width:940px;" class="fl">
+                <div style="padding:28px;" class="mb20 bgcff por">
+                    <p>
+                        <a href="/">Home</a>&nbsp;&nbsp;>&nbsp;&nbsp;
+                        <a href="./blog">Blog</a>&nbsp;&nbsp;>&nbsp;&nbsp;
+                        <a href="javascript:void(0);" id="blogDetailBreadcrumbsTitle" class="word-cut" style="max-width: 800px; cursor: default;"><%=postTitle%></a>
+                    </p>
+                    <div class="tac mt20 mb20"><img data-src="headPic" id="blogDetailHeadPic" src="<%=headPic%>" style="max-width:924px;max-height:360px;"/></div>
+                    <p class="col44 f24 mb20 wordBreakAll" data-content="postTitle" id="blogDetailPostTitle"><%=postTitle%></p>
+                    <span class="col99 f14 fl mb20">
+                        By <span><%=postAuthor%></span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span><%=postDate%></span>
+                    </span>
+                    <div class="shareBtns fr mt_5"></div>
+                    <div class="clear mb30" style="height:1px;background:#e4e4e4;"></div>
+                    <div id="postContentHidden" class="none"><%=postContent%></div>
+                    <iframe class="f16 col44 blogDetailIframe" id="postContentIframe" frameborder="no" border="0" style="width:100%;"></iframe>
+                </div>
+                <script type="text/javascript">
+                    //为了更快
+                    +function setIframeContent() {
+                        var iframe = document.getElementById('postContentIframe'),
+                            docum  = iframe.contentWindow.document,
+                            conten = document.getElementById('postContentHidden').innerText
+                            
+
+                        //由于后台的发布的宽度比前台宽，所以去掉文章的高度
+                        var content = conten.replace(/<style type="text\/css">body{background-color:#ffffff; background-image:;.*<\/style>/, '')
+                        
+                        var userAgent = navigator.userAgent
+                        if (userAgent.indexOf('Firefox') > -1) {
+                            //firefox, 不知道什么原因, 先这样吧 
+                            setTimeout(function() {
+                                document.getElementById('postContentIframe').contentDocument.body.innerHTML = content
+                                document.getElementById('postContentIframe').style.height = $('#postContentIframe')[0].contentDocument.documentElement.offsetHeight + 'px'
+                            }, 100)
+                        } else if(userAgent.indexOf('MSIE') > -1) {
+                            //ie8, 9
+                            setTimeout(function() {
+                                var bod = document.frames['postContentIframe'].document.body
+                                bod.innerHTML = content
+                                setTimeout(function() {
+                                    iframe.style.height  = bod.scrollHeight + 30 + 'px'    
+                                }, 100)
+                            }, 100)
+                        } else {
+                            docum.body.innerHTML = content
+                            iframe.style.height  = docum.documentElement.offsetHeight + 'px'
+                        }
+                    }()
+                </script>
+                <div style="padding:28px;" class="bgcff">
+                    <img src="../../images/comment.png" alt="">
+                    <span style="color:#2896ff" class="f18 ml10 va5">Comments
+                        <span class="ml5">(</span><span data-content="commentsNum" id="blogDetailCommentsNum"></span><span>)</span>
+                    </span>
+                    <div id="commentsListBox">
+                        <div data-list="comments">
+                            <div class="col99" style="padding:28px 0;border-bottom:1px solid #e4e4e4">
+                                <p class="f14 mb15">
+                                   <span>By </span> <span data-list-commentAuthor class="showEllipsis safari-vv disib" style="max-width: 190px;vertical-align: -3px;"> </span>  |  <span data-list-commentDate> </span>
+                                </p>
+                                <p class="f14 w97p wordBreakAll" data-list-commentContent></p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="tac"><input type="button" id="loadMoreComments" class="articleDetail-loadMoreBtn mt40 curp none" data-i18n="blog_load_more" value="Load More"></p>
+                    <form id="commentForm">
+                           <textarea rows="10" style="border:1px solid #e2e2e2" id="commentTextarea" name="commentTextarea" class="w100p hidden f16 mt60 p10" maxlength="1500" placeholder="blog_leave_a_comment"></textarea>
+                    </form>
+                    <input type="button" data-i18n="blog_post" value="POST" id="postComments" class="default_button h45 w120 lh45 f16 fr mt20 curp"/>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="fl ml14 bgcff" style="width:258px;padding:16px;">
+                <h2 class="f24 col44 mt20 pb10 mb20" style="border-bottom:1px solid #e4e4e4" data-i18n="blog_hot_article">Hot Article</h2>
+                <ul class="articleDetail-hotArticle ml20" data-list="hot" id="hotArticleBox">
+                    <% hot.forEach(function(item){ %>
+                        <li><a href="<%= item.hrefLink%>" style="word-break:break-word"><%= item.postTitle%></a></li>
+                    <% }) %>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <!-- 页脚 star-->
+    <div class="js-footer footer mt40">
+        <!-- build:footer-->
+        <!-- endbuild -->
+    </div>
+    <!-- 页脚 end-->
+</div>
+
+<script type="text/template" id="hotArticleBoxTem">
+    <li><a data-href="href" data-content="postTitle" style="word-break:break-word"></a></li>
+</script>
+
+<script type="text/javascript" src="js/lib/jquery.js"></script>
+<script type="text/javascript" src="js/lib/jquery.loadTemplate-1.4.4.js"></script>
+<script type="text/javascript" src="js/lib/i18n/jquery.i18n.properties-1.0.9.js"></script>
+<script type="text/javascript" src="js/lib/jquery.validate.v1.5.2.js"></script>
+<script type="text/javascript" src="js/lib/layer/layer.js"></script>
+<script type="text/javascript" src="js/core/core.js"></script>
+<script type="text/javascript" src="js/xbn.config.js"></script>
+<script type="text/javascript" src="js/lib/jquery.methods.js"></script>
+<!-- build:js-controls-->
+<script type="text/javascript" src="js/controls/Base.js"></script>
+<script type="text/javascript" src="js/controls/DataGrid.js"></script>
+<script type="text/javascript" src="js/controls/List.js"></script>
+<script type="text/javascript" src="js/controls/Pagination.js"></script>
+<script type="text/javascript" src="js/controls/Searcher.js"></script>
+<script type="text/javascript" src="js/controls/TextBox.js"></script>
+<!-- endbuild -->
+<script type="text/javascript" src="js/modules/common/revision.js"></script>
+<!--控件加载-->
+
+<script type="text/javascript" src="js/modules/blog/blogDetail.js"></script>
+
+</body>
+</html>

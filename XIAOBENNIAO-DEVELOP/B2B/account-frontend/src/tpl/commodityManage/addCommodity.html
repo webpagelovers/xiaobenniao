@@ -1,0 +1,158 @@
+<div class="js-modules-commodityManage-addCommodity">
+    <form class="js-addCommodity">
+        <div class="mb100">
+            <div class="w93p center mt50">
+                <p class="pb5 borderColE5 bottomBorder"><span class="disib bgcDarkOran w5 h18"></span><span class="va2 ml10 f18">产品基本信息</span></p>
+                <div class=" bgcee mt20  pt25 pb25">
+
+                    <div class="mb30">
+                        <label class="tar w155 disib"><i class="redFont"> * </i>标题：</label>
+                        <div class="disib">
+                            <input type="text" name="title" data-property-name="title" data-control-type="TextBox" placeholder="请输入标题" maxlength="250" class="default_input" >
+                            <span class="js-error"></span>
+                        </div>
+                    </div>
+
+                    <div class="mb10 js-tag por">
+                        <label class="tar w155 disib vat"><i class="redFont"> * </i>标签／关键字：</label>
+                        <div class="disibni">
+                            <input type="text" name="tagKeyword" data-property-name="tagKeyword" data-control-type="TextBox" placeholder="请输入标签／关键字" maxlength="20" class="default_input js-tagKeyword" ><br>
+                            <span class="js-error disib vat-t " ></span>
+                        </div>
+                        <div class="disibni">
+                            <input type="text" name="tagKeyword1" data-property-name="tagKeyword1" data-control-type="TextBox" placeholder="请输入标签／关键字" maxlength="20" class="default_input" ><br>
+                            <span class="js-error disib vat-t"></span>
+                        </div>
+                        <div class="disibni">
+                            <input type="text" name="tagKeyword2" data-property-name="tagKeyword2" data-control-type="TextBox" placeholder="请输入标签／关键字" maxlength="20" class="default_input" ><br>
+                            <span class="js-error disib vat-t"></span>
+                        </div>
+                    </div>
+                    <div class="mb10">
+                        <label class="tar w155 disib vat"><i class="redFont"> * </i>规格型号：</label>
+                        <div class="disib">
+                            <input type="text" name="specificationsAndModels" data-property-name="specificationsAndModels" data-control-type="TextBox" placeholder="请输入规格型号" maxlength="20" class="default_input" >
+                            <br>
+                            <span class="js-error disib vat-t"></span>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="tar w155 disib">HScode：</label>
+                        <input type="text" name="hscode" data-property-name="hscode" data-control-type="TextBox" placeholder="请输入HScode" maxlength="10" class="default_input" >
+                        <span class="js-error disib vat-t"></span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="w93p center mt50">
+                <p class="pb5 borderColE5 bottomBorder"><span class="disib bgcDarkOran w5 h18"></span><span class="va2 ml10 f18">产品交易信息</span></p>
+                <div class=" bgcee mt20  pt25 pb25">
+
+                    <div class="mb10 disib por">
+                        <label class="tar w155 disib vat"><i class="redFont"> * </i>价格：</label>
+                        <div class="disib">
+                            <input type="text" name="price" data-property-name="price" data-control-type="TextBox" placeholder="请输入价格" maxlength="13" class="default_input" >
+                            <br>
+                            <span class="js-error disib vat-t " ></span>
+                        </div>
+
+                    </div>
+                    <div class="wrapper-demo disib por vat" >
+                        <input type="hidden" name="currency" data-value="currency">
+                        <div class="wrapper-dropdown selected w160"  data-property-name="currency" data-control-type="ComboBox" >
+                            <i>请选择</i>
+                            <ul class="dropdown">
+                            </ul>
+                        </div>
+                        <span class="js-error js-currencyError"></span>
+                    </div>
+                    <div class="mb30">
+                        <label class="tar w155 disib vat"><i class="redFont"> * </i>港口：</label>
+                        <div class="disib">
+                            <input type="text" name="port" data-property-name="port" data-control-type="TextBox" placeholder="请输入港口" maxlength="50" class="default_input" >
+                            <br>
+                            <span class="js-error "></span>
+                        </div>
+                    </div>
+
+                    <div class="mb30">
+                        <label class="tar w155 disib">价格条款：</label>
+                        <input type="text" name="priceClause" data-property-name="priceClause" data-control-type="TextBox" placeholder="请输入价格条款" maxlength="50" class="default_input" >
+                        <span class="js-error disib vat-t"></span>
+                    </div>
+
+                    <p class="mb30">
+                        <label class="tar w155 disib">材质：</label>
+                        <input type="text" name="texture" data-property-name="texture" data-control-type="TextBox" placeholder="请输入材质" maxlength="20" class="default_input" >
+                        <span class="js-error"></span>
+                    </p>
+                    <p class="mb30">
+                        <label class="tar w155 disib">尺寸：</label>
+                        <input type="text" name="size" data-property-name="size" data-control-type="TextBox" placeholder="请输入尺寸" maxlength="20" class="default_input" >
+                        <span class="js-error"></span>
+                    </p>
+                    <p class="mb30">
+                        <label class="tar w155 disib">特质：</label>
+                        <input type="text" name="peculiarity" data-property-name="peculiarity" data-control-type="TextBox" placeholder="请输入特质" maxlength="20" class="default_input" >
+                        <span class="js-error"></span>
+                    </p>
+                    <p class="mb30">
+                        <label class="tar w155 disib">重量：</label>
+                        <input type="text" name="weight" data-property-name="weight" data-control-type="TextBox" placeholder="请输入重量" maxlength="20" class="default_input" >
+                        <span class="js-error"></span>
+                    </p>
+                    <p class="">
+                        <label class="tar w155 disib">颜色：</label>
+                        <input type="text" name="colour" data-property-name="colour" data-control-type="TextBox" placeholder="请输入颜色" maxlength="20" class="default_input" >
+                        <span class="js-error"></span>
+                    </p>
+
+                </div>
+            </div>
+            <div class="w93p center mt50">
+                <p class="pb5 borderColE5 bottomBorder"><span class="disib bgcDarkOran w5 h18"></span><span class="va2 ml10 f18">产品内容描述</span></p>
+                <div class=" bgcee mt20  pt25 pb25">
+
+                    <p class="ml160 col66 mb10">图片大小2M以内，格式为JPG、PNG、JPEG最少上传3张图片，最多上传20张图片</p>
+                    <div>
+                        <label class="tar w155 disib vat mt10"><i class="redFont"> * </i>图片：</label>
+                        <div data-property-name="commodityAttachmentList" data-control-type="Upload" class="disib por">
+                            <div class="queueList disib uploadBox">
+                                <div class="filePicker w90 ti8 add-filebg disib"></div>
+                            </div>
+                            <p class="mt40"><label class="js-error redFont js-attachError poa t5 l125"></label></p>
+                            <div class="mt20 js-wrapUploadData w660"></div>
+                        </div>
+                    </div>
+
+                    <div class="clear mb30"></div>
+                    <div class="mb30">
+                        <label class="tar w155 disib vat"><i class="redFont"> * </i>产品描述：</label>
+                        <input type="hidden" name="commodityDescription" data-value="commodityDescription">
+                        <script id="modules-commodityManage-addCommodity-editor" style="height:300px;width:70%" type="text/plain" class="disibni"></script>
+                        <!--ueditor is here-->
+                        <span class="js-error js-editorError redFont ml160 disbn"></span>
+                    </div>
+
+                    <!--<div>-->
+                        <!--<label class="tar w155 disib vat">更多规格：</label>-->
+                        <!--<div class="bgcFfNew cccBorder w75p disib pl50 pt30 pb30">-->
+
+
+
+
+
+
+                        <!--</div>-->
+                    <!--</div>-->
+
+                </div>
+
+            </div>
+            <div class="tac">
+                <input type="button" class="default_button mt40 w90 js-submit" value="发布">
+                <input type="button" class="default_button mt40 w90 ml30  js-save" value="保存">
+            </div>
+        </div>
+    </form>
+</div>

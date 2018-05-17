@@ -1,0 +1,451 @@
+<div class="js-modules-accountSettings-companyInfo">
+    <div class="bottomBorder w95p center pb10">
+        <h1 class="f24 fl h90 lh90">企业信息</h1>
+        <div class="progress-wrap fr mt20"></div>
+        <div class="clear"></div>
+    </div>
+    <div class="mt80 directionWords noBorder w88p center f14 pt10 pb10 pl20 pr20 none js-complete">
+        <p class="mb10"><i class="iconfont icon-gantanCircle redFont f24 mr10"></i>尊敬的会员您好!</p>
+        <p class="ml25">请尽快完善您的企业信息!</p>
+    </div>
+    <div class="mt80 directionWords noBorder w88p center f14 pt10 pb10 pl20 pr20 none js-rejected">
+        <p class="mb10"><i class="iconfont icon-gantanCircle redFont f24 mr10"></i>尊敬的会员您好!</p>
+        <p class="ml25">您的企业信息审核未通过，未通过的原因是：<span data-content-text="lastAuditLogging"></span></p>
+    </div>
+    <div class="mt80 bgcee noBorder w88p center f14 pt10 pb10 pl20 pr20 none js-approved">
+        <p class="mb10"><i class="iconfont icon-bgcDuiguo colGreen f24 mr10"></i>尊敬的会员您好!</p>
+        <p class="ml25">您的企业信息已审核通过。</p>
+    </div>
+    <div class="mt80 directionWords noBorder w88p center f14 pt10 pb10 pl20 pr20 js-noaudit none">
+        <p class="mb10"><i class="iconfont icon-gantanCircle redFont f24 mr10"></i>尊敬的会员您好!</p>
+        <p class="ml25">您的企业信息正在审核中，您可以拨打客服电话010-81281397查询您的审核进度。</p>
+    </div>
+    <div class="js-companyEdit none">
+        <div class="w93p center mt50">
+            <p class="pb5 borderColE5 bottomBorder"><span class="disib bgcDarkOran w5 h18"></span><span class="vat ml10">基本信息</span></p>
+            <div class=" bgcee mt20  pt25 pb25">
+               <form class="js-companyBaseInfo ">
+                    <div class="mb30">
+                        <label class="tar w155 disib">公司名称：</label>
+                       <span data-content-text="companyNameCn"></span>
+                    </div>
+                    <div class="mb30">
+                        <label class="tar w155 disib vat"><i class="redFont"> * </i>所在地：</label>
+                        <div class="disibni company-address">
+                            <div class="fl" data-property-name="companyAddress" data-control-type="ComboBoxSecond" >
+                                <input type="hidden" name="companyAddressProvince">
+                                <div class="wrapper-dropdown selected js-province m0 tac w160" data-value="province" >
+                                    <i>请选择</i>
+                                    <ul class="dropdown">
+                                    </ul>
+                                </div>
+                                <input type="hidden" name="companyAddressCity">
+                                <div class="wrapper-dropdown selected js-city m0 tac w160" data-value="city" >
+                                    <i>请选择</i>
+                                    <ul class="dropdown">
+                                    </ul>
+                                </div>
+                                <input type="hidden" name="companyAddressDistrict">
+                                <div class="wrapper-dropdown selected js-district m0 tac w160" data-value="district">
+                                    <i >请选择</i>
+                                    <ul class="dropdown">
+                                    </ul>
+                                </div>
+                                <span class="js-error"></span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="mb30">
+                        <label class="tar w155 disib"><i class="redFont"> * </i>公司电话：</label>
+                        <input type="text" placeholder="请输入公司电话" class="default_input"
+                               name="companyPhone" data-property-name="companyPhone" data-value="companyPhone" data-control-type="TextBox">
+                        <span class="js-error"></span>
+                    </div>
+                    <div class="mb30 por">
+                        <label class="tar w155 disib"><i class="redFont"> * </i>员工人数：</label>
+                        <input type="text" placeholder="请输入员工人数"
+                               class="default_input" name="employees"
+                               data-property-name="employees" data-value="employees"
+                               data-control-type="TextBox">
+                        <span class="js-error"></span>
+                    </div>
+                    <div class="mb30">
+                        <label class="tar w155 disib">注册资金（万）：</label>
+                        <input type="text" placeholder="请输入注册资金"
+                               class="default_input " name="registeredCapital"
+                               data-property-name="registeredCapital"
+                               data-value="registeredCapital" data-control-type="TextBox">
+                        <span class="js-error disib vat-t"></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="w93p center mt50">
+            <p class="pb5 borderColE5 bottomBorder"><span class="disib bgcDarkOran w5 h18"></span><span class="vat ml10">资质信息</span></p>
+            <p class="mt20">
+            <div class="perInfo js-chooseCardType bgcee" data-property-name="isSocialUnityCreditCode" data-control-type="RadioBox">
+                <div  class="radioBox w100 ml13" >
+                    <input type="radio" name="isSocialUnityCreditCode" value="0" checked id="five">
+                    <label for="five"></label><span>五证企业</span>
+                </div>
+                <div class="radioBox w100">
+                    <input type="radio" name="isSocialUnityCreditCode"  value="1"  id="oneThree">
+                    <label for="oneThree"></label><span>三证合一</span>
+                </div>
+                <div class="radioBox w100">
+                    <input type="radio" name="isSocialUnityCreditCode"  value="2"  id="oneFive">
+                    <label for="oneFive"></label><span>五证合一</span>
+                </div>
+            </div>
+            </p>
+            <ul class="js-threeCertificate mt_50">
+                <li>
+                    <div class="js-fiveCard">
+                        <div class="bgcee mt20  pt25 pb25">
+                             <form class="js-zerotype">
+                                <div class="ml20">
+                                        <p>
+                                            <span><em class="redFont f18 vat-t mr5">*</em>营业执照：</span>
+                                            <span class="colcc">最大2MB 支持JPG, JPEG, PNG格式,图片各项内容清晰，加盖公章</span>
+                                        </p>
+                                        <div class="mt10">
+                                            <label class="pt7">证件编号：</label>
+                                            <input type="text" class="default_input por js-yingye-number"  placeholder="输入证件编号"
+                                                   name="number" data-property-name="number" data-value="businessLicense.number" data-control-type="TextBox">
+                                            <span class="js-error"></span>
+                                            <span class="js-custom-error redFont"></span>
+                                        </div>
+                                    <div data-property-name="imgurls" data-control-type="Upload">
+                                        <div class="queueList disib uploadBox mt20">
+                                            <div class="filePicker filePicker1 w90 ti8 add-filebg disib"></div>
+                                        </div>
+                                        <span class="js-error disb redFont mt20 mb20 js-attachError"></span>
+                                        <div class="mt40 js-wrapUploadData"></div>
+                                    </div>
+                                </div>
+                        </form>
+                        </div>
+                        <div class="bgcee mt20  pt25 pb25">
+                            <form class="js-onetype">
+                                 <div class="ml20">
+                                    <p>
+                                        <span><em class="redFont f18 vat-t mr5">*</em>组织机构代码：</span>
+                                        <span class="colcc">最大2MB 支持JPG, JPEG, PNG格式,图片各项内容清晰，加盖公章</span>
+                                    </p>
+                                    <div class="mt10">
+                                        <label class="pt7">证件编号：</label>
+                                        <input type="text" class="default_input"   placeholder="输入证件编号"
+                                               name="number" data-property-name="number" data-control-type="TextBox">
+                                        <span class="js-error"></span>
+                                    </div>
+                                     <div data-property-name="imgurls" data-control-type="Upload">
+                                         <div class="queueList disib uploadBox mt20">
+                                             <div class="filePicker filePicker2 w90 ti8 add-filebg disib"></div>
+                                         </div>
+                                         <span class="js-error disb redFont mt20 mb20 js-attachError"></span>
+                                         <div class="mt40 js-wrapUploadData"></div>
+                                     </div>
+                             </div>
+                            </form>
+                        </div>
+                        <div class="bgcee mt20  pt25 pb25">
+                            <form class="js-twotype">
+                                <div class="ml20">
+                                    <p>
+                                        <span><em class="redFont f18 vat-t mr5">*</em>税务登记证：</span>
+                                        <span class="colcc">最大2MB 支持JPG, JPEG, PNG格式,图片各项内容清晰，加盖公章</span>
+                                    </p>
+                                        <div class="mt10">
+                                            <label class="pt7">证件编号：</label>
+                                            <input type="text" class="default_input js-shuiwu-number" placeholder="输入证件编号"
+                                                   name="number"  data-property-name="number" data-control-type="TextBox">
+                                            <span class="js-error"></span>
+                                            <span class="js-custom-error redFont"></span>
+                                        </div>
+                                    <div data-property-name="imgurls" data-control-type="Upload">
+                                        <div class="queueList disib uploadBox mt20">
+                                            <div class="filePicker filePicker3 w90 ti8 add-filebg disib"></div>
+                                        </div>
+                                        <span class="js-error disb redFont js-attachError"></span>
+                                        <div class="mt40 js-wrapUploadData"></div>
+
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+                <li class="none">
+                    <form class="js-oneThreeCard js-fourtype bgcee mt20  pt25 pb25">
+                        <div class="perOfThree por">
+                            <div class="ml20">
+                                <p>
+                                    <span><em class="redFont f18 vat-t mr5">*</em>社会统一信用代码：</span>
+                                    <span class="colcc">最大2MB 支持JPG, JPEG, PNG格式,图片各项内容清晰，加盖公章</span>
+                                </p>
+                                <div class="mt10">
+                                    <label class="pt7">证件编号：</label>
+                                    <input type="text"  class="default_input por" data-value="socialUnityCreditCode.number"
+                                           placeholder="输入证件编号" name="number" data-property-name="number"
+                                           data-control-type="TextBox">
+                                    <span class="js-error"></span>
+                                </div>
+                                <div data-property-name="imgurls" data-control-type="Upload">
+                                    <div class="queueList disib uploadBox mt20">
+                                        <div class="filePicker filePicker0 w90 ti8 add-filebg disib"></div>
+                                    </div>
+                                    <span class="js-error disb redFont js-attachError mt20 mb20"></span>
+
+                                    <div class="mt40 js-wrapUploadData"></div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </li>
+                <li class="none">
+                    <div class="js-oneFiveCard bgcee mt20  pt25 pb25 ">
+                        <form class="js-fivetype">
+                            <div class="ml20">
+                                <p>
+                                    <span><em class="redFont f18 vat-t mr5">*</em>营业执照：</span>
+                                    <span class="colcc">最大2MB 支持JPG, JPEG, PNG格式,图片各项内容清晰，加盖公章</span>
+                                </p>
+                                <div class="mt10">
+                                    <label class="pt7 w140 disib tar">注册号：</label>
+                                    <input type="text" class="default_input por"  placeholder="输入注册号"
+                                           name="registrationNumber" id="registrationNumber" data-property-name="registrationNumber" data-value="licenseFiveCardShowInfo.registrationNumber" data-control-type="TextBox">
+                                    <span class="js-error"></span>
+                                </div>
+                                <div class="mt10">
+                                    <label class="pt7 w140 disib tar">组织机构代码证号：</label>
+                                    <input type="text" class="default_input por"  placeholder="输入组织机构代码证号"
+                                           name="organizationCode" id="organizationCode" data-property-name="organizationCode" data-value="licenseFiveCardShowInfo.organizationCode" data-control-type="TextBox">
+                                    <span class="js-error"></span>
+                                </div>
+                                <div class="mt10">
+                                    <label class="pt7 w140 disib tar">税务登记证号：</label>
+                                    <input type="text" class="default_input por"  placeholder="输入税务登记证号"
+                                           name="taxRegistrationCertificate" id="taxRegistrationCertificate" data-property-name="taxRegistrationCertificate" data-value="licenseFiveCardInfo.taxRegistrationCertificate" data-control-type="TextBox">
+                                    <span class="js-error"></span>
+                                </div>
+                                <div class="mt10">
+                                    <label class="pt7 w140 disib tar">社会保险登记证号：</label>
+                                    <input type="text" class="default_input por"  placeholder="输入社会保险登记证号"
+                                           name="socialInsuranceRegistrationCardNumber" id="socialInsuranceRegistrationCardNumber" data-property-name="socialInsuranceRegistrationCardNumber" data-value="licenseFiveCardShowInfo.socialInsuranceRegistrationCardNumber" data-control-type="TextBox">
+                                    <span class="js-error"></span>
+                                </div>
+                                <div class="mt10">
+                                    <label class="pt7 w140 disib tar">统计登记证号：</label>
+                                    <input type="text" class="default_input por"  placeholder="输入统计登记证号"
+                                           name="statisticalRegistrationNumber" id="statisticalRegistrationNumber" data-property-name="statisticalRegistrationNumber" data-value="licenseFiveCardShowInfo.statisticalRegistrationNumber" data-control-type="TextBox">
+                                    <span class="js-error"></span>
+                                </div>
+                                <div data-property-name="imgurls" data-control-type="Upload">
+                                    <div class="queueList disib uploadBox mt20">
+                                        <div class="filePicker filePicker5 w90 ti8 add-filebg disib"></div>
+                                    </div>
+                                    <span class="js-error disb redFont mt20 mb20 js-attachError"></span>
+                                    <div class="mt40 js-wrapUploadData"></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+                <div class="bgcee mt20  pt25 pb25">
+                    <form class="js-threetype">
+                        <div class="ml20">
+                            <p>
+                                <span>企业授权书：</span>
+                                <span class="colcc">最大2MB 支持JPG, JPEG, PNG格式,图片各项内容清晰，加盖公章</span>
+                            </p>
+                            <div data-property-name="imgurls" data-control-type="Upload">
+                                <div class="queueList disib uploadBox mt20">
+                                    <div class="filePicker filePicker4 w90 ti8 add-filebg disib"></div>
+                                </div>
+                                <span class="js-error disb redFont"></span>
+                                <div class="mt40 js-wrapUploadData"></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="bgcee mt20  pt25 pb25">
+                    <form class="js-othertype">
+                        <div class="ml20">
+                            <p>
+                                <span>其他（如质量体系认证书、CE证书、CB证书等）：</span>
+                                <span class="colcc">最大2MB 支持JPG, JPEG, PNG格式,图片各项内容清晰，加盖公章</span>
+                            </p>
+                            <div data-property-name="imgurls" data-control-type="Upload">
+                                <div class="queueList disib uploadBox mt20">
+                                    <div class="filePicker filePickerO w90 ti8 add-filebg disib"></div>
+                                </div>
+                                <span class="js-error disb redFont"></span>
+                                <div class="mt40 js-wrapUploadData"></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            <div class="w93p mt30 tac mb50">
+                <input type="button"  value="提交" class="default_button w80 js-companyButton">
+            </div>
+
+
+
+    </div>
+</div>
+    <div class="js-companyBase"></div>
+    <script type="text/html" class="js-companyBase-tpl">
+        <div class="w93p center mt50">
+            <p class="pb5 borderColE5 bottomBorder"><span class="disib bgcDarkOran w5 h18"></span><span class="vat ml10">基本信息</span></p>
+            <div class=" bgcee mt20  pt25 pb25">
+                    <div class="mb30">
+                        <label class="tar w155 disib">公司名称：</label>
+                        <span data-content-text="companyNameCn"></span>
+                    </div>
+                    <div class="mb30">
+                        <label class="tar w155 disib vat">所在地：</label>
+                        <span data-content-text="provinceName"></span><span data-content-text="cityName"></span><span data-content-text="districtName"></span>
+
+                    </div>
+                    <div class="mb30">
+                        <label class="tar w155 disib">公司电话：</label>
+                        <span data-content-text="companyPhone"></span>
+                    </div>
+                    <div class="mb30">
+                        <label class="tar w155 disib">员工人数：</label>
+                        <span data-content-text="employees"></span>
+                    </div>
+
+                    <div class="mb30">
+                        <label class="tar w155 disib">注册资金（万）：</label>
+                        <span data-content-text="registeredCapital"></span>
+                    </div>
+            </div>
+        </div>
+        <div class="w93p center mt50">
+            <p class="pb5 borderColE5 bottomBorder"><span class="disib bgcDarkOran w5 h18"></span><span class="vat ml10">资质信息</span></p>
+            <ul class="js-threeCertificateData">
+                <li>
+                    <div class="js-fiveCard">
+                        <div class="bgcee mt20  pt25 pb25">
+                            <form class="js-zerotypes">
+                                <div class="ml20">
+                                    <p>
+                                        <span><em class="redFont f18 vat-t mr5">*</em>营业执照：</span>
+                                        <span class="colcc">最大2MB 支持JPG, JPEG, PNG格式,图片各项内容清晰，加盖公章</span>
+                                    </p>
+                                    <div class="mt10">
+                                        <label class="pt7">证件编号：</label>
+                                        <span data-content-text="businessLicense.number"></span>
+                                    </div>
+                                    <div class="js-wrapUploadData"></div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="bgcee mt20  pt25 pb25">
+                            <form class="js-onetypes">
+                                <div class="ml20">
+                                    <p>
+                                        <span><em class="redFont f18 vat-t mr5">*</em>组织机构代码：</span>
+                                        <span class="colcc">最大2MB 支持JPG, JPEG, PNG格式,图片各项内容清晰，加盖公章</span>
+                                    </p>
+                                    <div class="mt10">
+                                        <label class="pt7">证件编号：</label>
+                                        <span  data-content-text="organizationCode.number"></span>
+                                    </div>
+                                    <div class="js-wrapUploadData"></div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="bgcee mt20  pt25 pb25">
+                            <div class="js-twotypes">
+                                <div class="ml20">
+                                    <p>
+                                        <span><em class="redFont f18 vat-t mr5">*</em>税务登记证：</span>
+                                        <span class="colcc">最大2MB 支持JPG, JPEG, PNG格式,图片各项内容清晰，加盖公章</span>
+                                    </p>
+                                    <div class="mt10">
+                                        <label class="pt7">证件编号：</label>
+                                        <span data-content-text="taxRegistrationCertificate.number"></span>
+                                    </div>
+                                    <div class="js-wrapUploadData"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="none">
+                    <form class="js-oneThreeCard js-fourtypes bgcee mt20  pt25 pb25">
+                        <div class="perOfThree por">
+                            <div class="ml20">
+                                <p>
+                                    <span><em class="redFont f18 vat-t mr5">*</em>社会统一信用代码：</span>
+                                    <span class="colcc">最大2MB 支持JPG, JPEG, PNG格式,图片各项内容清晰，加盖公章</span>
+                                </p>
+                                <div class="mt10">
+                                    <label class="pt7">证件编号：</label>
+                                    <span data-content-text="socialUnityCreditCode.number"></span>
+                                </div>
+                                <div class="js-wrapUploadData"></div>
+                            </div>
+                        </div>
+                    </form>
+                </li>
+                <li class="none">
+                    <div class="js-oneFiveCard bgcee mt20  pt25 pb25 ">
+                        <div class="js-fivetypes">
+                            <div class="ml20">
+                                <p>
+                                    <span><em class="redFont f18 vat-t mr5">*</em>营业执照：</span>
+                                    <span class="colcc">最大2MB 支持JPG, JPEG, PNG格式,图片各项内容清晰，加盖公章</span>
+                                </p>
+                                <div class="mt10">
+                                    <label class="pt7">注册号：</label>
+                                    <span data-content-text="licenseFiveCardShowInfo.registrationNumber"></span>
+                                </div>
+                                <div class="mt10">
+                                    <label class="pt7">组织机构代码证号：</label>
+                                   <span data-content-text="licenseFiveCardShowInfo.organizationCode"></span>
+                                </div>
+                                <div class="mt10">
+                                    <label class="pt7">税务登记证号：</label>
+                                    <span data-content-text="licenseFiveCardShowInfo.taxRegistrationCertificate"></span>
+                                </div>
+                                <div class="mt10">
+                                    <label class="pt7">社会保险登记证号：</label>
+                                    <span data-content-text="licenseFiveCardShowInfo.socialInsuranceRegistrationCardNumber"></span>
+                                <div class="mt10">
+                                    <label class="pt7">统计登记证号：</label>
+                                    <span data-content-text="licenseFiveCardShowInfo.statisticalRegistrationNumber"></span>
+                                </div>
+                                <div class="js-wrapUploadData"></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+                <div class="js-threetypes bgcee mt20  pt25 pb25">
+                        <div class="ml20">
+                            <p>
+                                <span>企业授权书：</span>
+                                <span class="colcc">最大2MB 支持JPG, JPEG, PNG格式,图片各项内容清晰，加盖公章</span>
+                            </p>
+                            <div class="mt40 js-wrapUploadData"></div>
+                        </div>
+                </div>
+                <div class="bgcee js-othertypes mt20  pt25 pb25 mb30">
+                        <div class="ml20">
+                            <p>
+                                <span>其他（如质量体系认证书、CE证书、CB证书等）：</span>
+                                <span class="colcc">最大2MB 支持JPG, JPEG, PNG格式,图片各项内容清晰，加盖公章</span>
+                            </p>
+                            <div class="mt40 js-wrapUploadData"></div>
+                        </div>
+                </div>
+
+        </div>
+    </script>
+</div>

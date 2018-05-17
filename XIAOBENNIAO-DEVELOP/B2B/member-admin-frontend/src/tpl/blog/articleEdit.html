@@ -1,0 +1,72 @@
+<div class="js-modules-blog-articleEdit">
+    <form class="js-addArticle">
+        <div class="WrapBox">
+            <p class="grayHeader mb50"><i class="iconfont icon-home"></i><span class="location">所在位置：</span><span
+            >文章管理</span><span class="gt">&gt;</span><span class="now js-nav">编辑文章</span></p>
+            <div class="newInfoBox">
+                <div class="newInfoBoxHeader disib h30 lh30 w97p">
+                    <span class="newInfoBoxHeaderContent bold h30 lh30 f16 disib">列表页封面图</span><span class="col99">图片大小不超过5MB，建议尺寸：200像素 * 270像素，支持格式: gif,jpg,jpeg,png,bmp</span>
+                </div>
+                <div class="bgcee mt30 pt30 pl30 pb30">
+                    <div class="js-webUpload">
+                        <div data-property-name="listImage" data-control-type="WebUpload" class="por">
+                            <div class="js-wrapData disib w530 hauto pl136"></div>
+                            <div class="queueList poa t0">
+                                <div class="filePicker1 default_button w100" style="background:white;border:1px solid #00aff0;color:#00aff0"></div>
+                            </div>
+                            <span><label class="js-error redFont w210 poa l0 b_20"></label></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="newInfoBox">
+                <div class="newInfoBoxHeader disib h30 lh30 w97p">
+                    <span class="newInfoBoxHeaderContent bold h30 lh30 f16 disib">文章页头图</span><span class="col99">图片大小不超过5MB，建议尺寸：300像素 * 400像素，支持格式: gif,jpg,jpeg,png,bmp</span>
+                </div>
+                <div class="perInfo mt40 bgcee pt30 pl30 pr30 pb30">
+                    <div class="js-webUpload">
+                        <div data-property-name="headPic" data-control-type="WebUpload" class="por">
+                            <div class="js-wrapData disib w530 hauto pl136"></div>
+                            <div class="queueList poa t0" >
+                                <div class="filePicker2 default_button w100" style="background:white;border:1px solid #00aff0;color:#00aff0"></div>
+                            </div>
+                            <span><label class="js-error redFont w210 poa l0 b_20"></label></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="newInfoBox">
+                <div class="newInfoBoxHeader disib h30 lh30 w97p">
+                    <span class="newInfoBoxHeaderContent bold h30 lh30 f16 disib">文章标题<i class="redFont">*</i></span><span class="col99">（5-130个英文字符）</span><span class="fr mb10"><span class="js-titleNumber">0</span>/130</span>
+                </div>
+                <div>
+                    <input type="text" name="postTitle" data-property-name="postTitle" data-control-type="TextBox" class="mb30 w100p default_input mt30 js-title" value="">
+                    <span style="display: block;margin: -10px 0 10px 0"><label class="js-error redFont"></label></span>
+                </div>
+                <!--富文本-->
+                <div>
+                    <script id="modules.blog.articleEdit" style="height:400px; width:100%" name="content" type="text/plain"></script>
+                    <input type="hidden" name="editor" class="js-hiddenArticleContent">
+                    <span><label class="js-error redFont"></label></span>
+                </div>
+                <!--富文本-->
+            </div>
+            <div class="newInfoBox">
+                <div class="newInfoBoxHeader disib h30 lh30 w97p">
+                    <span class="newInfoBoxHeaderContent bold h30 lh30 f16 disib">摘要<i class="redFont">*</i></span><span class="colcc">（180-300个英文字符）</span><span class="fr mb10"><span class="js-abstractNumber">0</span>/300</span>
+                </div>
+                <div>
+                    <textarea name="briefDesc" data-property-name="briefDesc" data-control-type="TextBox" cols="30" rows="10" class="w100p mt30 js-abstract"></textarea>
+                    <span><label class="js-error redFont"></label></span>
+                </div>
+            </div>
+            <p class="ml85">
+                <input type="button" class="default_button  js-save w100" value="保存" style="background:white;border:1px solid #00aff0;color:#00aff0">
+                <input type="button" class="default_button  js-preview w100" value="预览" style="background:white;border:1px solid #00aff0;color:#00aff0">
+                <input type="button" class="default_button  js-publish w100" value="发布">
+            </p>
+
+        </div>
+    </form>
+</div>

@@ -1,0 +1,54 @@
+
+<div class="js-modules-authority-addAdmin hp100 mh900">
+     <form class="js-addAdmin hp100 mh900">
+          <div class="WrapBox hp100 mh900" >
+               <p class="grayHeader"><i class="iconfont icon-home"></i><span class="location">所在位置：</span><span class="now">角色管理</span><span class="gt">&gt;</span><span class="js-title">增加管理员</span></p>
+               <h1 class="js-title">增加管理员</h1><a class="fl hexagon" data-back="true">返回</a>
+               <div style="width:900px;" class="center">
+                    <div class="eachRow pt30">
+                         <div class="por fl">
+                              <label class="ib w90 tar"><span class="must">*</span>登录名：</label>
+                              <input type="text" name="userName" class="default_input mr40" data-property-name="userName" data-control-type="TextBox"/>
+                              <span><label class="js-error addAdminJsError"></label></span>
+                         </div>
+                         <div class="por fl">
+                              <label class="ib w90 tar"><span class="must">*</span>登录密码：</label>
+                              <input type="password" name="password" class="default_input mr40" id="password" data-property-name="password" data-control-type="TextBox" autocomplete="off"/>
+                              <span><label class="js-error addAdminJsError"></label></span>
+                         </div>
+                         <div class="por js-cosPassword fl">
+                              <label class="ib w90 tar"><span class="must">*</span>确认密码：</label>
+                              <input type="password" class="default_input "  name="cosPassword" data-property-name="cosPassword" autocomplete="off"/>
+                              <span><label class="js-error addAdminJsError"></label></span>
+                         </div>
+                    </div>
+                    <div class="eachRow pt30">
+                         <div class="fl">
+                              <label class="ib w90 tar vat"><span class="must">*</span>角色：</label>
+                              <div class="wrapper-demo ib mr40">
+                                   <input type="hidden" name="roleId" data-value="roleId">
+                                   <span><label class="js-error addAdminRoleJsError js-roleIdError"></label></span>
+                                   <div class="wrapper-dropdown selected ib ml0 w90 mr0"  style="padding:0 20px;width:90px;" data-value="roleId" data-property-name="roleId" data-control-type="ComboBox">
+                                        <i>请选择</i>
+                                        <ul class="dropdown w1800">
+                                        </ul>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="fl por">
+                              <label class="ib w90 tar"><span class="must">*</span>真实姓名：</label>
+                              <input type="text" name="realname" class="default_input" data-property-name="realname" data-control-type="TextBox" />
+                              <span><label class="js-error poa w160 b0 l100"></label></span>
+                         </div>
+                    </div>
+<div class="mt60 ml60">
+     <input type="button" class="js-reset reset_button w100 ml200" value="重置">
+     <input type="button" class="js-button default_button ml30 w100" value="提交">
+</div>
+
+
+
+               </div>
+          </div>
+     </form>
+</div>

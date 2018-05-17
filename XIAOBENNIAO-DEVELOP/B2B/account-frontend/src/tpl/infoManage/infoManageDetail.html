@@ -1,0 +1,77 @@
+<div class="changecss js-modules-infoManage-infoManageDetail">
+    <h1 class="f18 tac mb80 mt80 pl70 pr70" data-content-text="title"></h1>
+    <div class="pl70 pr70">
+        <h3 class="f16 bottomBorder pb5 mb20">基本信息</h3>
+        <div class="f14 w100p mb20 "><em class="col66">产品分类：</em><span class="disib w90p vat" data-content-text="productsCategory" data-format="productsCategoryFormater"></span></div>
+        <div class="f14 w260 mb20 "><em class="col66">状态：</em><span data-content-text="status" data-format="statusFormater"></span></div>
+        <div class="f14 w260 mb20 "><em class="col66">采购数量：</em><span data-content-text="purchaseNum"></span></div>
+        <div class="f14 w260 mb20 "><em class="col66">信息类型：</em><span data-content-text="infoType" data-format="infoTypeFormater"></span></div>
+        <div class="f14 w260 mb20 "><em class="col66">国别：</em><span data-content-text="country"></span></div>
+        <div class="f14 w260 mb20"><em class="col66">发布日期：</em><span data-content-text="createDate" data-format="createDateFormater"></span></div>
+        <div class="f14 w260 mb20 "><em class="col66">截止日期：</em><span data-content-text="dueDate" data-format="dueDateFormater"></span></div>
+        <div class="f14 w260 mb20 js-shoppingTerms"><em class="col66">交易方式：</em><span data-content-text="shoppingTerms"></span></div>
+        <div class="f14 w260 mb20 js-paymentTerms"><em class="col66">付款方式：</em><span data-content-text="paymentTerms"></span></div>
+        <div class="f14 w260 mb20 js-currency"><em class="col66">货币种类：</em><span data-content-text="currency"></span></div>
+        <div class="f14 w260 mb20 js-budget"><em class="col66">预算：</em><span data-content-text="budget"></span></div>
+        <div class="f14 mt20"><em class="col66 vat">详情：</em><span class="disib w95p" data-content-text="summary"></span></div>
+        <!--附件-->
+        <div class="f14 mt20 mb10 js-infoDetailAttachTitle"><em class="col66">下载附件：</em></div>
+        <div class="js-infoDetailAttach"></div>
+
+        <div class="none js-responseInfoStatus">
+            <p class="bgcee w100p h30 lh30 f18 tac mt50 mb50">以下为响应采购信息</p>
+
+            <!--供应商信息-->
+            <div>
+                <p class="f16 bottomBorder pb10 mb30">供应商信息</p>
+                <div class="disib mb20 vat"><span class="col66">公司名称：</span><span data-content-text="responseSupplierName" class="w220 word-cut"></span></div>
+                <div class="disib ml140 mb20"><span class="col66 vat">联系人：</span><span data-content-text="responseContact" class="disib w100"></span></div>
+                <div class="disib ml140 mb20 vat"><span class="col66">电话：</span><span data-content-text="responseContactPhone"></span></div><br>
+                <div class="disib"><span class="col66">邮箱：</span><span data-content-text="responseContactEmail"></span></div>
+            </div>
+
+
+            <!--具体信息-->
+            <div>
+                <p class="f16 bottomBorder pb10 mb30 mt60">具体信息</p>
+                <div class="disib mb20"><span class="col66 vat">响应摘要：</span><span class="disib w720 js-responseInfoSummary" style="word-break: break-all"></span></div><br>
+                <div class="disib mb20">
+                    <span class="col66 vat">项目详情及附件：</span>
+                    <div class="disib w80p js-responseAttach"></div>
+                </div><br>
+                <div class="disib mb20"><span class="js-ResponsePrice"><span class="col66">应答金额：</span><span data-content-text="responseResponsePrice"></span><span data-content-text="responsePriceUnit"></span></span></div>
+            </div>
+        </div>
+
+        <p class="f14 mt30 mb10">向采购方提问</p>
+
+        <!--问答部分-->
+        <div class="js-questionList">
+
+        </div>
+        <div class="js-questionList-tpl mt15 none">
+            <div class="ask">
+                <p class="mb10"><span class="f14 col66">供应商</span><span class="ml20 messageTime">2016-11-25</span></p>
+                <span class="askAnswerLabel bgcDarkOran vat">问</span>
+                <div class="disib ml10 bgcee lh30 w95p bsb pl10 message">
+                    采购信息详采购信息详情及附件采购信息详情及附件采购信息详情及附件采购信息详情及附件采购信息详情及附件采购信息详情及附件采购信息详情及附件采购信息详情及附件采购信息详情及附件采购信息详情及附件采购信息详情及附件采购信息详情及附件采购信息详情及附件采购信息详情及附件情及附件采购信息详情及附件
+                </div>
+            </div>
+            <div class="answer">
+                <p class="mb10 mt10"><span class="f14 col66">采购方</span><span class="ml20 messageTime">2016-11-25</span></p>
+                <span class="askAnswerLabel bgcCc vat">答</span>
+                <div class="disib ml10 bgcee lh30 w95p bsb pl10 message">
+                    采购信息详采购信息详情及附件采购信息详情及附件采购信息详情及附件采购信息详情及附件采购信息详情及附件采购信息详情及附件采购信息详情及附件采购信息详情及附件采购信息详情及附件采购信息详情及附件采购信息详情及附件采购信息详情及附件采购信息详情及附件采购信息详情及附件情及附件采购信息详情及附件
+                </div>
+            </div>
+        </div>
+
+        <!--提问框-->
+        <div class="askPurchaser w100p por mt30 por">
+            <textarea rows="8" class="w99p noBorder f14 js-questionFont"></textarea>
+            <p class="poa h30 lh30 w100p bgcee b0 tar pr10 bsb f14"><a class="curp js-question">提问</a></p>
+            <labal class="poa l0 js-responseInfo" style="color:red;bottom: -20px;"></labal>
+        </div>
+        <p class="tac mt60 mb10"><input type="button" value="响应" class="default_button w100 js-resBtn"></p>
+    </div>
+</div>

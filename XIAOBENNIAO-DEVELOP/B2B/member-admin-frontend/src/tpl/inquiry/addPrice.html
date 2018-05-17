@@ -1,0 +1,65 @@
+<div class="js-modules-inquiry-addPrice">
+    <div class="WrapBox js-addPrice addRFQ tac">
+        <div class="center tal disib">
+            <form class="js-addForm">
+                <div class="pt30">
+                    <div class="mt30 por">
+                        <label class="ib tar w160"><span class="must">*</span>Agent：</label>
+                        <input type="text" name="name" maxlength="128" placeholder="please enter Agent" class="default_input mr40 w350" data-property-name="name" data-control-type="TextBox"/>
+                        <span class="poa b0 w400" style="left:165px"><label class="js-error"></label></span>
+                    </div>
+                    <div class="mt30 por">
+                        <label class="ib tar w160"><span class="must">*</span>Email：</label>
+                        <input type="text" name="email" maxlength="60" placeholder="please enter Email" class="default_input mr40 w350" data-property-name="email" data-control-type="TextBox"/>
+                        <span class="poa b0 w400" style="left:165px"><label class="js-error"></label></span>
+                    </div>
+                    <div class="mt30 por">
+                        <label class="ib tar w160"><span class="must">*</span>Phone：</label>
+                        <input type="text" maxlength="11" name="phone" placeholder="please enter Phone"  class="default_input mr40 w350" data-property-name="phone" data-control-type="TextBox"/>
+                        <span class="poa b0 w400" style="left:165px"><label class="js-error"></label></span>
+                    </div>
+                    <!--富文本-->
+                    <div class="mt30">
+                        <label class="ib tar w160 vat">Content：</label>
+                        <script id="modules.inquiry.addPrice" style="height:400px;display:inline-block;width:77%" name="content" type="text/plain"></script>
+                    </div>
+                    <!--富文本-->
+                    <div class="mt30 js-sourcingRequestAttachments">
+                        <label class="ib tar w160">Attachements：</label>
+                        <span>(Max.10 attachements.Max.15MB for each.)</span>
+                        <div class="js-webUpload">
+                            <div data-property-name="sourcingRequestQuoteAttachments" data-control-type="WebUpload" class="por ml160 mt20">
+                                <div class="queueList">
+                                    <div class="filePicker default_button w100" style="background:white;border:1px solid #00aff0;color:#00aff0"></div>
+                                </div>
+                                <div class="js-wrapData disib w530 hauto pl136 mt20"></div>
+
+
+                                <span><label class="js-error redFont w210 poa l0 b_20"></label></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt30 por">
+                        <label class="ib tar w160"><span class="must">*</span>来源：</label>
+                        <input type="hidden" class="js-inputSource" name="inputSource">
+                        <div class="wrapper-dropdown selected ml0" style="width: 350px" data-property-name="source" data-control-type="ComboBox">
+                            <i>请选择</i>
+                            <ul class="dropdown">
+                            </ul>
+                        </div>
+                        <span class="poa b0 w400" style="left:165px"><label class="js-error currency-error"></label></span>
+                    </div>
+                    <div class="mt30 por">
+                        <label class="ib tar w160"><span class="must">*</span>Post Time：</label>
+                        <input type="text" class="default_input w350 datetimepicker"  name="postTime"  data-property-name="postTime" data-control-type="TextBox" placeholder="Please click choice postTime"/>
+                        <span class="poa b0 w400" style="left:165px"><label class="js-error js-postTime-error"></label></span>
+                    </div>
+                </div>
+                <div class="mt60 ml60">
+                    <input type="button" class="js-cancel reset_button w100 ml200" value="关闭">
+                    <input type="button" class="js-addButton default_button ml30 w100" value="新增报价">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

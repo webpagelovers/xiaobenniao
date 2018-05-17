@@ -1,0 +1,5 @@
+User-Agent: *
+Disallow: /product/searchlist.html?key=*
+
+
+Sitemap: https://www.weintrade.com/sitemap.xml

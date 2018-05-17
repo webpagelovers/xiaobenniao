@@ -1,0 +1,26 @@
+{
+  "statusCode": "2000000",
+  "message": "成功",
+  "data":{
+      "list":[
+        {
+          "id" : "1",
+          "question" : "项目数量是多少",
+          "answer" : "100",
+          "createDate": "2016-09-19"
+        },
+        {
+          "id" : "2",
+          "question" : "项目数量是多少",
+          "answer" : "200",
+          "createDate": "2016-09-19"
+        },
+        {
+          "id" : "3",
+          "question" : "项目数量是多少",
+          "answer" : "300",
+          "createDate": "2016-09-19"
+        }
+      ]
+  }
+}

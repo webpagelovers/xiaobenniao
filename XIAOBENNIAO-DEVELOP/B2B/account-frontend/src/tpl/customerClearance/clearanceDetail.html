@@ -1,0 +1,156 @@
+<div class="js-modules-customerClearance-clearanceDetail pl35 pb110">
+    <div class="progress-wrap mt70 ml30"></div>
+    <div class="clear tac pt120 js-cancelStatus">
+        <img src="images/cancelled.png">
+    </div>
+    <div class="clear tac pt120 js-cancelStatusCon f16"></div>
+    <div class="clear mb80"></div>
+    <div class="js-drawback"></div>
+    <div class="js-payment"></div>
+    <div class="js-customsRecords"></div>
+    <div class="js-bookingInformation"></div>
+    <h2 class="header f14 por mb20 mt20">
+        <div class="fileWrap bgcGreen ml30">
+            <i class="iconfont icon-file"></i>
+        </div>
+        <span>报关信息</span>
+        <span class="f12 col66">/  ENCLOSURE</span>
+        <span class="orange-font curp f12 ml30 js-showHideButton js-showHideButton5"><i class="mr5">展开</i><i
+                class="iconfont icon-toggleBottom f12"></i></span>
+    </h2>
+    <div class="js-column js-column5 js-c-detail">
+        <h2 class="header f14 por mb30">
+            <div class="fileWrap ml30 bgcOran">
+                <i class="iconfont icon-file"></i>
+            </div>
+            <span>收汇方式</span>
+            <span class="f12 col66">/  APPLY FOR CUSTOMS</span>
+        </h2>
+        <div class="w100p  bsb pl80 mb10">
+            <div class=" w100p mb30">
+                <label class="col66">收款方式：</label><span data-content-text="exchangeMethod"
+                                                             data-format="exchangeMethodFormater"></span>
+            </div>
+            <div class=" w100p mb30">
+                <label class="col66">出口口岸：</label><span data-content-text="customsPort"></span>
+            </div>
+
+            <div class=" w100p mb30">
+                <label class="col66">本单联系人：</label><span data-content-text="contacts" data-format="contactsFormater"></span>
+            </div>
+            <div class=" w100p mb30">
+                <label class="col66 vat">结汇/退税收款账户：</label><span data-content-text="bankAccount" data-format="acountFormater" class="disib w80p"></span>
+            </div>
+        </div>
+        <hr size="3" color="#eee" width="95%" class="center">
+
+        <h2 class="header f14 por mb20 mt20">
+            <div class="fileWrap ml30 bgcYe">
+                <i class="iconfont icon-file"></i>
+            </div>
+            <span>货品信息</span>
+            <span class="f12 col66">/  GOODS NFORMATIONS</span>
+        </h2>
+        <!--<div class="w100p  bsb pl50">-->
+        <div class="w100p bsb mb10 pl80">
+            <div class="w100p mb30">
+                <label class="col66 ">币种：</label>
+                <span data-content-text="currency" data-format="currencyFormater"></span>
+            </div>
+            <!--</div>-->
+            <!--<div class="w100p  bsb pl50">-->
+            <div class="w100p mb30">
+                <label class="col66 ">价格条款：</label>
+                <span data-content-text="priceTerm" data-format="priceTermFormater"></span>
+            </div>
+            <!--</div>-->
+            <!--<div class="w100p  bsb pl50">-->
+            <div class="w100p mb30">
+                <label class="col66 vat">包装方式：</label>
+                <span data-content-text="packageType" data-format="packageTypeFormater" class="disib w75p"></span>
+            </div>
+            <!--</div>-->
+            <!--<div class="w100p  bsb pl50">-->
+            <div class="w100p mb30">
+                <label class="col66 ">出货清单：</label>
+            </div>
+            <div class="js-exportGoodsList"></div>
+        </div>
+
+
+        <p class="ml76 w80p p20 tar pt0 mt10">
+            <label class="col66">该批总净重：</label><span class="mr60"><em data-content-text="totalNetWeight"></em><em>
+            KG</em></span>
+            <label class="col66">总毛重：</label><span class="mr60"><em data-content-text="totalGrosWeight"></em><em>
+            KG</em></span>
+            <label class="col66">总产品数量：</label><span class="mr60" data-content-text="totalGoodsCount"></span>
+            <label class="col66">总货值：</label><em data-content-text="currency" data-format="currencyFormater"></em> <span
+                data-content-text="totalValue"></span>
+        </p>
+        <p class="ml80 mt20"><label class="col66">货品数量：</label><span data-content-text="packageNumber"></span></p>
+        <p class="ml80 mt20"><label class="col66">整体包装种类：</label><span data-content-text="packagingMaterial"
+                                                                       data-format="packagingMaterialFormater"></span>
+        </p>
+        <p class="ml80 mt20 mb40"><label class="col66">产品信息是否确定：</label><span data-content-text="detailConfirmed"
+                                                                              data-format="detailConfirmedFormater"></span>
+        </p>
+        <hr size="3" color="#eee" width="95%" class="center">
+        <h2 class="header f14 por mb20 mt20">
+            <div class="fileWrap ml30 bgcBigRed">
+                <i class="iconfont icon-file"></i>
+            </div>
+            <span>报关信息</span>
+            <span class="f12 col66">/  CUSTOMS INFORMATION</span>
+        </h2>
+        <div class="w100p  bsb pl75 mb10 bgxx">
+            <div class="w100p mb30">
+                <label class="col66 w27p">预计出货日期：</label><span data-content-text="shipmentDate"></span>
+            </div>
+            <div class="w100p mb30">
+                <label class="col66 w33p">运抵国（贸易国/地区）：</label><span data-content-text="tradeNation"></span>
+            </div>
+            <div class="w100p mb30">
+                <label class="col66 w33p">指运港（境外接货港）：</label><span data-content-text="targetNation"></span>
+            </div>
+            <div class="w100p mb30">
+                <label class="col66 w27p">最终目的国：</label><span data-content-text="targetNation"></span>
+            </div>
+
+            <div class="w100p mb30">
+                <label class="col66 w33p">合同类型：</label><span data-content-text="contractType"
+                                                             data-format="exchangeContractTypeFormater"></span>
+            </div>
+            <div class="w100p mb30">
+                <label class="col66 w33p">指定报关合同号：</label><span data-content-text="contractNumber"></span>
+            </div>
+            <div class="w100p mb30">
+                <label class="col66 w100" style="width: 100px;">境外贸易商：</label><span data-content-text="internationalTrader"
+                                                              data-format="internationalTraderFormater"></span>
+            </div>
+            <div class="w100p mb30">
+                <label class="col66 w27p">境内货源地：</label><span data-content-text="domesticSource"></span>
+            </div>
+            <div class="w100p mb30">
+                <label class="col66 w33p">提货地址：</label><span data-content-text="exportGoodsLocation"
+                                                             data-format="exportGoodsLocationFormater"></span>
+            </div>
+        </div>
+        <hr size="3" color="#eee" width="95%" class="center">
+        <h2 class="header f14 por mb20 mt20">
+            <div class="fileWrap ml30 bgcDarkBlue">
+                <i class="iconfont icon-file"></i>
+            </div>
+            <span>附件</span>
+            <span class="f12 col66">/  Enclosure</span>
+        </h2>
+        <p class="ml80">SO（Shipping Order/SO）：</p>
+        <div class="ml80 mt10 js-orderAttachments">
+        </div>
+        <p class="ml80 mt40">内贸合同：</p>
+        <div class="ml80 mt10 js-domesticTradeContractAttachments">
+        </div>
+        <p class="ml80 mt40">其他附件：</p>
+        <div class="ml80 mt10 js-otherAttachments">
+        </div>
+    </div>
+</div>

@@ -1,0 +1,366 @@
+<div class="js-modules-bid-tenderDetail">
+    <h1 class="f17 tac mt50"><span data-content-text="tenderName"></span><span class="por js-winWrap"></span></h1>
+    <h2 class="header f16 por mb40 mt66">
+        <div class="fileWrap bgcYe ml30">
+            <i class="iconfont icon-file"></i>
+        </div>
+        <span>基本信息</span>
+        <span class="f12 col66">/ THE BASIC INFORMATION</span>
+    </h2>
+    <form class="js-basicInfoForm mw1028">
+        <div class="perDetail w33p ">
+            <label class="col66 vat">招标名称：</label><span data-content-text="tenderName" class="disibni w190 textOverflowEllippsis"></span>
+        </div>
+        <div class="perDetail w33p ">
+            <label class="col66 vat">招标方：</label><span data-content-text="companyName" class="disibni w190 textOverflowEllippsis"></span>
+        </div>
+        <div class="perDetail w33p ">
+            <label class="col66">当前状态：</label><span data-content-text="tenderStatus" class="js-currentStatus"></span>
+        </div>
+        <div class="perDetail w33p ">
+            <label class="col66">联系电话：</label><span data-content-text="contactPhone"></span>
+        </div>
+        <div class="perDetail w33p ">
+            <label class="col66">E-mail：</label><span data-content-text="contactEmail"></span>
+        </div>
+        <div class="perDetail w33p ">
+            <label class="col66 vat">联系人：</label><span data-content-text="contact" class="disibni w190 textOverflowEllippsis"></span>
+        </div>
+        <div class="perDetail w33p ">
+            <label class="col66">招标形式：</label><span data-content-text="tenderType"></span>
+        </div>
+        <div class="perDetail w33p js-applyDueDate">
+            <label class="col66">报名截止时间：</label><span data-content-text="applyDueDate"></span>
+        </div>
+        <div class="perDetail w33p js-purchaseBidsDueDate">
+            <label class="col66">投标截止时间：</label><span data-content-text="purchaseBidsDueDate"></span>
+        </div>
+    </form>
+
+    <div class="js_tabPannel2 js-sign none">
+        <div class="changecss">
+            <div class="tab_btn">
+            <ul class="fix fL middleNav h30 ml30 mt20">
+                <li class="active" tabChangeInfo="tabReview">
+                    <a href="javascript:;">资审公告</a>
+                    <span class="tab_line"></span>
+                </li>
+                <li tabChangeInfo="tabChangeData">
+                    <a href="javascript:;">变更<span class="redFont none js-new por t_5">●</span></a>
+                    <span class="tab_line"></span>
+                </li>
+            </ul>
+        </div>
+        </div>
+        <div class="tab_content js-tabContent middleNavContent ml73">
+            <div class="listWrap js-biddingAttachment pb90">
+                <h2 class="header f16 por mb20 mt60">
+                    <div class="fileWrap bgcOran">
+                        <i class="iconfont icon-file"></i>
+                    </div>
+                    <span>招标方发布的资料</span>
+                    <span class="f12 col66">/ MATERIALS FOR AUDIT</span>
+                </h2>
+                <div class="mb10">
+                    <span class="col66 mb20 ml45 vat disibni mt10">公告附件：</span>
+                    <div class="js-wrapAttachment disibni w660"></div>
+                </div>
+
+                <div class="grayBlock w82p ml45">
+                    <h1 class="mt20 mb20 tac f14 col00">公告内容</h1>
+                    <p  class="js-tenderContent w88p center"></p>
+                </div>
+                <h2 class="header f16 por mb20 mt60">
+                    <div class="fileWrap bgcR">
+                        <i class="iconfont icon-file"></i>
+                    </div>
+                    <span>我的附件</span>
+                    <span class="f12 col66">/  RESULT OF CAPITAL AUDIT</span>
+                </h2>
+                <p class="col66 ml45 mb20">请上传单个附件大小在100M以内的文件</p>
+                <span class="col66 vat disibni ml45"><em class="redFont f20 mr5 va_5">*</em>上传附件：</span>
+                <div class="disibni w660">
+                    <div class="js-webUpload ">
+                        <div data-property-name="biddingAttachmentList" data-control-type="WebUpload" class="por">
+                            <div class="queueList disibni vat">
+                                <div class="filePicker js-capitalAudit default_button w100"></div>
+                            </div>
+                            <div class="js-wrapData disibni w530 hauto por"></div>
+                            <span class="poa l6 t35"><label class="js-error js-attachError redFont disibni w100"></label></span>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                <span class="default_button w100 js-signUp ml350 mt40 disibni">我要报名</span>
+                <div class="js-adopt none">
+                    <h2 class="header f16 por mb20 mt30">
+                        <div class="fileWrap bgcBigRed">
+                            <i class="iconfont icon-file"></i>
+                        </div>
+                        <span>资审结果</span>
+                        <span class="f12 col66">/  RESULT OF CAPITAL AUDIT</span>
+                    </h2>
+                    <p class="mt30 ml45"><i class="iconfont icon-bgcDuiguo colGreen f20 mr10 va_2"></i><span class="f14">资审通过</span></p>
+                    <p class="col66 ml76">请等待招标方全部资审完成</p>
+                </div>
+                <div class="js-noAdopt none">
+                    <h2 class="header f16 por mb20 mt30">
+                        <div class="fileWrap bgcBigRed">
+                            <i class="iconfont icon-file"></i>
+                        </div>
+                        <span>资审结果</span>
+                        <span class="f12 col66">/  RESULT OF CAPITAL AUDIT</span>
+                    </h2>
+                    <p class="mt30"><i class="ml45 iconfont icon-bgcError colRed f20 mr10 va_2"></i><span class="f14">资审不通过</span></p>
+                    <div class="grayBlock w88p ml45 mt30 mb100">
+                        <h1 class="mt20 mb20 tac col00 f14">不通过理由</h1>
+                        <p class="w88p center js-noAdoptReason"></p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="listWrap">
+                <div data-property-name="changeTabDataGrid" data-control-type="TabDataGrid">
+                    <div class="js-wrapTabDataGrid"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="js_tabPannel1 js-detail">
+        <div class="changecss">
+             <div class="tab_btn">
+            <ul class="fix fL middleNav h30 ml30 mt20">
+                <li class="active" tabChangeInfo="tabTenderDetail">
+                    <a href="javascript:;">招标详情</a>
+                    <span class="tab_line"></span>
+                </li>
+                <li tabChangeInfo="tabChange">
+                    <a href="javascript:;">变更<span class="redFont none js-new" style="position: relative;top: -5px;">●</span></a>
+                    <span class="tab_line"></span>
+                </li>
+                <li tabChangeInfo="tabMyBid">
+                    <a href="javascript:;">我的投标文件</a>
+                    <span class="tab_line"></span>
+                </li>
+                <li tabChangeInfo="tabAnswerQuestion">
+                    <a href="javascript:;">招标答疑</a>
+                    <span class="tab_line"></span>
+                </li>
+                <li tabChangeInfo="tabAnswer">
+                    <a href="javascript:;">投标澄清</a>
+                    <span class="tab_line"></span>
+                </li>
+                <li tabChangeInfo="tabQualification">
+                    <a href="javascript:;">资审公告</a>
+                    <span class="tab_line"></span>
+                </li>
+            </ul>
+        </div>
+        </div>
+        <div class="tab_content js-tabContent middleNavContent ml80">
+            <div class="listWrap pb110">
+                <h2 class="header f16 por mb20 mt60">
+                    <span>招标正文</span>
+                    <span class="f12 col66">/ BIDDING TEXT</span>
+                </h2>
+                <p class="w80p tenderContent"></p>
+                <hr size="3" color="#eee" width="93%" class="mt40">
+                <h2 class="header f16 por mb20 mt60">
+                    <span>采购清单</span>
+                    <span class="f12 col66">/ PURCHASE LIST</span>
+                </h2>
+                <div class="table_main js-datagrida"></div>
+                <hr size="3" color="#eee" width="93%" class="mt40">
+                <h2 class="header f16 por mb20 mt60">
+                    <span>商务条款</span>
+                    <span class="f12 col66">/ BUSINESS TERMS</span>
+                </h2>
+                <div class="table_main js-datagridb"></div>
+                <hr size="3" color="#eee" width="93%" class="mt40">
+                <h2 class="header f16 por mb20 mt60">
+                    <span>技术条款</span>
+                    <span class="f12 col66">/ TECHNICAL TERMS</span>
+                </h2>
+                <div class="table_main js-datagridc"></div>
+                <h2 class="header f16 por mb20 mt60">
+                    <span>招标附件</span>
+                    <span class="f12 col66">/ INVITATION TO TENDER</span>
+                </h2>
+                <label class="vat">附件：</label>
+                <div class="js-wrapDatas disibni w720"></div>
+            </div>
+            <div class="listWrap middleNavContent">
+                <div class="padnone">
+                    <div data-property-name="TabDataGrid" data-control-type="TabDataGrid">
+                        <div class="js-wrapTabDataGrid" ></div>
+                    </div>
+                </div>
+            </div>
+            <div class="listWrap middleNavContent js-bidDate pb90">
+                <form class="js-myBid">
+                    <h2 class="header f16 por mb20 mt60">
+                        <span class="redFont f20 vasub mr5">*</span><span>投标说明</span>
+                        <span class="f12 col66">/ BIDDING ITEM LISTING</span>
+                    </h2>
+                    <div class="js-wrapbidExplain disibni">
+                        <textarea name="bidExplain" class="fl f16 w920" data-property-name="bidExplain" data-control-type="TextBox" data-content-text="bidExplain"  cols="30" rows="10" ></textarea>
+                    </div>
+                    <h2 class="header f16 por mb20 mt60">
+                        <span>招标货品清单</span>
+                        <span class="f12 col66">/ BIDDING GOODS LIST</span>
+                    </h2>
+                    <div class="table_main js-datagrida"></div>
+                    <h2 class="header f16 por mb20 mt60">
+                        <span>商务条款</span>
+                        <span class="f12 col66">/ BUSINESS TERMS</span>
+                    </h2>
+                    <div class="table_main js-datagridb"></div>
+                    <h2 class="header f16 por mb20 mt60">
+                        <span>技术条款</span>
+                        <span class="f12 col66">/ TECHNOLOGY TERMS</span>
+                    </h2>
+                    <div class="table_main js-datagridc"></div>
+                    <h2 class="header f16 por mb20 mt60">
+                        <span>投标附件</span>
+                        <span class="f12 col66">/ BID ATTACHMENT</span>
+                    </h2>
+                    <div class="js-webUpload">
+                        <div data-property-name="biddingAttachmentList" data-control-type="WebUpload" class="por">
+                            <p class="col66 mb20">请上传单个附件大小在100M以内的文件</p>
+                            <span class="redFont f20 vat mr5">*</span><label class="vat">上传附件：</label>
+                            <div class="queueList disibni vat">
+                                <div class="filePicker default_button w100"></div>
+                            </div>
+                            <span class="poa disibni w140 t80 l60"><label class="js-error js-attachError redFont"></label></span>
+                            <div class="js-wrapData disibni hauto w530"></div>
+                        </div>
+                    </div>
+                    <div class="inputWrap mt40 por">
+                        <input type="button" class="js-buttoned default_button mb20 w100 ml350" value="提交投标信息"/>
+                        <span class="poa disibni w155"><label class="js-error JsError none"></label></span>
+                    </div>
+                </form>
+            </div>
+            <div class="listWrap js-tenderQuestion pb90">
+                <p class="mt30 mb40 js-askQuestion">
+                    <span class="f14">向招标方提问</span>
+                    <span class="f12 col66">/ ASK THE QUESTION TO THE TENDER</span>
+                </p>
+                <form class="js-textarea">
+                    <div class="por">
+                        <div class="askAnswerLabel bgcBlue fl">问</div>
+                        <textarea name="questionContent" class="fl ml20 w80p f16" data-property-name="questionContent" data-control-type="TextBox" cols="30" rows="10" placeholder="请输入300字以内问题"></textarea>
+                        <span class="poa l45 b0 w250"><label class="js-error supplierDisplayJsError"></label></span>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="pl40">
+                        <input type="button" class="js-buttons default_button mt30 w100 mb20" value="提交"/>
+                    </div>
+                </form>
+                <p class="mt40 mb40">
+                    <span class="f14">历史问题</span>
+                    <span class="f12 col66">/ HISTORY ISSUES</span>
+                </p>
+                <div class="table_main js-datagrid answerTable"></div>
+                <div class="papogation js-pagination pagination"></div>
+            </div>
+            <div class="listWrap js-tenderAnswer">
+                <div class="js-wrapTabDataGrided">
+                    <div class="js_tabPannel3">
+                        <div class="tab_btn fl changeTime mt40 mb100">
+                            <div class="col66 bgcFf"><p>全部功能</p><p>ALL FUNCTIONS</p></div>
+                            <ul class="fix">
+                                <li tabChangeInfo="tabNoAnswer">未回答</li>
+                                <li tabChangeInfo="tabHasAnswer">已回答</li>
+                            </ul>
+                        </div>
+                        <div class="tab_content js-tabContent fl ml40 mt40 w80p">
+                            <div class="listWrap">
+                                <div class="js-tenderCompanyNameCnNone">发起单位:<span class="js-tenderCompanyNameCn"></span></div>
+                                <div class="table_main js-datagrid"></div>
+                                <div class="papogation js-pagination pagination"></div>
+                            </div>
+                            <div class="listWrap">
+                                <div class="table_main js-datagrid"></div>
+                                <div class="papogation js-pagination pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="listWrap js-tabQualification pb90">
+                <h2 class="header f16 por mb20 mt60">
+                    <div class="fileWrap bgcOran">
+                        <i class="iconfont icon-file"></i>
+                    </div>
+                    <span>招标方发布的资料</span>
+                    <span class="f12 col66">/ MATERIALS FOR AUDIT</span>
+                </h2>
+                <div>
+                    <span class="col66 mb20 ml45 vat">公告附件：</span>
+                    <div class="js-wrapAttachment disibni w550"></div>
+                </div>
+
+                <div class="grayBlock w88p ml45">
+                    <h1 class="mt20 mb20 tac f14 col00">公告内容</h1>
+                    <p  class="js-tenderContent w88p center"></p>
+                </div>
+                <h2 class="header f16 por mb20 mt60">
+                    <div class="fileWrap bgcR">
+                        <i class="iconfont icon-file"></i>
+                    </div>
+                    <span>我的附件</span>
+                    <span class="f12 col66">/  RESULT OF CAPITAL AUDIT</span>
+                </h2>
+                <span class="col66 vat disibni mt10 ml45">上传附件：</span>
+                <div class="js-wrapQualification disibni w530"></div>
+                <span class="default_button mb20 w100 ml350 mt40 disibni">已报名</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 答疑模板 -->
+    <script type="text/html"  class="js-bid-tenderQuestion-tpl">
+        <tr>
+            <td>
+                <div>
+                    <div class="askAnswerLabel bgcBlue mr10 fl">问</div><p class="w530 fl p_text" data-content-text="questionContent"></p><p class="fr mr20" data-content-text="questionTime"></p>
+                </div>
+                <div class="clear"></div>
+                <div class="mt10 js-anserContent">
+                    <div class="askAnswerLabel bgcCc mr10 fl">答</div><p class="w530 fl p_text" data-content-text="answerContent"></p>
+                </div>
+                <div class="clear mb30"></div>
+                <hr size="3" color="#f4f4f7" class="mb30">
+            </td>
+        </tr>
+    </script>
+    <!-- 澄清模板 -->
+    <script type="text/html"  class="js-bid-tenderAnswer-tpl">
+        <tr>
+            <td>
+                <div class="js-wrapSubmit">
+                    <div  data-property-name="tenderTalkId"  data-control-type="Submit">
+                        <form class="js-bidanswer">
+                            <div class="mb20">
+                                <div class="askAnswerLabel bgcBlue fl mr10">问</div><p class="w530 fl p_text" data-content-text="questionContent"></p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="js-contAnswer por">
+                                <div>
+                                    <div class="askAnswerLabel bgcCc mr10 fl">答</div>
+                                    <input type="hidden" data-value="tenderTalkId"/>
+                                    <textarea name="answerContent" class="fl w80p f16" data-property-name="answerContent" data-control-type="TextBox"  cols="30" rows="10" placeholder="请输入300字以内答案"></textarea>
+                                    <span><label class="js-error supplierDisplayJsError"></label></span>
+                                </div>
+                                <div>
+                                    <input type="button"  class="js-submit default_button ml40 mt30 w100" value="提交"/>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </script>
+</div>

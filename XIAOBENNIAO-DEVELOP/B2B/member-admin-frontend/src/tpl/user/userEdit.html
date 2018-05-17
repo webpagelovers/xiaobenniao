@@ -1,0 +1,70 @@
+<div class="js-modules-user-userEdit">
+    <form class="js-addUser">
+        <div class="WrapBox">
+            <p class="grayHeader"><i class="iconfont icon-home"></i><span class="location">所在位置：</span><span
+                    >用户管理</span><span class="gt">&gt;</span><span class="now">新增用户</span></p>
+            <h1>增加用户 </h1><a class="fl hexagon" data-back="true">返回</a>
+            <div class="newInfoBox">
+                <div class="newInfoBoxHeader disib h30 lh30 w97p">
+                    <p class="newInfoBoxHeaderContent bold h30 lh30 f16 disib">用户信息</p>
+                </div>
+                <div class="w100p bgcee mt30 pt30 pb30">
+                    <p class="mb30 por">
+                        <span class="disib w160 tar">
+                            <em class="redFont f18 vat mr5">*</em>公司名称：
+                        </span>
+                        <input type="text" class="default_input" type="password" checkFieldUrl="/user/verifyCompanyName" name="companyNameCn" data-property-name="companyNameCn"
+                               data-control-type="TextBox" id="" placeholder="请输入公司名称">
+                        <span class="js-error poa"></span>
+                    </p>
+                    <p class="mb30 por">
+                        <span class="disib w160 tar">
+                            <em class="redFont f18 vat mr5">*</em>姓名：
+                        </span>
+                        <input type="text" class="default_input" name="userName" data-property-name="userName" data-control-type="TextBox"
+                                placeholder="请输入姓名">
+                        <span class="js-error poa"></span>
+                    </p>
+                    <p class="mb30 por">
+                        <span class="disib w160 tar">
+                            <em class="redFont f18 vat mr5">*</em>手机号码：
+                        </span>
+                        <input type="text" class="default_input" name="mobile" data-property-name="mobile" data-control-type="TextBox"
+                                id="telphone" placeholder="请输入手机号">
+                        <span class="js-error poa"></span>
+                    </p>
+                    <p class="mb30 por">
+                        <span class="disib w160 tar">
+                            <em class="redFont f18 vat mr5">*</em>密码：
+                        </span>
+                        <input type="text" class="default_input" name="password" data-property-name="password" autocomplete="off"
+                               data-control-type="TextBox" id="password" placeholder="输入6~16位密码">
+                        <span class="js-error poa"></span>
+                    </p>
+                    <p class="mb30">
+                        <span class="disib w160 tar">邮箱：</span>
+                        <input type="text" class="default_input" name="email" data-property-name="email" data-control-type="TextBox"
+                                id="email" placeholder="请输入邮箱">
+                        <span class="js-error poa w250"></span>
+                    </p>
+                </div>
+            </div>
+            <div class="newInfoBox">
+                <div class="newInfoBoxHeader disib h30 lh30 w97p">
+                    <p class="newInfoBoxHeaderContent bold h30 lh30 f16 disib">用户状态</p>
+                </div>
+                <div class="perInfo mt40 bgcee pt30 pl30 pr30" data-property-name="status" data-control-type="RadioBox">
+                    <div class="radioBox">
+                        <input type="radio" name="passOrNoPass" value="1" checked id="pass">
+                        <label for="pass" class="js-pass"></label><span>通过</span>
+                    </div>
+                    <div class="radioBox">
+                        <input type="radio" name="passOrNoPass" value="2" id="noPass">
+                        <label for="noPass" class="js-noPass1"></label><span>驳回</span>
+                    </div>
+                </div>
+            </div>
+            <input type="button" class="default_button submit js-button" value="确认">
+        </div>
+    </form>
+</div>

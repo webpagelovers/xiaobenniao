@@ -1,0 +1,138 @@
+<div class="js-modules-customerClearance-addDeclareProduct overHidden">
+    <form class="js-addDeclareProduct">
+        <div class="mt50 w93p center">
+            <p class="pb5 borderColE5 bottomBorder"><span class="disib bgcDarkOran w5 h18"></span><span
+                    class="vat ml10">产品信息：</span></p>
+            <div class="bgcee mt20 pt25 pb25 overHidden">
+                <p class="mb20">
+                    <span class="tar w155 disib"><em class="redFont f18 vat-t mr5">*</em>产品名称：</span>
+                    <input type="text" name="nameCn" data-property-name="nameCn" data-control-type="TextBox"
+                           maxlength="20" placeholder="请输入产品名称" class="default_input js-nameCn">
+                    <span class="lh30"><label class="js-error redFont"></label></span>
+                </p>
+                <p class="mb20">
+                    <span class="tar w155 disib"><em class="redFont f18 vat-t mr5">*</em>产品英文名称：</span>
+                    <input type="text" name="nameEn" data-property-name="nameEn" data-control-type="TextBox"
+                           maxlength="50" placeholder="请输入产品英文名称" class="default_input">
+                    <span class="lh30"><label class="js-error redFont"></label></span>
+                </p>
+                <p class="mb20">
+                    <span class="tar w155 disib"><em class="redFont f18 vat-t mr5">*</em>HSCode：</span>
+                    <input type="text" name="hsCode" data-property-name="hsCode" data-control-type="TextBox"
+                           maxlength="10" placeholder="请输入HSCode" class="default_input">
+                    <span class="lh30"><label class="js-error redFont"></label></span>
+                </p>
+                <p class="mb20">
+                    <span class="tar w155 disib"><em class="redFont f18 vat-t mr5">*</em>品牌：</span>
+                    <input type="text" name="brand" data-property-name="brand" data-control-type="TextBox"
+                           maxlength="10" placeholder="请输入品牌" class="default_input">
+                    <span class="lh30"><label class="js-error redFont"></label></span>
+                </p>
+                <p class="mb20">
+                    <span class="tar w155 disib"><em class="redFont f18 vat-t mr5">*</em>型号：</span>
+                    <input type="text" name="model" data-property-name="model" data-control-type="TextBox"
+                           maxlength="50" placeholder="请输入型号" class="default_input">
+                    <span class="lh30"><label class="js-error redFont"></label></span>
+                </p>
+                <p class="mb20">
+                    <span class="tar w155 disib"><em class="redFont f18 vat-t mr5">*</em>材质：</span>
+                    <input type="text" name="texture" data-property-name="texture" data-control-type="TextBox"
+                           maxlength="10" placeholder="请输入材质" class="default_input">
+                    <span class="lh30"><label class="js-error redFont"></label></span>
+                </p>
+                <p class="mb20">
+                    <span class="tar w155 disib"><em class="redFont f18 vat-t mr5">*</em>用途：</span>
+                    <input type="text" name="goodsUsage" data-property-name="usage" data-control-type="TextBox"
+                           maxlength="50" placeholder="请输入用途" class="default_input">
+                    <span class="lh30"><label class="js-error redFont"></label></span>
+                </p>
+            </div>
+        </div>
+    </form>
+    <div class="js-error redFontLength">
+        <div class="mt50 w93p center">
+            <p class="pb5 borderColE5 bottomBorder"><span class="disib bgcDarkOran w5 h18"></span><span
+                    class="vat ml10">相关附件：</span></p>
+            <div class="bgcee mt20 pt25 pb25 pl20 pr20 js-declareAttachment">
+                <p><span>历史报关单：</span><span class="colcc">最大2MB 支持JPG， JPEG， PNG，PDF，WORD格式，最多上传1个附件</span></p>
+                <div class="mt20">
+                    <div data-property-name="productCustomsAttachment" data-control-type="Upload">
+                        <div class="queueList disib uploadBox">
+                            <div class="filePicker filePicker1 w90 ti8 add-filebg disib"></div>
+                        </div>
+                        <div class="colff6 ml10 disib js-allCancel curp">全部删除</div>
+                        <p class="mt40"><label class="js-error redFont"></label></p>
+                        <div class="mt40 js-wrapUploadData"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bgcee mt20 pt25 pb25 pl20 pr20 js-productAppearancePic">
+                <p><span>产品（含配件）整体外观图：</span><span class="colcc">最大2MB 支持JPG， JPEG， PNG格式，最多上传5个附件</span></p>
+                <div class="mt20">
+                    <div data-property-name="productWholeAttachment" data-control-type="Upload">
+                        <div class="queueList disib uploadBox">
+                            <div class="filePicker filePicker2 w90 ti8 add-filebg disib"></div>
+                        </div>
+                        <div class="colff6 ml10 disib js-allCancel curp">全部删除</div>
+                        <p class="mt40"><label class="js-error redFont"></label></p>
+                        <div class="mt40 js-wrapUploadData"></div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="bgcee mt20 pt25 pb25 pl20 pr20 js-productVipassanaPic">
+                <p><span>产品内包装图（分别体现不同面）：</span><span class="colcc">最大2MB 支持JPG， JPEG， PNG格式，最多上传5个附件</span></p>
+                <div class="mt20">
+                    <div data-property-name="productInsideAttachment" data-control-type="Upload">
+                        <div class="queueList disib uploadBox">
+                            <div class="filePicker filePicker3 w90 ti8 add-filebg disib"></div>
+                        </div>
+                        <div class="colff6 ml10 disib js-allCancel curp">全部删除</div>
+                        <p class="mt40"><label class="js-error redFont"></label></p>
+                        <div class="mt40 js-wrapUploadData"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bgcee mt20 pt25 pb25 pl20 pr20 js-productModelPic">
+                <p><span>品牌/型号确认图：</span><span class="colcc">最大2MB 支持JPG， JPEG， PNG格式，最多上传5个附件</span></p>
+                <div class="mt20">
+                    <div data-property-name="productModelAttachment" data-control-type="Upload">
+                        <div class="queueList disib uploadBox">
+                            <div class="filePicker filePicker4 w90 ti8 add-filebg disib"></div>
+                        </div>
+                        <div class="colff6 ml10 disib js-allCancel curp">全部删除</div>
+                        <p class="mt40"><label class="js-error redFont"></label></p>
+                        <div class="mt40 js-wrapUploadData"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bgcee mt20 pt25 pb25 pl20 pr20 js-declareOther">
+                <p><span>其他（可选，如历史报关单、产品说明书、质保证书）：</span><span class="colcc">最大2MB 支持JPG， JPEG， PNG格式，最多上传5个附件</span>
+                </p>
+                <div class="mt20">
+                    <div data-property-name="productOtherAttachment" data-control-type="Upload">
+                        <div class="queueList disib uploadBox">
+                            <div class="filePicker filePicker5 w90 ti8 add-filebg disib"></div>
+                        </div>
+                        <div class="colff6 ml10 disib js-allCancel curp">全部删除</div>
+                        <p class="mt40"><label class="js-error redFont"></label></p>
+                        <div class="mt40 js-wrapUploadData"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <p class="tac mt70 mb100">
+        <input type="button" class="js-save default_button w100 mr10" value="保存">
+        <input type="button" class="js-submit default_button w100 ml10" value="提交">
+    </p>
+
+
+</div>
+
+
